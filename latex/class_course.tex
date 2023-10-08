@@ -1,0 +1,215 @@
+\hypertarget{class_course}{}\doxysection{Course Class Reference}
+\label{class_course}\index{Course@{Course}}
+
+
+This class contains the course consisting constructor, getters, setters member functions, and overloaded output and input stream.  
+
+
+
+
+{\ttfamily \#include $<$C\+O\+U\+R\+S\+E.\+H$>$}
+
+
+
+Collaboration diagram for Course\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_course__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_course_a6b959ccf15d9ceed9e9c14a701561982}{Course}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_course_ac2121e059c09d6f311a5499fa4c3fb1c}{Course}} (const char $\ast$nam, char sect, unsigned cred)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_course_a0d6ecc51cf62d796d6c795a7e9d76aa0}{Get\+Credits}} () const
+\begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_course_ab889c7d28b861ef596262d032330410e}{Set\+Credits}} (unsigned cred)
+\begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_course_ab15cd623ed0ca7ac588588abcbe2a03b}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_course}{Course}} \&C)
+\begin{DoxyCompactList}\small\item\em Overload output stream operator. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{class_course_a4dae8e836b170c3c1e4676d4d940c531}{operator$>$$>$}} (istream \&input, \mbox{\hyperlink{class_course}{Course}} \&C)
+\begin{DoxyCompactList}\small\item\em Overload input stream operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class contains the course consisting constructor, getters, setters member functions, and overloaded output and input stream. 
+
+\begin{DoxyAuthor}{Author}
+Chan Kok Wai (33924804) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 34 of file C\+O\+U\+R\+S\+E.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_course_a6b959ccf15d9ceed9e9c14a701561982}\label{class_course_a6b959ccf15d9ceed9e9c14a701561982}} 
+\index{Course@{Course}!Course@{Course}}
+\index{Course@{Course}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{Course()}{Course()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Course\+::\+Course (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+This initialize the course object and creates a course with default values name as empty string. 
+
+Definition at line 25 of file C\+O\+U\+R\+S\+E.\+C\+PP.
+
+\mbox{\Hypertarget{class_course_ac2121e059c09d6f311a5499fa4c3fb1c}\label{class_course_ac2121e059c09d6f311a5499fa4c3fb1c}} 
+\index{Course@{Course}!Course@{Course}}
+\index{Course@{Course}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{Course()}{Course()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Course\+::\+Course (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nam,  }\item[{char}]{sect,  }\item[{unsigned}]{cred }\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor. 
+
+This initialize the course object and creates a a course with user defined parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & The name of the course ( first parameter ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em sect} & The section of the enrollment mode ( second parameter ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em cred} & The number of credit obtained ( third parameter ) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file C\+O\+U\+R\+S\+E.\+C\+PP.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_course_a0d6ecc51cf62d796d6c795a7e9d76aa0}\label{class_course_a0d6ecc51cf62d796d6c795a7e9d76aa0}} 
+\index{Course@{Course}!GetCredits@{GetCredits}}
+\index{GetCredits@{GetCredits}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{GetCredits()}{GetCredits()}}
+{\footnotesize\ttfamily unsigned Course\+::\+Get\+Credits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Member Method. 
+
+This function gets the sum of credits from all courses.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_course_a0d6ecc51cf62d796d6c795a7e9d76aa0}{Get\+Credits()}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The sum of credits from all courses. 
+\end{DoxyReturn}
+
+
+Definition at line 110 of file C\+O\+U\+R\+S\+E.\+H.
+
+\mbox{\Hypertarget{class_course_ab889c7d28b861ef596262d032330410e}\label{class_course_ab889c7d28b861ef596262d032330410e}} 
+\index{Course@{Course}!SetCredits@{SetCredits}}
+\index{SetCredits@{SetCredits}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{SetCredits()}{SetCredits()}}
+{\footnotesize\ttfamily void Course\+::\+Set\+Credits (\begin{DoxyParamCaption}\item[{unsigned}]{cred }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Procedure. 
+
+This function sets the sum of credits.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_course_ab889c7d28b861ef596262d032330410e}{Set\+Credits(unsigned cred)}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cred} & The sum of credit from all courses. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 115 of file C\+O\+U\+R\+S\+E.\+H.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{class_course_ab889c7d28b861ef596262d032330410e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_course_ab15cd623ed0ca7ac588588abcbe2a03b}\label{class_course_ab15cd623ed0ca7ac588588abcbe2a03b}} 
+\index{Course@{Course}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_course}{Course}} \&}]{C }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overload output stream operator. 
+
+This is a friend member function that directly access into the member variables. This outputs the user defined course format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em os} & ostream extraction of user defined variable of the course (first parameter). \\
+\hline
+\mbox{\texttt{ in}}  & {\em C} & The course class variable to be used for extraction (second parameter). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+os The display output format of the course. 
+\end{DoxyReturn}
+
+
+Definition at line 45 of file C\+O\+U\+R\+S\+E.\+C\+PP.
+
+\mbox{\Hypertarget{class_course_a4dae8e836b170c3c1e4676d4d940c531}\label{class_course_a4dae8e836b170c3c1e4676d4d940c531}} 
+\index{Course@{Course}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{input,  }\item[{\mbox{\hyperlink{class_course}{Course}} \&}]{C }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overload input stream operator. 
+
+This is a friend member function that directly access into the member variables. This inputs the user defined course format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em input} & istream insertion of user defined variable of the course (first parameter). \\
+\hline
+\mbox{\texttt{ in}}  & {\em C} & The course class variable to be used for insertion (second parameter). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+input The insertion format of the course. 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file C\+O\+U\+R\+S\+E.\+C\+PP.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_o_u_r_s_e_8_h}{C\+O\+U\+R\+S\+E.\+H}}\item 
+\mbox{\hyperlink{_c_o_u_r_s_e_8_c_p_p}{C\+O\+U\+R\+S\+E.\+C\+PP}}\end{DoxyCompactItemize}

@@ -1,0 +1,80 @@
+\hypertarget{_c_o_u_r_s_e_8_c_p_p}{}\doxysection{C\+O\+U\+R\+S\+E.\+C\+PP File Reference}
+\label{_c_o_u_r_s_e_8_c_p_p}\index{COURSE.CPP@{COURSE.CPP}}
+
+
+\mbox{\hyperlink{class_course}{Course}} implementation file.  
+
+
+{\ttfamily \#include \char`\"{}course.\+h\char`\"{}}\newline
+Include dependency graph for C\+O\+U\+R\+S\+E.\+C\+PP\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{_c_o_u_r_s_e_8_c_p_p__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \mbox{\hyperlink{_c_o_u_r_s_e_8_c_p_p_a4dae8e836b170c3c1e4676d4d940c531}{operator$>$$>$}} (istream \&input, \mbox{\hyperlink{class_course}{Course}} \&C)
+\item 
+ostream \& \mbox{\hyperlink{_c_o_u_r_s_e_8_c_p_p_ab15cd623ed0ca7ac588588abcbe2a03b}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_course}{Course}} \&C)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_course}{Course}} implementation file. 
+
+This file holds all implementation from \mbox{\hyperlink{class_course}{Course}} header file. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_c_o_u_r_s_e_8_h}{Course.\+h}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Chan Kok Wai 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_c_o_u_r_s_e_8_c_p_p_ab15cd623ed0ca7ac588588abcbe2a03b}\label{_c_o_u_r_s_e_8_c_p_p_ab15cd623ed0ca7ac588588abcbe2a03b}} 
+\index{COURSE.CPP@{COURSE.CPP}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!COURSE.CPP@{COURSE.CPP}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_course}{Course}} \&}]{C }\end{DoxyParamCaption})}
+
+This is a friend member function that directly access into the member variables. This outputs the user defined course format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em os} & ostream extraction of user defined variable of the course (first parameter). \\
+\hline
+\mbox{\texttt{ in}}  & {\em C} & The course class variable to be used for extraction (second parameter). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+os The display output format of the course. 
+\end{DoxyReturn}
+
+
+Definition at line 45 of file C\+O\+U\+R\+S\+E.\+C\+PP.
+
+\mbox{\Hypertarget{_c_o_u_r_s_e_8_c_p_p_a4dae8e836b170c3c1e4676d4d940c531}\label{_c_o_u_r_s_e_8_c_p_p_a4dae8e836b170c3c1e4676d4d940c531}} 
+\index{COURSE.CPP@{COURSE.CPP}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!COURSE.CPP@{COURSE.CPP}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{input,  }\item[{\mbox{\hyperlink{class_course}{Course}} \&}]{C }\end{DoxyParamCaption})}
+
+This is a friend member function that directly access into the member variables. This inputs the user defined course format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em input} & istream insertion of user defined variable of the course (first parameter). \\
+\hline
+\mbox{\texttt{ in}}  & {\em C} & The course class variable to be used for insertion (second parameter). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+input The insertion format of the course. 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file C\+O\+U\+R\+S\+E.\+C\+PP.
+

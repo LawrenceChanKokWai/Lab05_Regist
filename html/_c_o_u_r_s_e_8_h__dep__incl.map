@@ -1,0 +1,7 @@
+<map id="COURSE.H" name="COURSE.H">
+<area shape="rect" id="node1" title="Object Class for the Course Class." alt="" coords="106,5,197,32"/>
+<area shape="rect" id="node2" href="$_c_o_u_r_s_e_8_c_p_p.html" title="Course implementation file." alt="" coords="5,80,113,107"/>
+<area shape="rect" id="node3" href="$_m_a_i_n_8_c_p_p.html" title="Entry executor for the Main application." alt="" coords="109,155,194,181"/>
+<area shape="rect" id="node4" href="$_r_e_g_i_s_t_8_h.html" title="Object Class for the Registration Class." alt="" coords="189,80,271,107"/>
+<area shape="rect" id="node5" href="$_r_e_g_i_s_t_8_c_p_p.html" title="Registration implementation file." alt="" coords="219,155,319,181"/>
+</map>

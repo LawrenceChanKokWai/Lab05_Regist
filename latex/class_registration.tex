@@ -1,0 +1,176 @@
+\hypertarget{class_registration}{}\doxysection{Registration Class Reference}
+\label{class_registration}\index{Registration@{Registration}}
+
+
+This class contains the registration that includes courses class. This class contains constructor, getters, setters member functions, and overloaded output and input stream.  
+
+
+
+
+{\ttfamily \#include $<$R\+E\+G\+I\+S\+T.\+H$>$}
+
+
+
+Collaboration diagram for Registration\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_registration__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_registration_aac811faf22fe96a7f657a282d6d679ab}{Registration}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_registration_a72a5cc800d9551d69e4c201cd9f07ccd}{Get\+Credits}} () const
+\begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_registration_a729a2d6ae08aefd2dbe10ec7b3e5ce48}{Get\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_registration_a47b9e6c8719767aec587822151619af6}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_registration}{Registration}} \&R)
+\begin{DoxyCompactList}\small\item\em Overload output stream operator. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{class_registration_a2d7be84f9edc66ada3b7482f1e2e24bc}{operator$>$$>$}} (istream \&input, \mbox{\hyperlink{class_registration}{Registration}} \&R)
+\begin{DoxyCompactList}\small\item\em Overload input stream operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class contains the registration that includes courses class. This class contains constructor, getters, setters member functions, and overloaded output and input stream. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_c_o_u_r_s_e_8_h}{Course.\+h}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Chan Kok Wai (33924804) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 37 of file R\+E\+G\+I\+S\+T.\+H.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_registration_aac811faf22fe96a7f657a282d6d679ab}\label{class_registration_aac811faf22fe96a7f657a282d6d679ab}} 
+\index{Registration@{Registration}!Registration@{Registration}}
+\index{Registration@{Registration}!Registration@{Registration}}
+\doxysubsubsection{\texorpdfstring{Registration()}{Registration()}}
+{\footnotesize\ttfamily Registration\+::\+Registration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+This initialize the registration object and creates a registration with default values of courses count as 0. 
+
+Definition at line 25 of file R\+E\+G\+I\+S\+T.\+C\+PP.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_registration_a729a2d6ae08aefd2dbe10ec7b3e5ce48}\label{class_registration_a729a2d6ae08aefd2dbe10ec7b3e5ce48}} 
+\index{Registration@{Registration}!GetCount@{GetCount}}
+\index{GetCount@{GetCount}!Registration@{Registration}}
+\doxysubsubsection{\texorpdfstring{GetCount()}{GetCount()}}
+{\footnotesize\ttfamily unsigned Registration\+::\+Get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Member Method. 
+
+This function gets the sum of count courses.
+
+\begin{DoxyReturn}{Returns}
+The sum of count courses. 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file R\+E\+G\+I\+S\+T.\+H.
+
+\mbox{\Hypertarget{class_registration_a72a5cc800d9551d69e4c201cd9f07ccd}\label{class_registration_a72a5cc800d9551d69e4c201cd9f07ccd}} 
+\index{Registration@{Registration}!GetCredits@{GetCredits}}
+\index{GetCredits@{GetCredits}!Registration@{Registration}}
+\doxysubsubsection{\texorpdfstring{GetCredits()}{GetCredits()}}
+{\footnotesize\ttfamily unsigned Registration\+::\+Get\+Credits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Member Method. 
+
+This function gets the sum of credits from all courses.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_registration_a72a5cc800d9551d69e4c201cd9f07ccd}{Get\+Credits()}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The sum of credits from all courses. 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file R\+E\+G\+I\+S\+T.\+C\+PP.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_registration_a47b9e6c8719767aec587822151619af6}\label{class_registration_a47b9e6c8719767aec587822151619af6}} 
+\index{Registration@{Registration}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Registration@{Registration}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_registration}{Registration}} \&}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overload output stream operator. 
+
+This is a friend member function that directly access into the member variables. This outputs the user defined registration format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em os} & ostream extraction of user defined variable of the registration (first parameter). \\
+\hline
+\mbox{\texttt{ in}}  & {\em R} & The registration class variable to be used for extraction (second parameter). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+os The display output format of the registration. 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file R\+E\+G\+I\+S\+T.\+C\+PP.
+
+\mbox{\Hypertarget{class_registration_a2d7be84f9edc66ada3b7482f1e2e24bc}\label{class_registration_a2d7be84f9edc66ada3b7482f1e2e24bc}} 
+\index{Registration@{Registration}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Registration@{Registration}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{input,  }\item[{\mbox{\hyperlink{class_registration}{Registration}} \&}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overload input stream operator. 
+
+This is a friend member function that directly access into the member variables. This inputs the user defined registration format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em input} & istream insertion of user defined variable of the registration (first parameter). \\
+\hline
+\mbox{\texttt{ in}}  & {\em R} & The registration class variable to be used for insertion (second parameter). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+input The insertion format of the registration. 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file R\+E\+G\+I\+S\+T.\+C\+PP.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_r_e_g_i_s_t_8_h}{R\+E\+G\+I\+S\+T.\+H}}\item 
+\mbox{\hyperlink{_r_e_g_i_s_t_8_c_p_p}{R\+E\+G\+I\+S\+T.\+C\+PP}}\end{DoxyCompactItemize}

@@ -1,0 +1,20 @@
+Student ID: 102234
+Semester:   962
+  Course:  CHM_1020
+  Section: C
+  Credits: 3
+
+  Course:  MUS_1100
+  Section: H
+  Credits: 1
+
+  Course:  BIO_1040
+  Section: D
+  Credits: 4
+
+  Course:  MTH_2400
+  Section: A
+  Credits: 3
+
+Number of courses = 4
+Total credits     = 11
