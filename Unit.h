@@ -14,6 +14,7 @@
 
 #include <iostream>
 #include <string.h>
+#include <iomanip>
 
 using namespace std;
 
@@ -22,7 +23,7 @@ using namespace std;
 ///
 /// @showinitializer
 ///
-const unsigned UnitNameSize = 10;
+const unsigned UnitNameSize = 40;
 
 ///
 /// Maximum array size for unit id supported
@@ -61,6 +62,44 @@ public:
     /// @param[in] credit The number of credit obtained ( third parameter )
     ///
     Unit( const char * unitName, const char *unitId, unsigned credit );
+
+    ///
+    /// @brief Member Method
+    ///
+    /// @details This function gets the unit id of the unit.
+    ///
+    /// @return The unit id of the unit.
+    ///
+    const char *GetUnitId() const;
+
+    ///
+    /// @brief Member Method
+    ///
+    /// @details This function gets the unit name of the unit.
+    ///
+    /// @return The unit name of the unit.
+    ///
+    const char *GetUnitName() const;
+
+    ///
+    /// @brief Procedure
+    ///
+    /// @details This function sets the unit id of a unit.
+    ///
+    /// @param[in] *unitId A pointer unitId pointing to index 0 of unitId.
+    /// @return Void
+    ///
+    void SetUnitId(const char *unitId);
+
+    ///
+    /// @brief Procedure
+    ///
+    /// @details This function sets the unit name of a unit.
+    ///
+    /// @param[in] *unitName A pointer unitName pointing to index 0 of unitName.
+    /// @return Void
+    ///
+    void SetUnitName(const char *unitName);
 
     ///
     /// @brief Member Method
