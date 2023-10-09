@@ -1,0 +1,273 @@
+\hypertarget{class_result}{}\doxysection{Result Class Reference}
+\label{class_result}\index{Result@{Result}}
+
+
+This class contains the result consisting constructor, getters, setters member functions, and overloaded output and input stream.  
+
+
+
+
+{\ttfamily \#include $<$Result.\+h$>$}
+
+
+
+Collaboration diagram for Result\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_result__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_result_a90f44667e23d25ccdeac37f00a74657b}{Result}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_result_a78f08be55f903a6795103886e0a6aa62}{Result}} (\mbox{\hyperlink{class_unit}{Unit}} \&unit, float marks)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_result_a8a442d311e4868f8e6094d8b3c2a02fa}{Get\+Unit}} (\mbox{\hyperlink{class_unit}{Unit}} \&unit) const
+\begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_result_a984dbc50adb7dcc9207122fd943fe4a8}{Get\+Marks}} () const
+\begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_result_a138e4b9661a9b847b9240d86806dcbef}{Set\+Unit}} (\mbox{\hyperlink{class_unit}{Unit}} \&unit)
+\begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_result_a20645b1b42ef7bc9a4a7520a581174d6}{Set\+Marks}} (float marks)
+\begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_result_a180fc33da8d4dc00234b39a25da17673}{operator$<$$<$}} (ostream \&output\+Stream, const \mbox{\hyperlink{class_result}{Result}} \&R)
+\begin{DoxyCompactList}\small\item\em Overload output stream operator. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{class_result_a4c5cdab2d8b61c3f3bc4770a96ff32a0}{operator$>$$>$}} (istream \&input\+Stream, \mbox{\hyperlink{class_result}{Result}} \&R)
+\begin{DoxyCompactList}\small\item\em Overload input stream operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class contains the result consisting constructor, getters, setters member functions, and overloaded output and input stream. 
+
+\begin{DoxyAuthor}{Author}
+Chan Kok Wai (33924804) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 25 of file Result.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_result_a90f44667e23d25ccdeac37f00a74657b}\label{class_result_a90f44667e23d25ccdeac37f00a74657b}} 
+\index{Result@{Result}!Result@{Result}}
+\index{Result@{Result}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{Result()}{Result()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Result\+::\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+This initialize the result object and creates a result with default values marks as 0.\+0. 
+
+Definition at line 12 of file Result.\+cpp.
+
+\mbox{\Hypertarget{class_result_a78f08be55f903a6795103886e0a6aa62}\label{class_result_a78f08be55f903a6795103886e0a6aa62}} 
+\index{Result@{Result}!Result@{Result}}
+\index{Result@{Result}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{Result()}{Result()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Result\+::\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unit}{Unit}} \&}]{unit,  }\item[{float}]{marks }\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor. 
+
+This initialize the result object and creates a a result with user defined parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em unit} & Referencing the unit object ( first parameter ) \\
+\hline
+\mbox{\texttt{ in}}  & {\em marks} & The mark of a unit ( second parameter ) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file Result.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_result_a984dbc50adb7dcc9207122fd943fe4a8}\label{class_result_a984dbc50adb7dcc9207122fd943fe4a8}} 
+\index{Result@{Result}!GetMarks@{GetMarks}}
+\index{GetMarks@{GetMarks}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{GetMarks()}{GetMarks()}}
+{\footnotesize\ttfamily float Result\+::\+Get\+Marks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Member Method. 
+
+This function gets the mark of a unit.
+
+\begin{DoxyReturn}{Returns}
+The mark for a unit. 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file Result.\+cpp.
+
+\mbox{\Hypertarget{class_result_a8a442d311e4868f8e6094d8b3c2a02fa}\label{class_result_a8a442d311e4868f8e6094d8b3c2a02fa}} 
+\index{Result@{Result}!GetUnit@{GetUnit}}
+\index{GetUnit@{GetUnit}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{GetUnit()}{GetUnit()}}
+{\footnotesize\ttfamily void Result\+::\+Get\+Unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unit}{Unit}} \&}]{unit }\end{DoxyParamCaption}) const}
+
+
+
+Member Method. 
+
+This function gets the unit object for the result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit} & A reference unit object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void. 
+\end{DoxyReturn}
+
+
+Definition at line 23 of file Result.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_result_a8a442d311e4868f8e6094d8b3c2a02fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_result_a20645b1b42ef7bc9a4a7520a581174d6}\label{class_result_a20645b1b42ef7bc9a4a7520a581174d6}} 
+\index{Result@{Result}!SetMarks@{SetMarks}}
+\index{SetMarks@{SetMarks}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{SetMarks()}{SetMarks()}}
+{\footnotesize\ttfamily void Result\+::\+Set\+Marks (\begin{DoxyParamCaption}\item[{float}]{marks }\end{DoxyParamCaption})}
+
+
+
+Procedure. 
+
+This function sets the mark of a unit.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em marks} & A mark of a unit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file Result.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{class_result_a20645b1b42ef7bc9a4a7520a581174d6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_result_a138e4b9661a9b847b9240d86806dcbef}\label{class_result_a138e4b9661a9b847b9240d86806dcbef}} 
+\index{Result@{Result}!SetUnit@{SetUnit}}
+\index{SetUnit@{SetUnit}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{SetUnit()}{SetUnit()}}
+{\footnotesize\ttfamily void Result\+::\+Set\+Unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unit}{Unit}} \&}]{unit }\end{DoxyParamCaption})}
+
+
+
+Procedure. 
+
+This function sets the unit object for a result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \&unit} & A reference unit of a unit object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 33 of file Result.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{class_result_a138e4b9661a9b847b9240d86806dcbef_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_result_a180fc33da8d4dc00234b39a25da17673}\label{class_result_a180fc33da8d4dc00234b39a25da17673}} 
+\index{Result@{Result}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{output\+Stream,  }\item[{const \mbox{\hyperlink{class_result}{Result}} \&}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overload output stream operator. 
+
+This is a friend member function that directly access into the member variables. This outputs the user defined result format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em output\+Stream} & ostream extraction of user defined variable of the result (first parameter). \\
+\hline
+\mbox{\texttt{ in}}  & {\em R} & The result class variable to be used for extraction (second parameter). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+output\+Stream The display output format of the result. 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file Result.\+cpp.
+
+\mbox{\Hypertarget{class_result_a4c5cdab2d8b61c3f3bc4770a96ff32a0}\label{class_result_a4c5cdab2d8b61c3f3bc4770a96ff32a0}} 
+\index{Result@{Result}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{input\+Stream,  }\item[{\mbox{\hyperlink{class_result}{Result}} \&}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overload input stream operator. 
+
+This is a friend member function that directly access into the member variables. This inputs the result defined unit format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em input\+Stream} & istream insertion of user defined variable of the result (first parameter). \\
+\hline
+\mbox{\texttt{ in}}  & {\em R} & The result class variable to be used for insertion (second parameter). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+input\+Stream The insertion format of the result. 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file Result.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_result_8h}{Result.\+h}}\item 
+\mbox{\hyperlink{_result_8cpp}{Result.\+cpp}}\end{DoxyCompactItemize}

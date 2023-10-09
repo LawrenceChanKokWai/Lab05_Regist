@@ -1,8 +1,15 @@
 var files_dup =
 [
-    [ "COURSE.CPP", "_c_o_u_r_s_e_8_c_p_p.html", "_c_o_u_r_s_e_8_c_p_p" ],
-    [ "COURSE.H", "_c_o_u_r_s_e_8_h.html", "_c_o_u_r_s_e_8_h" ],
-    [ "MAIN.CPP", "_m_a_i_n_8_c_p_p.html", "_m_a_i_n_8_c_p_p" ],
-    [ "REGIST.CPP", "_r_e_g_i_s_t_8_c_p_p.html", "_r_e_g_i_s_t_8_c_p_p" ],
-    [ "REGIST.H", "_r_e_g_i_s_t_8_h.html", "_r_e_g_i_s_t_8_h" ]
+    [ "Main.cpp", "_main_8cpp.html", "_main_8cpp" ],
+    [ "Registration.cpp", "_registration_8cpp.html", "_registration_8cpp" ],
+    [ "Registration.h", "_registration_8h.html", "_registration_8h" ],
+    [ "RegistrationTest.cpp", "_registration_test_8cpp.html", "_registration_test_8cpp" ],
+    [ "Result.cpp", "_result_8cpp.html", "_result_8cpp" ],
+    [ "Result.h", "_result_8h.html", [
+      [ "Result", "class_result.html", "class_result" ]
+    ] ],
+    [ "ResultTest.cpp", "_result_test_8cpp.html", "_result_test_8cpp" ],
+    [ "Unit.cpp", "_unit_8cpp.html", "_unit_8cpp" ],
+    [ "Unit.h", "_unit_8h.html", "_unit_8h" ],
+    [ "UnitTest.cpp", "_unit_test_8cpp.html", "_unit_test_8cpp" ]
 ];

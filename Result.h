@@ -50,9 +50,10 @@ public:
     ///
     /// @details This function gets the unit object for the result.
     ///
-    /// @return The unit object.
+    /// @param unit A reference unit object.
+    /// @return Void.
     ///
-    Unit GetUnit() const;
+    void GetUnit( Unit &unit ) const;
 
     ///
     /// @brief Member Method

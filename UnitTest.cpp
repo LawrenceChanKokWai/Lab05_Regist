@@ -1,3 +1,12 @@
+/// @file UnitTest.cpp
+/// @brief Unit test file.
+///
+/// This file is used for testing Unit class.
+/// @see Unit.h
+///
+/// @author Chan Kok Wai
+///
+
 #include<iostream>
 
 #include "Unit.h"

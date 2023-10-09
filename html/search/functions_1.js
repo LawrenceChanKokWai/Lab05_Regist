@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['getcount_27',['GetCount',['../class_registration.html#a729a2d6ae08aefd2dbe10ec7b3e5ce48',1,'Registration']]],
-  ['getcredits_28',['GetCredits',['../class_course.html#a0d6ecc51cf62d796d6c795a7e9d76aa0',1,'Course::GetCredits()'],['../class_registration.html#a72a5cc800d9551d69e4c201cd9f07ccd',1,'Registration::GetCredits()']]]
+  ['main_66',['main',['../_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Main.cpp'],['../_registration_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;RegistrationTest.cpp'],['../_result_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;ResultTest.cpp'],['../_unit_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;UnitTest.cpp']]]
 ];

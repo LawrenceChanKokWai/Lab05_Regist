@@ -1,0 +1,9 @@
+<map id="Result.h" name="Result.h">
+<area shape="rect" id="node1" title="Object Class for the Result Class." alt="" coords="245,5,315,32"/>
+<area shape="rect" id="node2" href="$_registration_8h.html" title="Object Class for the Registration Class." alt="" coords="111,80,214,107"/>
+<area shape="rect" id="node6" href="$_result_8cpp.html" title="Result implementation file." alt="" coords="238,80,322,107"/>
+<area shape="rect" id="node7" href="$_result_test_8cpp.html" title="Result test file." alt="" coords="347,80,456,107"/>
+<area shape="rect" id="node3" href="$_main_8cpp.html" title="Entry executor for the Main application." alt="" coords="5,155,80,181"/>
+<area shape="rect" id="node4" href="$_registration_8cpp.html" title="Registration implementation file." alt="" coords="105,155,221,181"/>
+<area shape="rect" id="node5" href="$_registration_test_8cpp.html" title="Registration test file." alt="" coords="245,155,387,181"/>
+</map>

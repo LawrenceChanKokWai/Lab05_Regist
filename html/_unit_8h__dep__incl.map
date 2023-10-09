@@ -1,0 +1,12 @@
+<map id="Unit.h" name="Unit.h">
+<area shape="rect" id="node1" title="Object Class for the Unit Class." alt="" coords="232,5,288,32"/>
+<area shape="rect" id="node2" href="$_main_8cpp.html" title="Entry executor for the Main application." alt="" coords="5,229,80,256"/>
+<area shape="rect" id="node3" href="$_result_8h.html" title="Object Class for the Result Class." alt="" coords="178,80,249,107"/>
+<area shape="rect" id="node9" href="$_unit_8cpp.html" title="Unit implementation file." alt="" coords="273,80,343,107"/>
+<area shape="rect" id="node10" href="$_unit_test_8cpp.html" title="Unit test file." alt="" coords="367,80,462,107"/>
+<area shape="rect" id="node4" href="$_registration_8h.html" title="Object Class for the Registration Class." alt="" coords="103,155,206,181"/>
+<area shape="rect" id="node7" href="$_result_8cpp.html" title="Result implementation file." alt="" coords="230,155,314,181"/>
+<area shape="rect" id="node8" href="$_result_test_8cpp.html" title="Result test file." alt="" coords="339,155,448,181"/>
+<area shape="rect" id="node5" href="$_registration_8cpp.html" title="Registration implementation file." alt="" coords="105,229,221,256"/>
+<area shape="rect" id="node6" href="$_registration_test_8cpp.html" title="Registration test file." alt="" coords="245,229,387,256"/>
+</map>

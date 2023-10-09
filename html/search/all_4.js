@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['regist_2ecpp_11',['REGIST.CPP',['../_r_e_g_i_s_t_8_c_p_p.html',1,'']]],
-  ['regist_2eh_12',['REGIST.H',['../_r_e_g_i_s_t_8_h.html',1,'']]],
-  ['registration_13',['Registration',['../class_registration.html',1,'Registration'],['../class_registration.html#aac811faf22fe96a7f657a282d6d679ab',1,'Registration::Registration()']]],
-  ['rinput_2etxt_14',['rinput.txt',['../rinput_8txt.html',1,'']]],
-  ['routput_2etxt_15',['routput.txt',['../routput_8txt.html',1,'']]]
+  ['setcount_26',['SetCount',['../class_registration.html#a8806e95a1f1159a9c0b317bcb6104a6f',1,'Registration']]],
+  ['setcredits_27',['SetCredits',['../class_unit.html#abff157e76552cc8a3941f39b96869ff2',1,'Unit']]],
+  ['setmarks_28',['SetMarks',['../class_result.html#a20645b1b42ef7bc9a4a7520a581174d6',1,'Result']]],
+  ['setresult_29',['SetResult',['../class_registration.html#a0f6cc413bd8809c543f04a44aa6eac11',1,'Registration']]],
+  ['setsemester_30',['SetSemester',['../class_registration.html#a30bc191dbd0ec35e961c6682b2833a3b',1,'Registration']]],
+  ['setstudentid_31',['SetStudentId',['../class_registration.html#aff8c1a738f6ea932a230712db262180e',1,'Registration']]],
+  ['setunit_32',['SetUnit',['../class_result.html#a138e4b9661a9b847b9240d86806dcbef',1,'Result']]],
+  ['setunitid_33',['SetUnitId',['../class_unit.html#ac15c197032096290f7240c6ca37960ec',1,'Unit']]],
+  ['setunitname_34',['SetUnitName',['../class_unit.html#ac53eb47c2701c7bbc05aa8b898bde7ad',1,'Unit']]]
 ];

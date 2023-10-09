@@ -1,3 +1,11 @@
+/// @file Result.cpp
+/// @brief Result implementation file.
+///
+/// This file holds all implementation from Result header file.
+/// @see Result.h
+///
+/// @author Chan Kok Wai
+///
 
 #include "Result.h"
 
@@ -12,9 +20,9 @@ Result::Result(Unit &unit, float marks)
     m_marks = marks;
 }
 
-Unit Result::GetUnit() const
+void Result::GetUnit( Unit &unit ) const
 {
-    return m_unit;
+    unit = m_unit;
 }
 
 float Result::GetMarks() const

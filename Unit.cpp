@@ -67,8 +67,8 @@ ostream& operator<<(std::ostream& os, const Unit& U)
 {
     const unsigned spacing = 4;
 
-    os << left << setw(spacing) << "" << "Unit ID:" << setw(spacing) << "" << U.m_unitName << '\n'
-       << setw(spacing) << "" << "Unit Name:" << setw(2) << "" << U.m_unitId << '\n'
+    os << left << setw(spacing) << "" << "Unit ID:" << setw(spacing) << "" << U.m_unitId << '\n'
+       << setw(spacing) << "" << "Unit Name:" << setw(2) << "" << U.m_unitName << '\n'
        << setw(spacing) << "" << "Credits:" << setw(spacing) << "" << U.m_credits << '\n';
     return os;
 }

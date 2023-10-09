@@ -1,11 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "cgmors",
-  1: "cr",
-  2: "cmr",
-  3: "cgmors",
-  4: "cm",
-  5: "o"
+  0: "gmorsu",
+  1: "ru",
+  2: "mru",
+  3: "gmorsu",
+  4: "mu",
+  5: "o",
+  6: "r"
 };
 
 var indexSectionNames =
@@ -15,7 +16,8 @@ var indexSectionNames =
   2: "files",
   3: "functions",
   4: "variables",
-  5: "related"
+  5: "related",
+  6: "pages"
 };
 
 var indexSectionLabels =
@@ -25,6 +27,7 @@ var indexSectionLabels =
   2: "Files",
   3: "Functions",
   4: "Variables",
-  5: "Friends"
+  5: "Friends",
+  6: "Pages"
 };
 

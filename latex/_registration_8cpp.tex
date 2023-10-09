@@ -1,0 +1,80 @@
+\hypertarget{_registration_8cpp}{}\doxysection{Registration.\+cpp File Reference}
+\label{_registration_8cpp}\index{Registration.cpp@{Registration.cpp}}
+
+
+\mbox{\hyperlink{class_registration}{Registration}} implementation file.  
+
+
+{\ttfamily \#include \char`\"{}Registration.\+h\char`\"{}}\newline
+Include dependency graph for Registration.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{_registration_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \mbox{\hyperlink{_registration_8cpp_a2d7be84f9edc66ada3b7482f1e2e24bc}{operator$>$$>$}} (istream \&input, \mbox{\hyperlink{class_registration}{Registration}} \&R)
+\item 
+ostream \& \mbox{\hyperlink{_registration_8cpp_a47b9e6c8719767aec587822151619af6}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_registration}{Registration}} \&R)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_registration}{Registration}} implementation file. 
+
+This file holds all implementation from \mbox{\hyperlink{class_registration}{Registration}} header file. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_registration_8h}{Registration.\+h}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Chan Kok Wai 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_registration_8cpp_a47b9e6c8719767aec587822151619af6}\label{_registration_8cpp_a47b9e6c8719767aec587822151619af6}} 
+\index{Registration.cpp@{Registration.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Registration.cpp@{Registration.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_registration}{Registration}} \&}]{R }\end{DoxyParamCaption})}
+
+This is a friend member function that directly access into the member variables. This outputs the user defined registration format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em os} & ostream extraction of user defined variable of the registration (first parameter). \\
+\hline
+\mbox{\texttt{ in}}  & {\em R} & The registration class variable to be used for extraction (second parameter). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+os The display output format of the registration. 
+\end{DoxyReturn}
+
+
+Definition at line 93 of file Registration.\+cpp.
+
+\mbox{\Hypertarget{_registration_8cpp_a2d7be84f9edc66ada3b7482f1e2e24bc}\label{_registration_8cpp_a2d7be84f9edc66ada3b7482f1e2e24bc}} 
+\index{Registration.cpp@{Registration.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Registration.cpp@{Registration.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{input,  }\item[{\mbox{\hyperlink{class_registration}{Registration}} \&}]{R }\end{DoxyParamCaption})}
+
+This is a friend member function that directly access into the member variables. This inputs the user defined registration format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em input} & istream insertion of user defined variable of the registration (first parameter). \\
+\hline
+\mbox{\texttt{ in}}  & {\em R} & The registration class variable to be used for insertion (second parameter). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+input The insertion format of the registration. 
+\end{DoxyReturn}
+
+
+Definition at line 83 of file Registration.\+cpp.
+

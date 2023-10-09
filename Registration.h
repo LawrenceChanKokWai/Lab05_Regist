@@ -1,4 +1,4 @@
-/// @file Regist.h
+/// @file Registration.h
 /// @brief Object Class for the Registration Class.
 ///
 /// This class contains the registration
@@ -13,19 +13,19 @@
 #define REGIST_H
 
 #include <iostream>
-#include "Unit.h"
+#include "Result.h"
 
 using namespace std;
 
 ///
-/// Maximum array size of courses supported
+/// Maximum array size of result supported
 ///
 /// @showinitializer
 ///
-const unsigned MaxUnits = 10;
+const unsigned MaxResult = 10;
 
 /// @brief This class contains the registration
-/// that includes courses class.
+/// that includes result class.
 /// This class contains constructor, getters, setters
 /// member functions, and overloaded output and input stream.
 ///
@@ -49,22 +49,87 @@ public:
     ///
     /// @brief Member Method
     ///
-    /// @details This function gets the sum of credits from all courses.
+    /// @details This function gets the student id of the student.
     ///
-    /// @see GetCredits()
-    /// @return The sum of credits from all courses.
+    /// @return The student id of the student.
+    ///
+    long GetStudentId() const;
+
+    ///
+    /// @brief Member Method
+    ///
+    /// @details This function gets the semester of the unit.
+    ///
+    /// @return The semester of the unit.
+    ///
+    unsigned GetSemester() const;
+
+    ///
+    /// @brief Member Method
+    ///
+    /// @details This function gets the sum of credits from all units.
+    ///
+    /// @return The sum of credits from all units.
     ///
     unsigned GetCredits() const;
 
     ///
     /// @brief Member Method
     ///
-    /// @details This function gets the sum  of count courses.
+    /// @details This function gets the sum  of count units.
     ///
-    /// @return The sum of count courses.
+    /// @return The sum of count units.
     ///
     unsigned GetCount() const;
 
+    ///
+    /// @brief Member Method
+    ///
+    /// @details This function gets the results from a count.
+    ///
+    /// @return The result from a count.
+    ///
+    const Result &GetResult(const unsigned count) const;
+
+    ///
+    /// @brief Procedure
+    ///
+    /// @details This function sets the student Id.
+    ///
+    /// @param[in] studentId The student id of a student.
+    /// @return Void
+    ///
+    void SetStudentId(long studentId);
+
+    ///
+    /// @brief Procedure
+    ///
+    /// @details This function sets the semester.
+    ///
+    /// @param[in] semester The semester for the student enrolled with the units.
+    /// @return Void
+    ///
+    void SetSemester(unsigned semester);
+
+    ///
+    /// @brief Procedure
+    ///
+    /// @details This function sets the count.
+    ///
+    /// @param[in] count The count of the units.
+    /// @return Void
+    ///
+    void SetCount(unsigned count);
+
+    ///
+    /// @brief Procedure
+    ///
+    /// @details This function sets the result.
+    ///
+    /// @param[in] result The results from the student.
+    /// @return Void
+    ///
+    void SetResult(Result &result, unsigned index);
 
     ///
     /// @brief Overload output stream operator
@@ -91,16 +156,11 @@ public:
     friend istream & operator >>( istream & input, Registration & R );
 
 private:
-    long studentId;             // student ID number
-    unsigned semester;          // semester year, number
-    unsigned count;             // number of courses
-    Unit units[MaxUnits]; // array of courses
+    long m_studentId;
+    unsigned m_semester;
+    unsigned m_count;
+    Result m_result[MaxResult];
 };
-
-inline unsigned Registration::GetCount() const
-{
-    return count;
-}
 
 #endif
 

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['getcount_4',['GetCount',['../class_registration.html#a729a2d6ae08aefd2dbe10ec7b3e5ce48',1,'Registration']]],
-  ['getcredits_5',['GetCredits',['../class_course.html#a0d6ecc51cf62d796d6c795a7e9d76aa0',1,'Course::GetCredits()'],['../class_registration.html#a72a5cc800d9551d69e4c201cd9f07ccd',1,'Registration::GetCredits()']]]
+  ['main_9',['main',['../_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;Main.cpp'],['../_registration_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;RegistrationTest.cpp'],['../_result_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;ResultTest.cpp'],['../_unit_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;UnitTest.cpp']]],
+  ['main_2ecpp_10',['Main.cpp',['../_main_8cpp.html',1,'']]],
+  ['maxresult_11',['MaxResult',['../_registration_8h.html#a5b74fc140f1b0449eaaee6fe368482ef',1,'Registration.h']]]
 ];

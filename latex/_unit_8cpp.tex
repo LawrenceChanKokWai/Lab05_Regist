@@ -1,0 +1,68 @@
+\hypertarget{_unit_8cpp}{}\doxysection{Unit.\+cpp File Reference}
+\label{_unit_8cpp}\index{Unit.cpp@{Unit.cpp}}
+
+
+\mbox{\hyperlink{class_unit}{Unit}} implementation file.  
+
+
+{\ttfamily \#include \char`\"{}Unit.\+h\char`\"{}}\newline
+Include dependency graph for Unit.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{_unit_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \mbox{\hyperlink{_unit_8cpp_a7a9d8f721576c83a2542bb81f2dbec9a}{operator$>$$>$}} (istream \&input, \mbox{\hyperlink{class_unit}{Unit}} \&U)
+\item 
+ostream \& \mbox{\hyperlink{_unit_8cpp_a3e9ad3532e507c14a957e842d2c80a69}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_unit}{Unit}} \&U)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_unit}{Unit}} implementation file. 
+
+This file holds all implementation from \mbox{\hyperlink{class_unit}{Unit}} header file. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_unit_8h}{Unit.\+h}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Chan Kok Wai 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_unit_8cpp_a3e9ad3532e507c14a957e842d2c80a69}\label{_unit_8cpp_a3e9ad3532e507c14a957e842d2c80a69}} 
+\index{Unit.cpp@{Unit.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Unit.cpp@{Unit.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_unit}{Unit}} \&}]{U }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file Unit.\+cpp.
+
+\mbox{\Hypertarget{_unit_8cpp_a7a9d8f721576c83a2542bb81f2dbec9a}\label{_unit_8cpp_a7a9d8f721576c83a2542bb81f2dbec9a}} 
+\index{Unit.cpp@{Unit.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Unit.cpp@{Unit.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{input,  }\item[{\mbox{\hyperlink{class_unit}{Unit}} \&}]{U }\end{DoxyParamCaption})}
+
+This is a friend member function that directly access into the member variables. This inputs the user defined unit format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em input} & istream insertion of user defined variable of the unit (first parameter). \\
+\hline
+\mbox{\texttt{ in}}  & {\em U} & The unit class variable to be used for insertion (second parameter). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+input The insertion format of the unit. 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file Unit.\+cpp.
+

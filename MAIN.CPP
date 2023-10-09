@@ -16,7 +16,7 @@
 #include <iostream>
 #include <fstream>
 #include "Unit.h"  // Course class declaration
-#include "regist.h"  // Registration class declaration
+#include "Registration.h" // Registration class declaration
 
 using namespace std;
 
@@ -30,26 +30,30 @@ using namespace std;
 ///
 int main()
 {
-  ifstream infile( "rinput.txt" );
-  if( !infile ) return -1;
+    ifstream infile( "rinput.txt" );
+    if( !infile )
+        return -1;
 
-  Registration R;
-  infile >> R;
+    Registration R;
+    infile >> R;
+    cout << R
+            << "Number of courses = " << R.GetCount() << '\n'
+            << "Total credits     = " << R.GetCredits() << '\n';
 
-  ofstream ofile( "routput.txt" );
+    ofstream ofile( "routput.txt" );
 
 // Use a debugger and track down the calls made "behind the scene"
-  ofile << R
-    << "Number of courses = " << R.GetCount() << '\n'
-    << "Total credits     = " << R.GetCredits() << '\n';
+    ofile << R
+          << "Number of courses = " << R.GetCount() << '\n'
+          << "Total credits     = " << R.GetCredits() << '\n';
 
-  // Declare and initialize a Course, and modify
-  // its credits.
+    // Declare and initialize a Course, and modify
+    // its credits.
 
-  Unit aUnit( "MTH_3020", "ICT292", 2 );
-  aUnit.SetCredits( 5 );
-  cout << aUnit << endl; // the operator << for Course is called
+    //Unit aUnit( "MTH_3020", "ICT292", 2 );
+    //aUnit.SetCredits( 5 );
+    //cout << aUnit << endl; // the operator << for Course is called
 
-  return 0;
+    return 0;
 }
 

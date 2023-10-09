@@ -2,12 +2,12 @@
 \label{class_registration}\index{Registration@{Registration}}
 
 
-This class contains the registration that includes courses class. This class contains constructor, getters, setters member functions, and overloaded output and input stream.  
+This class contains the registration that includes result class. This class contains constructor, getters, setters member functions, and overloaded output and input stream.  
 
 
 
 
-{\ttfamily \#include $<$R\+E\+G\+I\+S\+T.\+H$>$}
+{\ttfamily \#include $<$Registration.\+h$>$}
 
 
 
@@ -15,7 +15,7 @@ Collaboration diagram for Registration\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=163pt]{class_registration__coll__graph}
+\includegraphics[width=169pt]{class_registration__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -23,10 +23,24 @@ Collaboration diagram for Registration\+:\nopagebreak
 \item 
 \mbox{\hyperlink{class_registration_aac811faf22fe96a7f657a282d6d679ab}{Registration}} ()
 \begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_registration_ab8864cecbcbc90e8a70e9d004af31925}{Get\+Student\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_registration_a4c1f5de4ca28183644910b90de6856eb}{Get\+Semester}} () const
+\begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
 unsigned \mbox{\hyperlink{class_registration_a72a5cc800d9551d69e4c201cd9f07ccd}{Get\+Credits}} () const
 \begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
 unsigned \mbox{\hyperlink{class_registration_a729a2d6ae08aefd2dbe10ec7b3e5ce48}{Get\+Count}} () const
-\begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_result}{Result}} \& \mbox{\hyperlink{class_registration_a8455b62a567ada3ffee0f32b63400a7d}{Get\+Result}} (const unsigned count) const
+\begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_registration_aff8c1a738f6ea932a230712db262180e}{Set\+Student\+Id}} (long student\+Id)
+\begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_registration_a30bc191dbd0ec35e961c6682b2833a3b}{Set\+Semester}} (unsigned semester)
+\begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_registration_a8806e95a1f1159a9c0b317bcb6104a6f}{Set\+Count}} (unsigned count)
+\begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_registration_a0f6cc413bd8809c543f04a44aa6eac11}{Set\+Result}} (\mbox{\hyperlink{class_result}{Result}} \&result, unsigned index)
+\begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -37,10 +51,10 @@ istream \& \mbox{\hyperlink{class_registration_a2d7be84f9edc66ada3b7482f1e2e24bc
 
 
 \doxysubsection{Detailed Description}
-This class contains the registration that includes courses class. This class contains constructor, getters, setters member functions, and overloaded output and input stream. 
+This class contains the registration that includes result class. This class contains constructor, getters, setters member functions, and overloaded output and input stream. 
 
 \begin{DoxySeeAlso}{See also}
-\mbox{\hyperlink{_c_o_u_r_s_e_8_h}{Course.\+h}}
+Course.\+h
 \end{DoxySeeAlso}
 \begin{DoxyAuthor}{Author}
 Chan Kok Wai (33924804) 
@@ -50,7 +64,7 @@ Chan Kok Wai (33924804)
 \end{DoxyVersion}
 
 
-Definition at line 37 of file R\+E\+G\+I\+S\+T.\+H.
+Definition at line 37 of file Registration.\+h.
 
 
 
@@ -67,7 +81,7 @@ Default constructor.
 
 This initialize the registration object and creates a registration with default values of courses count as 0. 
 
-Definition at line 25 of file R\+E\+G\+I\+S\+T.\+C\+PP.
+Definition at line 25 of file Registration.\+cpp.
 
 
 
@@ -76,21 +90,28 @@ Definition at line 25 of file R\+E\+G\+I\+S\+T.\+C\+PP.
 \index{Registration@{Registration}!GetCount@{GetCount}}
 \index{GetCount@{GetCount}!Registration@{Registration}}
 \doxysubsubsection{\texorpdfstring{GetCount()}{GetCount()}}
-{\footnotesize\ttfamily unsigned Registration\+::\+Get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily unsigned Registration\+::\+Get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
 Member Method. 
 
-This function gets the sum of count courses.
+This function gets the sum of count units.
 
 \begin{DoxyReturn}{Returns}
-The sum of count courses. 
+The sum of count units. 
 \end{DoxyReturn}
 
 
-Definition at line 100 of file R\+E\+G\+I\+S\+T.\+H.
+Definition at line 53 of file Registration.\+cpp.
 
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{class_registration_a729a2d6ae08aefd2dbe10ec7b3e5ce48_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_registration_a72a5cc800d9551d69e4c201cd9f07ccd}\label{class_registration_a72a5cc800d9551d69e4c201cd9f07ccd}} 
 \index{Registration@{Registration}!GetCredits@{GetCredits}}
 \index{GetCredits@{GetCredits}!Registration@{Registration}}
@@ -101,18 +122,203 @@ Definition at line 100 of file R\+E\+G\+I\+S\+T.\+H.
 
 Member Method. 
 
-This function gets the sum of credits from all courses.
+This function gets the sum of credits from all units.
 
-\begin{DoxySeeAlso}{See also}
-\mbox{\hyperlink{class_registration_a72a5cc800d9551d69e4c201cd9f07ccd}{Get\+Credits()}} 
-\end{DoxySeeAlso}
 \begin{DoxyReturn}{Returns}
-The sum of credits from all courses. 
+The sum of credits from all units. 
 \end{DoxyReturn}
 
 
-Definition at line 31 of file R\+E\+G\+I\+S\+T.\+C\+PP.
+Definition at line 41 of file Registration.\+cpp.
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{class_registration_a72a5cc800d9551d69e4c201cd9f07ccd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_registration_a8455b62a567ada3ffee0f32b63400a7d}\label{class_registration_a8455b62a567ada3ffee0f32b63400a7d}} 
+\index{Registration@{Registration}!GetResult@{GetResult}}
+\index{GetResult@{GetResult}!Registration@{Registration}}
+\doxysubsubsection{\texorpdfstring{GetResult()}{GetResult()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_result}{Result}} \& Registration\+::\+Get\+Result (\begin{DoxyParamCaption}\item[{const unsigned}]{count }\end{DoxyParamCaption}) const}
+
+
+
+Member Method. 
+
+This function gets the results from a count.
+
+\begin{DoxyReturn}{Returns}
+The result from a count. 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file Registration.\+cpp.
+
+\mbox{\Hypertarget{class_registration_a4c1f5de4ca28183644910b90de6856eb}\label{class_registration_a4c1f5de4ca28183644910b90de6856eb}} 
+\index{Registration@{Registration}!GetSemester@{GetSemester}}
+\index{GetSemester@{GetSemester}!Registration@{Registration}}
+\doxysubsubsection{\texorpdfstring{GetSemester()}{GetSemester()}}
+{\footnotesize\ttfamily unsigned Registration\+::\+Get\+Semester (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Member Method. 
+
+This function gets the semester of the unit.
+
+\begin{DoxyReturn}{Returns}
+The semester of the unit. 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file Registration.\+cpp.
+
+\mbox{\Hypertarget{class_registration_ab8864cecbcbc90e8a70e9d004af31925}\label{class_registration_ab8864cecbcbc90e8a70e9d004af31925}} 
+\index{Registration@{Registration}!GetStudentId@{GetStudentId}}
+\index{GetStudentId@{GetStudentId}!Registration@{Registration}}
+\doxysubsubsection{\texorpdfstring{GetStudentId()}{GetStudentId()}}
+{\footnotesize\ttfamily long Registration\+::\+Get\+Student\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Member Method. 
+
+This function gets the student id of the student.
+
+\begin{DoxyReturn}{Returns}
+The student id of the student. 
+\end{DoxyReturn}
+
+
+Definition at line 30 of file Registration.\+cpp.
+
+\mbox{\Hypertarget{class_registration_a8806e95a1f1159a9c0b317bcb6104a6f}\label{class_registration_a8806e95a1f1159a9c0b317bcb6104a6f}} 
+\index{Registration@{Registration}!SetCount@{SetCount}}
+\index{SetCount@{SetCount}!Registration@{Registration}}
+\doxysubsubsection{\texorpdfstring{SetCount()}{SetCount()}}
+{\footnotesize\ttfamily void Registration\+::\+Set\+Count (\begin{DoxyParamCaption}\item[{unsigned}]{count }\end{DoxyParamCaption})}
+
+
+
+Procedure. 
+
+This function sets the count.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em count} & The count of the units. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file Registration.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{class_registration_a8806e95a1f1159a9c0b317bcb6104a6f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_registration_a0f6cc413bd8809c543f04a44aa6eac11}\label{class_registration_a0f6cc413bd8809c543f04a44aa6eac11}} 
+\index{Registration@{Registration}!SetResult@{SetResult}}
+\index{SetResult@{SetResult}!Registration@{Registration}}
+\doxysubsubsection{\texorpdfstring{SetResult()}{SetResult()}}
+{\footnotesize\ttfamily void Registration\+::\+Set\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_result}{Result}} \&}]{result,  }\item[{unsigned}]{index }\end{DoxyParamCaption})}
+
+
+
+Procedure. 
+
+This function sets the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em result} & The results from the student. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file Registration.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{class_registration_a0f6cc413bd8809c543f04a44aa6eac11_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_registration_a30bc191dbd0ec35e961c6682b2833a3b}\label{class_registration_a30bc191dbd0ec35e961c6682b2833a3b}} 
+\index{Registration@{Registration}!SetSemester@{SetSemester}}
+\index{SetSemester@{SetSemester}!Registration@{Registration}}
+\doxysubsubsection{\texorpdfstring{SetSemester()}{SetSemester()}}
+{\footnotesize\ttfamily void Registration\+::\+Set\+Semester (\begin{DoxyParamCaption}\item[{unsigned}]{semester }\end{DoxyParamCaption})}
+
+
+
+Procedure. 
+
+This function sets the semester.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em semester} & The semester for the student enrolled with the units. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 68 of file Registration.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_registration_a30bc191dbd0ec35e961c6682b2833a3b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_registration_aff8c1a738f6ea932a230712db262180e}\label{class_registration_aff8c1a738f6ea932a230712db262180e}} 
+\index{Registration@{Registration}!SetStudentId@{SetStudentId}}
+\index{SetStudentId@{SetStudentId}!Registration@{Registration}}
+\doxysubsubsection{\texorpdfstring{SetStudentId()}{SetStudentId()}}
+{\footnotesize\ttfamily void Registration\+::\+Set\+Student\+Id (\begin{DoxyParamCaption}\item[{long}]{student\+Id }\end{DoxyParamCaption})}
+
+
+
+Procedure. 
+
+This function sets the student Id.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em student\+Id} & The student id of a student. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 63 of file Registration.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_registration_aff8c1a738f6ea932a230712db262180e_icgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Friends And Related Function Documentation}
@@ -140,7 +346,7 @@ os The display output format of the registration.
 \end{DoxyReturn}
 
 
-Definition at line 50 of file R\+E\+G\+I\+S\+T.\+C\+PP.
+Definition at line 93 of file Registration.\+cpp.
 
 \mbox{\Hypertarget{class_registration_a2d7be84f9edc66ada3b7482f1e2e24bc}\label{class_registration_a2d7be84f9edc66ada3b7482f1e2e24bc}} 
 \index{Registration@{Registration}!operator$>$$>$@{operator$>$$>$}}
@@ -166,11 +372,11 @@ input The insertion format of the registration.
 \end{DoxyReturn}
 
 
-Definition at line 40 of file R\+E\+G\+I\+S\+T.\+C\+PP.
+Definition at line 83 of file Registration.\+cpp.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_r_e_g_i_s_t_8_h}{R\+E\+G\+I\+S\+T.\+H}}\item 
-\mbox{\hyperlink{_r_e_g_i_s_t_8_c_p_p}{R\+E\+G\+I\+S\+T.\+C\+PP}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_registration_8h}{Registration.\+h}}\item 
+\mbox{\hyperlink{_registration_8cpp}{Registration.\+cpp}}\end{DoxyCompactItemize}

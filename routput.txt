@@ -1,20 +1,14 @@
-Student ID: 102234
-Semester:   962
-  Unit:  CHM_1020
-  Unit Id: C
-  Credits: 3
+Student ID: 12345678
+Semester:   1
+    Unit ID:    ICT283
+    Unit Name:  Data_Structures
+    Credits:    3
+    Marks:      95
 
-  Unit:  MUS_1100
-  Unit Id: H
-  Credits: 1
+    Unit ID:    ICT289
+    Unit Name:  Computer_Graphics
+    Credits:    3
+    Marks:      80
 
-  Unit:  BIO_1040
-  Unit Id: D
-  Credits: 4
-
-  Unit:  MTH_2400
-  Unit Id: A
-  Credits: 3
-
-Number of courses = 4
-Total credits     = 11
+Number of courses = 2
+Total credits     = 6
