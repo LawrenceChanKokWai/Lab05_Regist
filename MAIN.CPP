@@ -6,7 +6,7 @@
 /// and calculates the total credits obtained. Main includes
 /// course and regist class.
 ///
-/// @see Course.h
+/// @see Unit.h
 /// @see Regist.h
 ///
 /// @author Chan Kok Wai
@@ -46,7 +46,7 @@ int main()
   // Declare and initialize a Course, and modify
   // its credits.
 
-  Unit aUnit( "MTH_3020", 'B', 2 );
+  Unit aUnit( "MTH_3020", "ICT292", 2 );
   aUnit.SetCredits( 5 );
   cout << aUnit << endl; // the operator << for Course is called
 

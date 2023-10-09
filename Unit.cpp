@@ -1,8 +1,8 @@
-/// @file Course.cpp
-/// @brief Course implementation file.
+/// @file Unit.cpp
+/// @brief Unit implementation file.
 ///
-/// This file holds all implementation from Course header file.
-/// @see Course.h
+/// This file holds all implementation from Unit header file.
+/// @see Unit.h
 ///
 /// @author Chan Kok Wai
 ///
@@ -21,31 +21,29 @@
 //----------------------------------------
 // Function implementations
 
-// Default constructor for Course
 Unit::Unit()
 {
-  name[0] = '\0'; // it is a char * string, not a C++ string object.
+  m_unitName[0] = '\0';
+  m_unitId[0] = '\0';
 }
 
-// Overloaded constructor for Course
-Unit::Unit( const char * nam, char sect,
-                unsigned cred )
+Unit::Unit( const char * unitName, const char *unitId, unsigned credit )
 {
-  strncpy( name, nam, UnitNameSize );
-  section = sect;
-  credits = cred;
+  strncpy( m_unitName, unitName, UnitNameSize );
+  strncpy( m_unitId, unitId, UnitIdSize );
+  m_credits = credit;
 }
 
 istream & operator >>( istream & input, Unit & U )
 {
-  input >> U.name >> U.section >> U.credits;
+  input >> U.m_unitName >> U.m_unitId >> U.m_credits;
   return input;
 }
 
 ostream & operator <<( ostream & os, const Unit & U )
 {
-  os << "  Unit:  " << U.name << '\n'
-     << "  Section: " << U.section << '\n'
-     << "  Credits: " << U.credits << '\n';
+  os << "  Unit:  " << U.m_unitName << '\n'
+     << "  Unit Id: " << U.m_unitId << '\n'
+     << "  Credits: " << U.m_credits << '\n';
   return os;
 }

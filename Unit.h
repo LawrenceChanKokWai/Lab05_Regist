@@ -1,7 +1,7 @@
-/// @file Course.h
-/// @brief Object Class for the Course Class.
+/// @file Unit.h
+/// @brief Object Class for the Unit Class.
 ///
-/// This class contains the course
+/// This class contains the unit
 /// consisting constructor, getters, setters
 /// member functions, and overloaded output and input stream.
 ///
@@ -18,13 +18,20 @@
 using namespace std;
 
 ///
-/// Maximum array size of course name supported
+/// Maximum array size for unit name supported
 ///
 /// @showinitializer
 ///
 const unsigned UnitNameSize = 10;
 
-/// @brief This class contains the course
+///
+/// Maximum array size for unit id supported
+///
+/// @showinitializer
+///
+const unsigned UnitIdSize = 10;
+
+/// @brief This class contains the unit
 /// consisting constructor, getters, setters
 /// member functions, and overloaded output and input stream.
 ///
@@ -38,30 +45,30 @@ public:
     ///
     ///  @brief  Default constructor
     ///
-    ///  @details This initialize the course object and creates a
-    ///  course with default  values name as empty string.
+    ///  @details This initialize the unit object and creates a
+    ///  unit with default  values of unit name, and unit id as empty string.
     ///
     Unit();
 
     ///
     /// @brief Parameterized constructor
     ///
-    /// @details This initialize the course object and creates a
-    /// a course with user defined parameters.
+    /// @details This initialize the unit object and creates a
+    /// a unit with user defined parameters.
     ///
-    /// @param[in] name The name of the course ( first parameter )
-    /// @param[in] sect The section of the enrollment mode ( second parameter )
-    /// @param[in] cred The number of credit obtained ( third parameter )
+    /// @param[in] unitName The name of the unit ( first parameter )
+    /// @param[in] unitId The unit id of the enrollment mode ( second parameter )
+    /// @param[in] credit The number of credit obtained ( third parameter )
     ///
-    Unit( const char * nam, char sect, unsigned cred );
+    Unit( const char * unitName, const char *unitId, unsigned credit );
 
     ///
     /// @brief Member Method
     ///
-    /// @details This function gets the sum of credits from all courses.
+    /// @details This function gets the sum of credits from all units.
     ///
     /// @see GetCredits()
-    /// @return The sum of credits from all courses.
+    /// @return The sum of credits from all units.
     ///
     unsigned GetCredits() const;
 
@@ -70,21 +77,21 @@ public:
     ///
     /// @details This function sets the sum of credits.
     ///
-    /// @see SetCredits(unsigned cred)
-    /// @param[in] cred The sum of credit from all courses.
+    /// @see SetCredits(unsigned credit)
+    /// @param[in] credit The sum of credit from all units.
     /// @return Void
     ///
-    void SetCredits( unsigned cred );
+    void SetCredits( unsigned credit );
 
     ///
     /// @brief Overload output stream operator
     ///
     /// @details This is a friend member function that directly access into
-    /// the member variables. This outputs the user defined course format.
+    /// the member variables. This outputs the user defined unit format.
     ///
-    /// @param[in] os ostream extraction of user defined variable of the course (first parameter).
-    /// @param[in] C The course class variable to be used for extraction (second parameter).
-    /// @return os The display output format of the course.
+    /// @param[in] os ostream extraction of user defined variable of the unit (first parameter).
+    /// @param[in] U The unit class variable to be used for extraction (second parameter).
+    /// @return os The display output format of the unit.
     ///
     friend ostream & operator <<( ostream & os, const Unit & U );
 
@@ -92,29 +99,29 @@ public:
     /// @brief Overload input stream operator
     ///
     /// @details This is a friend member function that directly access into
-    /// the member variables. This inputs the user defined course format.
+    /// the member variables. This inputs the user defined unit format.
     ///
-    /// @param[in] input istream insertion of user defined variable of the course (first parameter).
-    /// @param[in] C The course class variable to be used for insertion (second parameter).
-    /// @return input The insertion format of the course.
+    /// @param[in] input istream insertion of user defined variable of the unit (first parameter).
+    /// @param[in] U The unit class variable to be used for insertion (second parameter).
+    /// @return input The insertion format of the unit.
     ///
     friend istream & operator >>( istream & input, Unit & U );
 
 private:
-    char name[UnitNameSize];
-    char section;
-    int  credits;
+    char m_unitName[UnitNameSize];
+    char m_unitId[UnitIdSize];
+    unsigned  m_credits;
 };
 
 
 inline unsigned Unit::GetCredits() const
 {
-    return credits;
+    return m_credits;
 }
 
-inline void Unit::SetCredits( unsigned cred )
+inline void Unit::SetCredits( unsigned credit )
 {
-    credits = cred;
+    m_credits = credit;
 }
 
 #endif
