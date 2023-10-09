@@ -15,7 +15,7 @@
 
 #include <iostream>
 #include <fstream>
-#include "course.h"  // Course class declaration
+#include "Unit.h"  // Course class declaration
 #include "regist.h"  // Registration class declaration
 
 using namespace std;
@@ -46,9 +46,9 @@ int main()
   // Declare and initialize a Course, and modify
   // its credits.
 
-  Course aCourse( "MTH_3020", 'B', 2 );
-  aCourse.SetCredits( 5 );
-  cout << aCourse << endl; // the operator << for Course is called
+  Unit aUnit( "MTH_3020", 'B', 2 );
+  aUnit.SetCredits( 5 );
+  cout << aUnit << endl; // the operator << for Course is called
 
   return 0;
 }

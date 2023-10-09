@@ -13,7 +13,7 @@
 #define REGIST_H
 
 #include <iostream>
-#include "course.h"
+#include "Unit.h"
 
 using namespace std;
 
@@ -22,7 +22,7 @@ using namespace std;
 ///
 /// @showinitializer
 ///
-const unsigned MaxCourses = 10;
+const unsigned MaxUnits = 10;
 
 /// @brief This class contains the registration
 /// that includes courses class.
@@ -94,7 +94,7 @@ private:
     long studentId;             // student ID number
     unsigned semester;          // semester year, number
     unsigned count;             // number of courses
-    Course courses[MaxCourses]; // array of courses
+    Unit units[MaxUnits]; // array of courses
 };
 
 inline unsigned Registration::GetCount() const

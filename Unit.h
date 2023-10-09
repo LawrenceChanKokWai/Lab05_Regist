@@ -9,8 +9,8 @@
 ///
 ///
 
-#ifndef COURSE_H
-#define COURSE_H
+#ifndef UNIT_H
+#define UNIT_H
 
 #include <iostream>
 #include <string.h>
@@ -22,7 +22,7 @@ using namespace std;
 ///
 /// @showinitializer
 ///
-const unsigned CourseNameSize = 10;
+const unsigned UnitNameSize = 10;
 
 /// @brief This class contains the course
 /// consisting constructor, getters, setters
@@ -31,7 +31,7 @@ const unsigned CourseNameSize = 10;
 /// @author Chan Kok Wai (33924804)
 /// @version 1.0.0
 ///
-class Course
+class Unit
 {
 public:
 
@@ -41,7 +41,7 @@ public:
     ///  @details This initialize the course object and creates a
     ///  course with default  values name as empty string.
     ///
-    Course();
+    Unit();
 
     ///
     /// @brief Parameterized constructor
@@ -53,7 +53,7 @@ public:
     /// @param[in] sect The section of the enrollment mode ( second parameter )
     /// @param[in] cred The number of credit obtained ( third parameter )
     ///
-    Course( const char * nam, char sect, unsigned cred );
+    Unit( const char * nam, char sect, unsigned cred );
 
     ///
     /// @brief Member Method
@@ -86,7 +86,7 @@ public:
     /// @param[in] C The course class variable to be used for extraction (second parameter).
     /// @return os The display output format of the course.
     ///
-    friend ostream & operator <<( ostream & os, const Course & C );
+    friend ostream & operator <<( ostream & os, const Unit & U );
 
     ///
     /// @brief Overload input stream operator
@@ -98,21 +98,21 @@ public:
     /// @param[in] C The course class variable to be used for insertion (second parameter).
     /// @return input The insertion format of the course.
     ///
-    friend istream & operator >>( istream & input, Course & C );
+    friend istream & operator >>( istream & input, Unit & U );
 
 private:
-    char name[CourseNameSize];  // course name, C style string. not a C++ string object
-    char section;   // section (letter) can be enrolment mode
-    int  credits;   // number of credits
+    char name[UnitNameSize];
+    char section;
+    int  credits;
 };
 
 
-inline unsigned Course::GetCredits() const
+inline unsigned Unit::GetCredits() const
 {
     return credits;
 }
 
-inline void Course::SetCredits( unsigned cred )
+inline void Unit::SetCredits( unsigned cred )
 {
     credits = cred;
 }

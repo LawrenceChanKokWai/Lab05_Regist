@@ -10,7 +10,7 @@
 
 //----------------------------------------
 // Includes
-#include "course.h"
+#include "Unit.h"
 
 //----------------------------------------
 // Global variables/defines
@@ -22,30 +22,30 @@
 // Function implementations
 
 // Default constructor for Course
-Course::Course()
+Unit::Unit()
 {
   name[0] = '\0'; // it is a char * string, not a C++ string object.
 }
 
 // Overloaded constructor for Course
-Course::Course( const char * nam, char sect,
+Unit::Unit( const char * nam, char sect,
                 unsigned cred )
 {
-  strncpy( name, nam, CourseNameSize );
+  strncpy( name, nam, UnitNameSize );
   section = sect;
   credits = cred;
 }
 
-istream & operator >>( istream & input, Course & C )
+istream & operator >>( istream & input, Unit & U )
 {
-  input >> C.name >> C.section >> C.credits;
+  input >> U.name >> U.section >> U.credits;
   return input;
 }
 
-ostream & operator <<( ostream & os, const Course & C )
+ostream & operator <<( ostream & os, const Unit & U )
 {
-  os << "  Course:  " << C.name << '\n'
-     << "  Section: " << C.section << '\n'
-     << "  Credits: " << C.credits << '\n';
+  os << "  Unit:  " << U.name << '\n'
+     << "  Section: " << U.section << '\n'
+     << "  Credits: " << U.credits << '\n';
   return os;
 }
