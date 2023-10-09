@@ -32,11 +32,23 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="COURSE.CPP" />
-		<Unit filename="COURSE.H" />
-		<Unit filename="MAIN.CPP" />
+		<Unit filename="MAIN.CPP">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="REGIST.CPP" />
 		<Unit filename="REGIST.H" />
+		<Unit filename="Result.cpp" />
+		<Unit filename="Result.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="ResultTest.cpp" />
+		<Unit filename="Unit.cpp" />
+		<Unit filename="Unit.h" />
+		<Unit filename="UnitTest.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<envvars />
