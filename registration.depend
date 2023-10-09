@@ -71,7 +71,7 @@
 	<string.h>
 	<iomanip>
 
-1696836245 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab3_regist\registration\codeblocks\unit.cpp
+1696837373 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab3_regist\registration\codeblocks\unit.cpp
 	"Unit.h"
 
 1696826415 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab3_regist\registration\codeblocks\main.cpp
@@ -83,4 +83,15 @@
 1696834682 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab3_regist\registration\codeblocks\unittest.cpp
 	<iostream>
 	"Unit.h"
+
+1696837697 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab3_regist\registration\codeblocks\result.cpp
+	"Result.h"
+
+1696837657 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab3_regist\registration\codeblocks\result.h
+	<iomanip>
+	"Unit.h"
+
+1696837896 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab3_regist\registration\codeblocks\resulttest.cpp
+	<iostream>
+	"Result.h"
 

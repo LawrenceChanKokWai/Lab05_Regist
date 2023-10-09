@@ -63,7 +63,7 @@ istream & operator >>( istream & input, Unit & U )
     return input;
 }
 
-std::ostream& operator<<(std::ostream& os, const Unit& U)
+ostream& operator<<(std::ostream& os, const Unit& U)
 {
     const unsigned spacing = 4;
 
