@@ -106,3 +106,42 @@
 	<iostream>
 	"Registration.h"
 
+1696857812 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab4_regist\registration\codeblocks\registration.cpp
+	"Registration.h"
+
+1696858406 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab4_regist\registration\codeblocks\registration.h
+	<iostream>
+	"Result.h"
+
+1696857734 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab4_regist\registration\codeblocks\result.h
+	<iomanip>
+	"Unit.h"
+
+1696835426 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab4_regist\registration\codeblocks\unit.h
+	<iostream>
+	<string.h>
+	<iomanip>
+
+1696858661 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab4_regist\registration\codeblocks\result.cpp
+	"Result.h"
+
+1696852461 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab4_regist\registration\codeblocks\unit.cpp
+	"Unit.h"
+
+1696913250 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab4_regist\registration\codeblocks\datetest.cpp
+	<iostream>
+	"Date.h"
+	"Utils.h"
+
+1696911696 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab4_regist\registration\codeblocks\date.h
+	<iostream>
+	<string>
+	<iomanip>
+
+1696910940 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab4_regist\registration\codeblocks\date.cpp
+	"Date.h"
+
+1696912058 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab4_regist\registration\codeblocks\utils.h
+	<iostream>
+	<string>
+
