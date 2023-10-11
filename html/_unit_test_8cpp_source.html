@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lab 03: UnitTest.cpp Source File</title>
+<title>Lab 04: UnitTest.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Lab 03
+   <div id="projectname">Lab 04
    &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">ICT283 Data Structure &amp; Abstraction</div>
@@ -89,39 +89,127 @@ $(document).ready(function(){initNavTree('_unit_test_8cpp_source.html',''); init
 <div class="contents">
 <a href="_unit_test_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include&lt;iostream&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_unit_8h.html">Unit.h</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include&lt;fstream&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_unit_8h.html">Unit.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_utils_8h.html">Utils.h</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_unit_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   16</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_unit_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_unit.html">Unit</a> unitTest;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    cout &lt;&lt; unitTest.<a class="code" href="class_unit.html#ab1f83a3955a721e46730773747e4e67e">GetCredits</a>() &lt;&lt; endl;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    cout &lt;&lt; unitTest.<a class="code" href="class_unit.html#a184536cfeeda6ba3e486d6d0dfa91a76">GetUnitId</a>() &lt;&lt; endl;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    cout &lt;&lt; unitTest.<a class="code" href="class_unit.html#a68eeb31e4e6e309c9ba27e1ed63bd724">GetUnitName</a>() &lt;&lt; endl;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="_unit_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   18</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_unit_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span> INFILE(<span class="stringliteral">&quot;Tests/UnitTest.txt&quot;</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_utils.html">Utils</a> utils;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_unit.html">Unit</a> unitTest;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_unit.html">Unit</a> paramTest(<span class="stringliteral">&quot;Data Structure&quot;</span>, <span class="stringliteral">&quot;ICT290&quot;</span>, 2);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    unitTest.<a class="code" href="class_unit.html#ac15c197032096290f7240c6ca37960ec">SetUnitId</a>(<span class="stringliteral">&quot;ICT282&quot;</span>);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    unitTest.<a class="code" href="class_unit.html#ac53eb47c2701c7bbc05aa8b898bde7ad">SetUnitName</a>(<span class="stringliteral">&quot;Data_Base&quot;</span>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    unitTest.<a class="code" href="class_unit.html#abff157e76552cc8a3941f39b96869ff2">SetCredits</a>(3);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    cout &lt;&lt; unitTest;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    ofstream ofs(INFILE);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span>(!ofs)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Unit Test File: \n====Test1: Test on default constructor with initial value to be set as empty string for unit id, unit name, and 0 for credit====&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    ofs &lt;&lt; <span class="stringliteral">&quot;Unit Test File: \n====Test1: Test on default constructor with initial value to be set as empty string for unit id, unit name, and 0 for credit====&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    utils.<a class="code" href="class_utils.html#add70b4fec7ff9e8d45023de6a2ac7219">Assert</a>(</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        unitTest.<a class="code" href="class_unit.html#a4fe683b797b0e2814be2ffffa2c19bbe">GetUnitName</a>() == <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="stringliteral">&quot;Unit Name has been set to empty string&quot;</span>,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="stringliteral">&quot;Unit Name should be set to empty string&quot;</span>, ofs</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    );</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    utils.<a class="code" href="class_utils.html#add70b4fec7ff9e8d45023de6a2ac7219">Assert</a>(</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        unitTest.<a class="code" href="class_unit.html#a8952641afc157ff469bd4c85f664e71f">GetUnitId</a>() == <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="stringliteral">&quot;Unit ID has been set to empty string&quot;</span>,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="stringliteral">&quot;Unit ID should be set to empty string&quot;</span>, ofs</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    );</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    utils.<a class="code" href="class_utils.html#add70b4fec7ff9e8d45023de6a2ac7219">Assert</a>(</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        unitTest.<a class="code" href="class_unit.html#ab1f83a3955a721e46730773747e4e67e">GetCredits</a>() == 0,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="stringliteral">&quot;Unit Credits has been set to 0&quot;</span>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="stringliteral">&quot;Unit Credits should be set to 0&quot;</span>, ofs</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    );</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span> &lt;&lt; <span class="stringliteral">&quot;====Test2: Test on Parameterized constructor with user defined value==== \n&quot;</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    ofs &lt;&lt; <span class="charliteral">&#39;\n&#39;</span> &lt;&lt; <span class="stringliteral">&quot;====Test2: Test on Parameterized constructor with user defined value==== \n&quot;</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    utils.<a class="code" href="class_utils.html#add70b4fec7ff9e8d45023de6a2ac7219">Assert</a>(</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        paramTest.<a class="code" href="class_unit.html#a4fe683b797b0e2814be2ffffa2c19bbe">GetUnitName</a>() == <span class="stringliteral">&quot;Data Structure&quot;</span>,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="stringliteral">&quot;Parameterized Unit Name has been set to Data Structure&quot;</span>,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="stringliteral">&quot;Parameterized Unit Name should be set to Data Structure&quot;</span>, ofs</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    );</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    utils.<a class="code" href="class_utils.html#add70b4fec7ff9e8d45023de6a2ac7219">Assert</a>(</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        paramTest.<a class="code" href="class_unit.html#a8952641afc157ff469bd4c85f664e71f">GetUnitId</a>() == <span class="stringliteral">&quot;ICT290&quot;</span>,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="stringliteral">&quot;Parameterized Unit Name has been set to ICT290&quot;</span>,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="stringliteral">&quot;Parameterized Unit Name should be set to ICT290&quot;</span>, ofs</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    );</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    utils.<a class="code" href="class_utils.html#add70b4fec7ff9e8d45023de6a2ac7219">Assert</a>(</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        paramTest.<a class="code" href="class_unit.html#ab1f83a3955a721e46730773747e4e67e">GetCredits</a>() == 2,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="stringliteral">&quot;Parameterized Unit Credit has been set to 2&quot;</span>,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="stringliteral">&quot;Parameterized Unit Credit should be set to 2&quot;</span>, ofs</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    );</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span> &lt;&lt; <span class="stringliteral">&quot;====Test3: Test on Unit Class Setters in setting user defined values==== \n&quot;</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    ofs &lt;&lt; <span class="charliteral">&#39;\n&#39;</span> &lt;&lt; <span class="stringliteral">&quot;====Test3: Test on Unit Class Setters in setting user defined values==== \n&quot;</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">string</span> unitName = <span class="stringliteral">&quot;Changed unit name&quot;</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">string</span> unitId = <span class="stringliteral">&quot;Changed unit id&quot;</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="_unit_test_8txt.html#ac281457f0d2e18b13ff51ef65f2273c1">credit</a> = 1;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Test Value: ---&gt;&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Unit Name: &quot;</span> &lt;&lt; unitName &lt;&lt; <span class="stringliteral">&quot;, Unit ID: &quot;</span> &lt;&lt; unitId &lt;&lt; <span class="stringliteral">&quot;, Unit Credit: &quot;</span> &lt;&lt; <a class="code" href="_unit_test_8txt.html#ac281457f0d2e18b13ff51ef65f2273c1">credit</a> &lt;&lt; endl;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    ofs &lt;&lt; <span class="stringliteral">&quot;Test Value: ---&gt;&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Unit Name: &quot;</span> &lt;&lt; unitName &lt;&lt; <span class="stringliteral">&quot;, Unit ID: &quot;</span> &lt;&lt; unitId &lt;&lt; <span class="stringliteral">&quot;, Unit Credit: &quot;</span> &lt;&lt; <a class="code" href="_unit_test_8txt.html#ac281457f0d2e18b13ff51ef65f2273c1">credit</a> &lt;&lt; endl;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    paramTest.<a class="code" href="class_unit.html#a0922592481529e4806a519e51276833f">SetUnitName</a>(unitName);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    paramTest.<a class="code" href="class_unit.html#a9a2b0cbf6d77f3884b43a275b1949966">SetUnitId</a>(unitId);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    paramTest.<a class="code" href="class_unit.html#abff157e76552cc8a3941f39b96869ff2">SetCredits</a>(<a class="code" href="_unit_test_8txt.html#ac281457f0d2e18b13ff51ef65f2273c1">credit</a>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    utils.<a class="code" href="class_utils.html#add70b4fec7ff9e8d45023de6a2ac7219">Assert</a>(</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        paramTest.<a class="code" href="class_unit.html#a4fe683b797b0e2814be2ffffa2c19bbe">GetUnitName</a>() == unitName,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="stringliteral">&quot;Unit Name has been set using SetUnitName()&quot;</span>,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="stringliteral">&quot;Unit Name has not been set using SetUnitName()&quot;</span>, ofs</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    );</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    utils.<a class="code" href="class_utils.html#add70b4fec7ff9e8d45023de6a2ac7219">Assert</a>(</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        paramTest.<a class="code" href="class_unit.html#a8952641afc157ff469bd4c85f664e71f">GetUnitId</a>() == unitId,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="stringliteral">&quot;Unit ID has been set using SetUnitID()&quot;</span>,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="stringliteral">&quot;Unit ID has not been set using SetUnitID()&quot;</span>, ofs</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    );</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    utils.<a class="code" href="class_utils.html#add70b4fec7ff9e8d45023de6a2ac7219">Assert</a>(</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        paramTest.<a class="code" href="class_unit.html#ab1f83a3955a721e46730773747e4e67e">GetCredits</a>() == <a class="code" href="_unit_test_8txt.html#ac281457f0d2e18b13ff51ef65f2273c1">credit</a>,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="stringliteral">&quot;Unit Credit has been set using GetCredits()&quot;</span>,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="stringliteral">&quot;Unit Credit has not been set using GetCredits()&quot;</span>, ofs</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    );</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span> &lt;&lt; <span class="stringliteral">&quot;====Test4: Test on output stream of Unit class==== \n&quot;</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Test Value: ---&gt;&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Unit Name: &quot;</span> &lt;&lt; unitName &lt;&lt; <span class="stringliteral">&quot;, Unit ID: &quot;</span> &lt;&lt; unitId &lt;&lt; <span class="stringliteral">&quot;, Unit Credit: &quot;</span> &lt;&lt; <a class="code" href="_unit_test_8txt.html#ac281457f0d2e18b13ff51ef65f2273c1">credit</a> &lt;&lt; endl;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Actual cout display:&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    cout &lt;&lt; paramTest;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    ofs &lt;&lt; <span class="charliteral">&#39;\n&#39;</span> &lt;&lt; <span class="stringliteral">&quot;====Test4: Test on output stream of Unit class==== \n&quot;</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    ofs &lt;&lt; <span class="stringliteral">&quot;Test Value: ---&gt;&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Unit Name: &quot;</span> &lt;&lt; unitName &lt;&lt; <span class="stringliteral">&quot;, Unit ID: &quot;</span> &lt;&lt; unitId &lt;&lt; <span class="stringliteral">&quot;, Unit Credit: &quot;</span> &lt;&lt; <a class="code" href="_unit_test_8txt.html#ac281457f0d2e18b13ff51ef65f2273c1">credit</a> &lt;&lt; endl;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    ofs &lt;&lt; <span class="stringliteral">&quot;Actual cout display:&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    ofs &lt;&lt; paramTest;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    ofs.close();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_unit_html_a68eeb31e4e6e309c9ba27e1ed63bd724"><div class="ttname"><a href="class_unit.html#a68eeb31e4e6e309c9ba27e1ed63bd724">Unit::GetUnitName</a></div><div class="ttdeci">const char * GetUnitName() const</div><div class="ttdoc">Member Method.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00043">Unit.cpp:43</a></div></div>
-<div class="ttc" id="aclass_unit_html_abff157e76552cc8a3941f39b96869ff2"><div class="ttname"><a href="class_unit.html#abff157e76552cc8a3941f39b96869ff2">Unit::SetCredits</a></div><div class="ttdeci">void SetCredits(unsigned credit)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8h_source.html#l00161">Unit.h:161</a></div></div>
-<div class="ttc" id="aclass_unit_html_a184536cfeeda6ba3e486d6d0dfa91a76"><div class="ttname"><a href="class_unit.html#a184536cfeeda6ba3e486d6d0dfa91a76">Unit::GetUnitId</a></div><div class="ttdeci">const char * GetUnitId() const</div><div class="ttdoc">Member Method.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00038">Unit.cpp:38</a></div></div>
-<div class="ttc" id="a_unit_test_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="_unit_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="_unit_test_8cpp_source.html#l00016">UnitTest.cpp:16</a></div></div>
-<div class="ttc" id="aclass_unit_html_ac15c197032096290f7240c6ca37960ec"><div class="ttname"><a href="class_unit.html#ac15c197032096290f7240c6ca37960ec">Unit::SetUnitId</a></div><div class="ttdeci">void SetUnitId(const char *unitId)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00048">Unit.cpp:48</a></div></div>
-<div class="ttc" id="aclass_unit_html_ac53eb47c2701c7bbc05aa8b898bde7ad"><div class="ttname"><a href="class_unit.html#ac53eb47c2701c7bbc05aa8b898bde7ad">Unit::SetUnitName</a></div><div class="ttdeci">void SetUnitName(const char *unitName)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00054">Unit.cpp:54</a></div></div>
-<div class="ttc" id="aclass_unit_html_ab1f83a3955a721e46730773747e4e67e"><div class="ttname"><a href="class_unit.html#ab1f83a3955a721e46730773747e4e67e">Unit::GetCredits</a></div><div class="ttdeci">unsigned GetCredits() const</div><div class="ttdoc">Member Method.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8h_source.html#l00156">Unit.h:156</a></div></div>
+<div class="ttc" id="aclass_utils_html"><div class="ttname"><a href="class_utils.html">Utils</a></div><div class="ttdoc">This class contains the assertion helper method that will be used for testing.</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00025">Utils.h:25</a></div></div>
+<div class="ttc" id="aclass_unit_html_abff157e76552cc8a3941f39b96869ff2"><div class="ttname"><a href="class_unit.html#abff157e76552cc8a3941f39b96869ff2">Unit::SetCredits</a></div><div class="ttdeci">void SetCredits(unsigned credit)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00063">Unit.cpp:63</a></div></div>
+<div class="ttc" id="aclass_unit_html_a0922592481529e4806a519e51276833f"><div class="ttname"><a href="class_unit.html#a0922592481529e4806a519e51276833f">Unit::SetUnitName</a></div><div class="ttdeci">void SetUnitName(string unitName)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00058">Unit.cpp:58</a></div></div>
+<div class="ttc" id="a_utils_8h_html"><div class="ttname"><a href="_utils_8h.html">Utils.h</a></div><div class="ttdoc">Utils Class that hold helper functions.</div></div>
+<div class="ttc" id="aclass_unit_html_a4fe683b797b0e2814be2ffffa2c19bbe"><div class="ttname"><a href="class_unit.html#a4fe683b797b0e2814be2ffffa2c19bbe">Unit::GetUnitName</a></div><div class="ttdeci">string GetUnitName() const</div><div class="ttdoc">Member Method.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00043">Unit.cpp:43</a></div></div>
+<div class="ttc" id="a_unit_test_8txt_html_ac281457f0d2e18b13ff51ef65f2273c1"><div class="ttname"><a href="_unit_test_8txt.html#ac281457f0d2e18b13ff51ef65f2273c1">credit</a></div><div class="ttdeci">Unit Test unit and for credit</div><div class="ttdef"><b>Definition:</b> <a href="_unit_test_8txt_source.html#l00002">UnitTest.txt:2</a></div></div>
+<div class="ttc" id="aclass_unit_html_a8952641afc157ff469bd4c85f664e71f"><div class="ttname"><a href="class_unit.html#a8952641afc157ff469bd4c85f664e71f">Unit::GetUnitId</a></div><div class="ttdeci">string GetUnitId() const</div><div class="ttdoc">Member Method.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00038">Unit.cpp:38</a></div></div>
+<div class="ttc" id="a_unit_test_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="_unit_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="_unit_test_8cpp_source.html#l00018">UnitTest.cpp:18</a></div></div>
+<div class="ttc" id="aclass_utils_html_add70b4fec7ff9e8d45023de6a2ac7219"><div class="ttname"><a href="class_utils.html#add70b4fec7ff9e8d45023de6a2ac7219">Utils::Assert</a></div><div class="ttdeci">void Assert(bool condition, string passMessage, string failMessage, ostream &amp;ofs)</div><div class="ttdoc">Method function.</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8h_source.html#l00039">Utils.h:39</a></div></div>
+<div class="ttc" id="aclass_unit_html_ab1f83a3955a721e46730773747e4e67e"><div class="ttname"><a href="class_unit.html#ab1f83a3955a721e46730773747e4e67e">Unit::GetCredits</a></div><div class="ttdeci">unsigned GetCredits() const</div><div class="ttdoc">Member Method.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00048">Unit.cpp:48</a></div></div>
+<div class="ttc" id="aclass_unit_html_a9a2b0cbf6d77f3884b43a275b1949966"><div class="ttname"><a href="class_unit.html#a9a2b0cbf6d77f3884b43a275b1949966">Unit::SetUnitId</a></div><div class="ttdeci">void SetUnitId(string unitId)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00053">Unit.cpp:53</a></div></div>
 <div class="ttc" id="a_unit_8h_html"><div class="ttname"><a href="_unit_8h.html">Unit.h</a></div><div class="ttdoc">Object Class for the Unit Class.</div></div>
-<div class="ttc" id="aclass_unit_html"><div class="ttname"><a href="class_unit.html">Unit</a></div><div class="ttdoc">This class contains the unit consisting constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8h_source.html#l00042">Unit.h:42</a></div></div>
+<div class="ttc" id="aclass_unit_html"><div class="ttname"><a href="class_unit.html">Unit</a></div><div class="ttdoc">This class contains the unit consisting constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8h_source.html#l00028">Unit.h:28</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

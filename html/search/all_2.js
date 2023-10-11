@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['operator_3c_3c_12',['operator&lt;&lt;',['../class_registration.html#a47b9e6c8719767aec587822151619af6',1,'Registration::operator&lt;&lt;()'],['../class_result.html#a180fc33da8d4dc00234b39a25da17673',1,'Result::operator&lt;&lt;()'],['../class_unit.html#a3abc2e82e65e93fc5f6c162bc87a5cef',1,'Unit::operator&lt;&lt;()'],['../_registration_8cpp.html#a47b9e6c8719767aec587822151619af6',1,'operator&lt;&lt;(ostream &amp;os, const Registration &amp;R):&#160;Registration.cpp'],['../_result_8cpp.html#a180fc33da8d4dc00234b39a25da17673',1,'operator&lt;&lt;(ostream &amp;outputStream, const Result &amp;R):&#160;Result.cpp'],['../_unit_8cpp.html#a3e9ad3532e507c14a957e842d2c80a69',1,'operator&lt;&lt;(std::ostream &amp;os, const Unit &amp;U):&#160;Unit.cpp']]],
-  ['operator_3e_3e_13',['operator&gt;&gt;',['../class_registration.html#a2d7be84f9edc66ada3b7482f1e2e24bc',1,'Registration::operator&gt;&gt;()'],['../class_result.html#a4c5cdab2d8b61c3f3bc4770a96ff32a0',1,'Result::operator&gt;&gt;()'],['../class_unit.html#a7a9d8f721576c83a2542bb81f2dbec9a',1,'Unit::operator&gt;&gt;()'],['../_registration_8cpp.html#a2d7be84f9edc66ada3b7482f1e2e24bc',1,'operator&gt;&gt;(istream &amp;input, Registration &amp;R):&#160;Registration.cpp'],['../_result_8cpp.html#a4c5cdab2d8b61c3f3bc4770a96ff32a0',1,'operator&gt;&gt;(istream &amp;inputStream, Result &amp;R):&#160;Result.cpp'],['../_unit_8cpp.html#a7a9d8f721576c83a2542bb81f2dbec9a',1,'operator&gt;&gt;(istream &amp;input, Unit &amp;U):&#160;Unit.cpp']]]
+  ['date_2',['Date',['../class_date.html',1,'Date'],['../class_date.html#a4e59ed4ba66eec61c27460c5d09fa1bd',1,'Date::Date()'],['../class_date.html#a6e4979dfc71c09cdab0b65a734e4a4df',1,'Date::Date(unsigned day, unsigned month, unsigned year)']]],
+  ['date_2ecpp_3',['Date.cpp',['../_date_8cpp.html',1,'']]],
+  ['date_2eh_4',['Date.h',['../_date_8h.html',1,'']]],
+  ['datetest_2ecpp_5',['DateTest.cpp',['../_date_test_8cpp.html',1,'']]],
+  ['datetest_2etxt_6',['DateTest.txt',['../_date_test_8txt.html',1,'']]]
 ];

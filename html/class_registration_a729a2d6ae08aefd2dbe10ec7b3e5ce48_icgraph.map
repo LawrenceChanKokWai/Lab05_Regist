@@ -1,4 +1,6 @@
 <map id="Registration::GetCount" name="Registration::GetCount">
-<area shape="rect" id="node1" title="Member Method." alt="" coords="104,5,259,32"/>
-<area shape="rect" id="node2" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main program (entry execution)" alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node1" title="Member Method." alt="" coords="139,56,293,83"/>
+<area shape="rect" id="node2" href="$_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main program (entry execution)" alt="" coords="23,5,73,32"/>
+<area shape="rect" id="node3" href="$_registration_8h.html#a47b9e6c8719767aec587822151619af6" title="Overload output stream operator." alt="" coords="5,56,91,83"/>
+<area shape="rect" id="node4" href="$_registration_8h.html#a2d7be84f9edc66ada3b7482f1e2e24bc" title="Overload input stream operator." alt="" coords="5,107,91,133"/>
 </map>

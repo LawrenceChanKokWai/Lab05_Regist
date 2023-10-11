@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['unitidsize_82',['UnitIdSize',['../_unit_8h.html#a41e5f4d7ec46200b0b4f5145682925d9',1,'Unit.h']]],
-  ['unitnamesize_83',['UnitNameSize',['../_unit_8h.html#a96539265e18260e7c58bca410f23a0cb',1,'Unit.h']]]
+  ['file_125',['File',['../_date_test_8txt.html#a9bbe8e712007c1333c2e14bb0ad173d2',1,'File():&#160;DateTest.txt'],['../_unit_test_8txt.html#a02caa76a222b2a5381df5a8d7e17e9f8',1,'File():&#160;UnitTest.txt']]]
 ];

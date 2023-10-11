@@ -1,14 +1,16 @@
 Student ID: 12345678
 Semester:   1
     Unit ID:    ICT283
-    Unit Name:  Data_Structures
+    Unit Name:  Data Structures
     Credits:    3
     Marks:      95
+    Date:       21/7/2020
 
     Unit ID:    ICT289
-    Unit Name:  Computer_Graphics
+    Unit Name:  Computer Graphics
     Credits:    3
     Marks:      80
+    Date:       19/3/2020
 
 Number of courses = 2
 Total credits     = 6

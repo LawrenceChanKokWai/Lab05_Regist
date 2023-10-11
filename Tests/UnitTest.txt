@@ -1,0 +1,23 @@
+Unit Test File: 
+====Test1: Test on default constructor with initial value to be set as empty string for unit id, unit name, and 0 for credit====
+[PASS]: Unit Name has been set to empty string
+[PASS]: Unit ID has been set to empty string
+[PASS]: Unit Credits has been set to 0
+
+====Test2: Test on Parameterized constructor with user defined value==== 
+[PASS]: Parameterized Unit Name has been set to Data Structure
+[PASS]: Parameterized Unit Name has been set to ICT290
+[PASS]: Parameterized Unit Credit has been set to 2
+
+====Test3: Test on Unit Class Setters in setting user defined values==== 
+Test Value: --->Unit Name: Changed unit name, Unit ID: Changed unit id, Unit Credit: 1
+[PASS]: Unit Name has been set using SetUnitName()
+[PASS]: Unit ID has been set using SetUnitID()
+[PASS]: Unit Credit has been set using GetCredits()
+
+====Test4: Test on output stream of Unit class==== 
+Test Value: --->Unit Name: Changed unit name, Unit ID: Changed unit id, Unit Credit: 1
+Actual cout display:
+    Unit ID:    Changed unit id
+    Unit Name:  Changed unit name
+    Credits:    1

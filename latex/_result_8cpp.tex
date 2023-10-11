@@ -10,16 +10,16 @@ Include dependency graph for Result.\+cpp\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=270pt]{_result_8cpp__incl}
+\includegraphics[width=262pt]{_result_8cpp__incl}
 \end{center}
 \end{figure}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 ostream \& \mbox{\hyperlink{_result_8cpp_a180fc33da8d4dc00234b39a25da17673}{operator$<$$<$}} (ostream \&output\+Stream, const \mbox{\hyperlink{class_result}{Result}} \&R)
-\item 
+\begin{DoxyCompactList}\small\item\em Overload output stream operator. \end{DoxyCompactList}\item 
 istream \& \mbox{\hyperlink{_result_8cpp_a4c5cdab2d8b61c3f3bc4770a96ff32a0}{operator$>$$>$}} (istream \&input\+Stream, \mbox{\hyperlink{class_result}{Result}} \&R)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Overload input stream operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -40,7 +40,11 @@ Chan Kok Wai
 \doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
 {\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{output\+Stream,  }\item[{const \mbox{\hyperlink{class_result}{Result}} \&}]{R }\end{DoxyParamCaption})}
 
-This is a friend member function that directly access into the member variables. This outputs the user defined result format.
+
+
+Overload output stream operator. 
+
+This is a member function that directly access into the member variables. This outputs the user defined result format.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -54,15 +58,26 @@ output\+Stream The display output format of the result.
 \end{DoxyReturn}
 
 
-Definition at line 43 of file Result.\+cpp.
+Definition at line 54 of file Result.\+cpp.
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{_result_8cpp_a180fc33da8d4dc00234b39a25da17673_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{_result_8cpp_a4c5cdab2d8b61c3f3bc4770a96ff32a0}\label{_result_8cpp_a4c5cdab2d8b61c3f3bc4770a96ff32a0}} 
 \index{Result.cpp@{Result.cpp}!operator$>$$>$@{operator$>$$>$}}
 \index{operator$>$$>$@{operator$>$$>$}!Result.cpp@{Result.cpp}}
 \doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
 {\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{input\+Stream,  }\item[{\mbox{\hyperlink{class_result}{Result}} \&}]{R }\end{DoxyParamCaption})}
 
-This is a friend member function that directly access into the member variables. This inputs the result defined unit format.
+
+
+Overload input stream operator. 
+
+This is a member function that directly access into the member variables. This inputs the result defined unit format.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -76,5 +91,12 @@ input\+Stream The insertion format of the result.
 \end{DoxyReturn}
 
 
-Definition at line 53 of file Result.\+cpp.
+Definition at line 69 of file Result.\+cpp.
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{_result_8cpp_a4c5cdab2d8b61c3f3bc4770a96ff32a0_cgraph}
+\end{center}
+\end{figure}

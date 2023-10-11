@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lab 03: Result.cpp File Reference</title>
+<title>Lab 04: Result.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Lab 03
+   <div id="projectname">Lab 04
    &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">ICT283 Data Structure &amp; Abstraction</div>
@@ -98,12 +98,13 @@ Include dependency graph for Result.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="_result_8cpp__incl.png" border="0" usemap="#_result_8cpp" alt=""/></div>
 <map name="_result_8cpp" id="_result_8cpp">
-<area shape="rect" title="Result implementation file." alt="" coords="42,5,126,32"/>
-<area shape="rect" href="_result_8h.html" title="Object Class for the Result Class." alt="" coords="49,80,119,107"/>
+<area shape="rect" title="Result implementation file." alt="" coords="65,5,149,32"/>
+<area shape="rect" href="_result_8h.html" title="Object Class for the Result Class." alt="" coords="71,80,142,107"/>
 <area shape="rect" title=" " alt="" coords="5,229,72,256"/>
-<area shape="rect" href="_unit_8h.html" title="Object Class for the Unit Class." alt="" coords="96,155,152,181"/>
-<area shape="rect" title=" " alt="" coords="96,229,168,256"/>
-<area shape="rect" title=" " alt="" coords="193,229,258,256"/>
+<area shape="rect" href="_unit_8h.html" title="Object Class for the Unit Class." alt="" coords="161,155,217,181"/>
+<area shape="rect" href="_date_8h.html" title="Date Class for the Registration Application." alt="" coords="77,155,137,181"/>
+<area shape="rect" title=" " alt="" coords="176,229,248,256"/>
+<area shape="rect" title=" " alt="" coords="97,229,151,256"/>
 </map>
 </div>
 </div>
@@ -112,8 +113,10 @@ Include dependency graph for Result.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a180fc33da8d4dc00234b39a25da17673"><td class="memItemLeft" align="right" valign="top">ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_result_8cpp.html#a180fc33da8d4dc00234b39a25da17673">operator&lt;&lt;</a> (ostream &amp;outputStream, const <a class="el" href="class_result.html">Result</a> &amp;R)</td></tr>
+<tr class="memdesc:a180fc33da8d4dc00234b39a25da17673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload output stream operator.  <a href="_result_8cpp.html#a180fc33da8d4dc00234b39a25da17673">More...</a><br /></td></tr>
 <tr class="separator:a180fc33da8d4dc00234b39a25da17673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c5cdab2d8b61c3f3bc4770a96ff32a0"><td class="memItemLeft" align="right" valign="top">istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_result_8cpp.html#a4c5cdab2d8b61c3f3bc4770a96ff32a0">operator&gt;&gt;</a> (istream &amp;inputStream, <a class="el" href="class_result.html">Result</a> &amp;R)</td></tr>
+<tr class="memdesc:a4c5cdab2d8b61c3f3bc4770a96ff32a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload input stream operator.  <a href="_result_8cpp.html#a4c5cdab2d8b61c3f3bc4770a96ff32a0">More...</a><br /></td></tr>
 <tr class="separator:a4c5cdab2d8b61c3f3bc4770a96ff32a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -148,7 +151,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This is a friend member function that directly access into the member variables. This outputs the user defined result format.</p>
+
+<p>Overload output stream operator. </p>
+<p>This is a member function that directly access into the member variables. This outputs the user defined result format.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">outputStream</td><td>ostream extraction of user defined variable of the result (first parameter). </td></tr>
@@ -158,7 +163,18 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>outputStream The display output format of the result. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_result_8cpp_source.html#l00043">43</a> of file <a class="el" href="_result_8cpp_source.html">Result.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_result_8cpp_source.html#l00054">54</a> of file <a class="el" href="_result_8cpp_source.html">Result.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_result_8cpp_a180fc33da8d4dc00234b39a25da17673_cgraph.png" border="0" usemap="#_result_8cpp_a180fc33da8d4dc00234b39a25da17673_cgraph" alt=""/></div>
+<map name="_result_8cpp_a180fc33da8d4dc00234b39a25da17673_cgraph" id="_result_8cpp_a180fc33da8d4dc00234b39a25da17673_cgraph">
+<area shape="rect" title="Overload output stream operator." alt="" coords="5,56,91,83"/>
+<area shape="rect" href="class_result.html#a2d701abe66b96a1d6723a5835e744309" title="Member Method." alt="" coords="143,5,258,32"/>
+<area shape="rect" href="class_result.html#a984dbc50adb7dcc9207122fd943fe4a8" title="Member Method." alt="" coords="139,56,263,83"/>
+<area shape="rect" href="class_result.html#a8a442d311e4868f8e6094d8b3c2a02fa" title="Member Method." alt="" coords="145,107,256,133"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -187,7 +203,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This is a friend member function that directly access into the member variables. This inputs the result defined unit format.</p>
+
+<p>Overload input stream operator. </p>
+<p>This is a member function that directly access into the member variables. This inputs the result defined unit format.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">inputStream</td><td>istream insertion of user defined variable of the result (first parameter). </td></tr>
@@ -197,7 +215,18 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>inputStream The insertion format of the result. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_result_8cpp_source.html#l00053">53</a> of file <a class="el" href="_result_8cpp_source.html">Result.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_result_8cpp_source.html#l00069">69</a> of file <a class="el" href="_result_8cpp_source.html">Result.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_result_8cpp_a4c5cdab2d8b61c3f3bc4770a96ff32a0_cgraph.png" border="0" usemap="#_result_8cpp_a4c5cdab2d8b61c3f3bc4770a96ff32a0_cgraph" alt=""/></div>
+<map name="_result_8cpp_a4c5cdab2d8b61c3f3bc4770a96ff32a0_cgraph" id="_result_8cpp_a4c5cdab2d8b61c3f3bc4770a96ff32a0_cgraph">
+<area shape="rect" title="Overload input stream operator." alt="" coords="5,56,91,83"/>
+<area shape="rect" href="class_result.html#a82a011482002e890c2b955724a8484dc" title="Procedure." alt="" coords="143,5,257,32"/>
+<area shape="rect" href="class_result.html#a20645b1b42ef7bc9a4a7520a581174d6" title="Procedure." alt="" coords="139,56,261,83"/>
+<area shape="rect" href="class_result.html#a138e4b9661a9b847b9240d86806dcbef" title="Procedure." alt="" coords="145,107,255,133"/>
+</map>
+</div>
 
 </div>
 </div>

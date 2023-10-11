@@ -1,0 +1,6 @@
+Result Test File: 
+====Test1: Test on default constructor with initial value to be set as 0.0 for marks====
+[PASS]: Default Constructor been created and marks has been set to 0.0
+
+====Test2: Test on Setting marks: 12.3==== 
+[PASS]: Marks has been set as 12.3

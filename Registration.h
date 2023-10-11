@@ -13,6 +13,7 @@
 #define REGIST_H
 
 #include <iostream>
+#include<string>
 #include "Result.h"
 
 using namespace std;
@@ -131,6 +132,14 @@ public:
     ///
     void SetResult(Result &result, unsigned index);
 
+private:
+    const unsigned INITIAL_VALUE = 0;
+    long m_studentId;
+    unsigned m_semester;
+    unsigned m_count;
+    Result m_result[MaxResult];
+};
+
     ///
     /// @brief Overload output stream operator
     ///
@@ -141,7 +150,7 @@ public:
     /// @param[in] R The registration class variable to be used for extraction (second parameter).
     /// @return os The display output format of the registration.
     ///
-    friend ostream & operator <<( ostream & os, const Registration & R);
+    ostream & operator <<( ostream & os, const Registration & R);
 
     ///
     /// @brief Overload input stream operator
@@ -153,14 +162,7 @@ public:
     /// @param[in] R The registration class variable to be used for insertion (second parameter).
     /// @return input The insertion format of the registration.
     ///
-    friend istream & operator >>( istream & input, Registration & R );
-
-private:
-    long m_studentId;
-    unsigned m_semester;
-    unsigned m_count;
-    Result m_result[MaxResult];
-};
+    istream & operator >>( istream & input, Registration & R );
 
 #endif
 

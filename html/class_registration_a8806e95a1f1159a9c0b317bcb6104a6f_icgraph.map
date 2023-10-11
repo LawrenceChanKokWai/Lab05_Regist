@@ -1,4 +1,5 @@
 <map id="Registration::SetCount" name="Registration::SetCount">
-<area shape="rect" id="node1" title="Procedure." alt="" coords="104,5,257,32"/>
-<area shape="rect" id="node2" href="$_registration_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node1" title="Procedure." alt="" coords="139,31,292,57"/>
+<area shape="rect" id="node2" href="$_registration_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="23,5,73,32"/>
+<area shape="rect" id="node3" href="$_registration_8h.html#a2d7be84f9edc66ada3b7482f1e2e24bc" title="Overload input stream operator." alt="" coords="5,56,91,83"/>
 </map>

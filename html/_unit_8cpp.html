@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lab 03: Unit.cpp File Reference</title>
+<title>Lab 04: Unit.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Lab 03
+   <div id="projectname">Lab 04
    &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">ICT283 Data Structure &amp; Abstraction</div>
@@ -98,11 +98,11 @@ Include dependency graph for Unit.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="_unit_8cpp__incl.png" border="0" usemap="#_unit_8cpp" alt=""/></div>
 <map name="_unit_8cpp" id="_unit_8cpp">
-<area shape="rect" title="Unit implementation file." alt="" coords="99,5,170,32"/>
-<area shape="rect" href="_unit_8h.html" title="Object Class for the Unit Class." alt="" coords="107,80,163,107"/>
+<area shape="rect" title="Unit implementation file." alt="" coords="94,5,165,32"/>
+<area shape="rect" href="_unit_8h.html" title="Object Class for the Unit Class." alt="" coords="101,80,157,107"/>
 <area shape="rect" title=" " alt="" coords="5,155,77,181"/>
-<area shape="rect" title=" " alt="" coords="102,155,167,181"/>
-<area shape="rect" title=" " alt="" coords="192,155,259,181"/>
+<area shape="rect" title=" " alt="" coords="102,155,157,181"/>
+<area shape="rect" title=" " alt="" coords="181,155,248,181"/>
 </map>
 </div>
 </div>
@@ -111,6 +111,7 @@ Include dependency graph for Unit.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a7a9d8f721576c83a2542bb81f2dbec9a"><td class="memItemLeft" align="right" valign="top">istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_unit_8cpp.html#a7a9d8f721576c83a2542bb81f2dbec9a">operator&gt;&gt;</a> (istream &amp;input, <a class="el" href="class_unit.html">Unit</a> &amp;U)</td></tr>
+<tr class="memdesc:a7a9d8f721576c83a2542bb81f2dbec9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload input stream operator.  <a href="_unit_8cpp.html#a7a9d8f721576c83a2542bb81f2dbec9a">More...</a><br /></td></tr>
 <tr class="separator:a7a9d8f721576c83a2542bb81f2dbec9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e9ad3532e507c14a957e842d2c80a69"><td class="memItemLeft" align="right" valign="top">ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_unit_8cpp.html#a3e9ad3532e507c14a957e842d2c80a69">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_unit.html">Unit</a> &amp;U)</td></tr>
 <tr class="separator:a3e9ad3532e507c14a957e842d2c80a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,7 +149,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unit_8cpp_source.html#l00066">66</a> of file <a class="el" href="_unit_8cpp_source.html">Unit.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unit_8cpp_source.html#l00085">85</a> of file <a class="el" href="_unit_8cpp_source.html">Unit.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_unit_8cpp_a3e9ad3532e507c14a957e842d2c80a69_cgraph.png" border="0" usemap="#_unit_8cpp_a3e9ad3532e507c14a957e842d2c80a69_cgraph" alt=""/></div>
+<map name="_unit_8cpp_a3e9ad3532e507c14a957e842d2c80a69_cgraph" id="_unit_8cpp_a3e9ad3532e507c14a957e842d2c80a69_cgraph">
+<area shape="rect" title=" " alt="" coords="5,56,91,83"/>
+<area shape="rect" href="class_unit.html#ab1f83a3955a721e46730773747e4e67e" title="Member Method." alt="" coords="147,5,261,32"/>
+<area shape="rect" href="class_unit.html#a8952641afc157ff469bd4c85f664e71f" title="Member Method." alt="" coords="151,56,257,83"/>
+<area shape="rect" href="class_unit.html#a4fe683b797b0e2814be2ffffa2c19bbe" title="Member Method." alt="" coords="139,107,269,133"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -177,7 +189,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This is a friend member function that directly access into the member variables. This inputs the user defined unit format.</p>
+
+<p>Overload input stream operator. </p>
+<p>This is a member function that directly access into the member variables. This inputs the user defined unit format.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>istream insertion of user defined variable of the unit (first parameter). </td></tr>
@@ -187,7 +201,18 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>input The insertion format of the unit. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_unit_8cpp_source.html#l00060">60</a> of file <a class="el" href="_unit_8cpp_source.html">Unit.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unit_8cpp_source.html#l00068">68</a> of file <a class="el" href="_unit_8cpp_source.html">Unit.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_unit_8cpp_a7a9d8f721576c83a2542bb81f2dbec9a_cgraph.png" border="0" usemap="#_unit_8cpp_a7a9d8f721576c83a2542bb81f2dbec9a_cgraph" alt=""/></div>
+<map name="_unit_8cpp_a7a9d8f721576c83a2542bb81f2dbec9a_cgraph" id="_unit_8cpp_a7a9d8f721576c83a2542bb81f2dbec9a_cgraph">
+<area shape="rect" title="Overload input stream operator." alt="" coords="5,56,91,83"/>
+<area shape="rect" href="class_unit.html#abff157e76552cc8a3941f39b96869ff2" title="Procedure." alt="" coords="147,5,261,32"/>
+<area shape="rect" href="class_unit.html#a9a2b0cbf6d77f3884b43a275b1949966" title="Procedure." alt="" coords="151,56,257,83"/>
+<area shape="rect" href="class_unit.html#a0922592481529e4806a519e51276833f" title="Procedure." alt="" coords="139,107,269,133"/>
+</map>
+</div>
 
 </div>
 </div>

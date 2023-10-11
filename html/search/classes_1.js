@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['unit_43',['Unit',['../class_unit.html',1,'']]]
+  ['registration_67',['Registration',['../class_registration.html',1,'']]],
+  ['result_68',['Result',['../class_result.html',1,'']]]
 ];

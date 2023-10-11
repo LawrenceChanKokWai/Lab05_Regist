@@ -10,27 +10,74 @@
 #include<iostream>
 
 #include "Registration.h"
+#include "Utils.h"
 
 using namespace std;
 
 int main()
 {
-    Unit unit;
-    unit.SetUnitId("ICT283");
-    unit.SetUnitName("Data_Structure_And_Algorithm");
-    unit.SetCredits(3);
+    Utils utils;
+    Registration testRegist;
+    const string INFILE("Tests/RegistrationTest.txt");
+    ofstream ofs(INFILE);
+    if(!ofs)
+    {
+        return -1;
+    }
 
-    Result result;
-    result.SetUnit(unit);
-    result.SetMarks(85.5);
+    cout << "Registration Test File: \n====Test1: Test on default constructor with initial value to be set as 0 for count====" << endl;
+    ofs << "Registration Test File: \n====Test1: Test on default constructor with initial value to be set as 0 for count====" << endl;
 
-    Registration registration;
-    registration.SetStudentId(39324804);
-    registration.SetSemester(3);
-    registration.SetResult(result, 0);
-    registration.SetCount(1);
+    utils.Assert(
+        testRegist.GetStudentId() == 0,
+        "Default Constructor created with student id set to 0",
+        "Default Constructor Should be created and student id to be set to 0", ofs
+    );
 
-    cout << registration;
+    utils.Assert(
+        testRegist.GetSemester() == 0,
+        "Default Constructor created with semester set to 0",
+        "Default Constructor Should be created and semester to be set to 0", ofs
+    );
+
+    utils.Assert(
+        testRegist.GetCount() == 0,
+        "Default Constructor created with count set to 0",
+        "Default Constructor Should be created and count to be set to 0", ofs
+    );
+
+    long testStudentIIdValue(12345678);
+    testRegist.SetStudentId(testStudentIIdValue);
+    cout << '\n' << "====Test2: Test on Setting Student ID: " << testStudentIIdValue << "==== \n";
+    ofs << '\n' << "====Test2: Test on Setting Student ID: " << testStudentIIdValue << "==== \n";
+    utils.Assert(
+        testRegist.GetStudentId() == testStudentIIdValue,
+        "Student Id successfully been set to 12345678",
+        "Student Id should be set to 12345678", ofs
+    );
+
+    unsigned testSemesterValue(3);
+    testRegist.SetSemester(testSemesterValue);
+    cout << '\n' << "====Test3: Test on Setting Semester: " << testSemesterValue << "==== \n";
+    ofs << '\n' << "====Test3: Test on Setting Semester: " << testSemesterValue << "==== \n";
+    utils.Assert(
+        testRegist.GetSemester() == testSemesterValue,
+        "Semester successfully been set to 3",
+        "Semester should be set to 3", ofs
+    );
+
+    unsigned testCountValue(3);
+    testRegist.SetCount(testCountValue);
+    cout << '\n' << "====Test4: Test on Setting Count: " << testCountValue << "==== \n";
+    ofs << '\n' << "====Test4: Test on Setting Count: " << testCountValue << "==== \n";
+    utils.Assert(
+        testRegist.GetSemester() == testCountValue,
+        "Count successfully been set to 3",
+        "Count should be set to 3", ofs
+    );
+
+
+    ofs.close();
 
     return 0;
 }

@@ -1,4 +1,5 @@
 <map id="Unit::SetCredits" name="Unit::SetCredits">
-<area shape="rect" id="node1" title="Procedure." alt="" coords="104,5,219,32"/>
-<area shape="rect" id="node2" href="$_registration_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node1" title="Procedure." alt="" coords="139,31,253,57"/>
+<area shape="rect" id="node2" href="$_registration_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="23,5,73,32"/>
+<area shape="rect" id="node3" href="$_unit_8h.html#a7a9d8f721576c83a2542bb81f2dbec9a" title="Overload input stream operator." alt="" coords="5,56,91,83"/>
 </map>

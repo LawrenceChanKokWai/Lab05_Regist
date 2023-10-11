@@ -1,8 +1,9 @@
 <map id="Registration.h" name="Registration.h">
-<area shape="rect" id="node1" title="Object Class for the Registration Class." alt="" coords="46,5,149,32"/>
+<area shape="rect" id="node1" title="Object Class for the Registration Class." alt="" coords="83,5,186,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,229,77,256"/>
-<area shape="rect" id="node3" href="$_result_8h.html" title="Object Class for the Result Class." alt="" coords="99,80,170,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="192,229,259,256"/>
-<area shape="rect" id="node5" href="$_unit_8h.html" title="Object Class for the Unit Class." alt="" coords="107,155,163,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="102,229,167,256"/>
+<area shape="rect" id="node3" title=" " alt="" coords="193,229,247,256"/>
+<area shape="rect" id="node4" href="$_result_8h.html" title="Object Class for the Result Class." alt="" coords="99,80,170,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="101,229,168,256"/>
+<area shape="rect" id="node6" href="$_unit_8h.html" title="Object Class for the Unit Class." alt="" coords="189,155,245,181"/>
+<area shape="rect" id="node7" href="$_date_8h.html" title="Date Class for the Registration Application." alt="" coords="105,155,165,181"/>
 </map>

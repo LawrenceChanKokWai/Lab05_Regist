@@ -14,6 +14,7 @@
 
 #include<iomanip>
 #include "Unit.h"
+#include "Date.h"
 
 /// @brief This class contains the result
 /// consisting constructor, getters, setters
@@ -43,7 +44,7 @@ public:
     /// @param[in] unit Referencing the unit object ( first parameter )
     /// @param[in] marks The mark of a unit ( second parameter )
     ///
-    Result(Unit &unit, float marks);
+    Result(Unit &unit, float marks, Date &date);
 
     ///
     /// @brief Member Method
@@ -65,6 +66,15 @@ public:
     float GetMarks() const;
 
     ///
+    /// @brief Member Method
+    ///
+    /// @details This function gets the date of a unit enrolled.
+    ///
+    /// @return The date for a unit enrolled.
+    ///
+    void GetDate( Date &date ) const;
+
+    ///
     /// @brief Procedure
     ///
     /// @details This function sets the unit object for a result.
@@ -77,6 +87,16 @@ public:
     ///
     /// @brief Procedure
     ///
+    /// @details This function sets the date object for a result.
+    ///
+    /// @param[in] &unit A reference date of a date object.
+    /// @return Void
+    ///
+    void SetDate(Date &date);
+
+    ///
+    /// @brief Procedure
+    ///
     /// @details This function sets the mark of a unit.
     ///
     /// @param[in] marks A mark of a unit
@@ -84,33 +104,35 @@ public:
     ///
     void SetMarks(float marks);
 
-    ///
-    /// @brief Overload output stream operator
-    ///
-    /// @details This is a friend member function that directly access into
-    /// the member variables. This outputs the user defined result format.
-    ///
-    /// @param[in] outputStream ostream extraction of user defined variable of the result (first parameter).
-    /// @param[in] R The result class variable to be used for extraction (second parameter).
-    /// @return outputStream The display output format of the result.
-    ///
-    friend ostream &operator << (ostream &outputStream, const Result &R);
-
-    ///
-    /// @brief Overload input stream operator
-    ///
-    /// @details This is a friend member function that directly access into
-    /// the member variables. This inputs the result defined unit format.
-    ///
-    /// @param[in] inputStream istream insertion of user defined variable of the result (first parameter).
-    /// @param[in] R The result class variable to be used for insertion (second parameter).
-    /// @return inputStream The insertion format of the result.
-    ///
-    friend istream &operator >> (istream &inputStream, Result &R);
-
 private:
     Unit m_unit;
     float m_marks;
+    Date m_date;
 };
+
+///
+/// @brief Overload output stream operator
+///
+/// @details This is a member function that directly access into
+/// the member variables. This outputs the user defined result format.
+///
+/// @param[in] outputStream ostream extraction of user defined variable of the result (first parameter).
+/// @param[in] R The result class variable to be used for extraction (second parameter).
+/// @return outputStream The display output format of the result.
+///
+ostream &operator << (ostream &outputStream, const Result &R);
+
+///
+/// @brief Overload input stream operator
+///
+/// @details This is a member function that directly access into
+/// the member variables. This inputs the result defined unit format.
+///
+/// @param[in] inputStream istream insertion of user defined variable of the result (first parameter).
+/// @param[in] R The result class variable to be used for insertion (second parameter).
+/// @return inputStream The insertion format of the result.
+///
+istream &operator >> (istream &inputStream, Result &R);
+
 
 #endif // RESULT_H_INCLUDED

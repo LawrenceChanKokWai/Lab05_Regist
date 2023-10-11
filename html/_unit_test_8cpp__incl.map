@@ -1,7 +1,9 @@
 <map id="UnitTest.cpp" name="UnitTest.cpp">
-<area shape="rect" id="node1" title="Unit test file." alt="" coords="39,5,134,32"/>
+<area shape="rect" id="node1" title="Unit test file." alt="" coords="130,5,225,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,155,77,181"/>
-<area shape="rect" id="node3" href="$_unit_8h.html" title="Object Class for the Unit Class." alt="" coords="99,80,155,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="102,155,167,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="192,155,259,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="271,155,337,181"/>
+<area shape="rect" id="node4" href="$_unit_8h.html" title="Object Class for the Unit Class." alt="" coords="108,80,164,107"/>
+<area shape="rect" id="node7" href="$_utils_8h.html" title="Utils Class that hold helper functions." alt="" coords="189,80,248,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="193,155,247,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="101,155,168,181"/>
 </map>

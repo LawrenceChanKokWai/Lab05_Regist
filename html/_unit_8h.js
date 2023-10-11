@@ -1,6 +1,6 @@
 var _unit_8h =
 [
     [ "Unit", "class_unit.html", "class_unit" ],
-    [ "UnitIdSize", "_unit_8h.html#a41e5f4d7ec46200b0b4f5145682925d9", null ],
-    [ "UnitNameSize", "_unit_8h.html#a96539265e18260e7c58bca410f23a0cb", null ]
+    [ "operator<<", "_unit_8h.html#a3abc2e82e65e93fc5f6c162bc87a5cef", null ],
+    [ "operator>>", "_unit_8h.html#a7a9d8f721576c83a2542bb81f2dbec9a", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lab 03: ResultTest.cpp Source File</title>
+<title>Lab 04: ResultTest.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Lab 03
+   <div id="projectname">Lab 04
    &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">ICT283 Data Structure &amp; Abstraction</div>
@@ -98,28 +98,31 @@ $(document).ready(function(){initNavTree('_result_test_8cpp_source.html',''); in
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_unit.html">Unit</a> testUnit;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    testUnit.<a class="code" href="class_unit.html#ac15c197032096290f7240c6ca37960ec">SetUnitId</a>(<span class="stringliteral">&quot;ICT282&quot;</span>);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    testUnit.<a class="code" href="class_unit.html#ac53eb47c2701c7bbc05aa8b898bde7ad">SetUnitName</a>(<span class="stringliteral">&quot;Data_Structure&quot;</span>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    testUnit.<a class="code" href="class_unit.html#abff157e76552cc8a3941f39b96869ff2">SetCredits</a>(3);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_result.html">Result</a> testResult(testUnit, 89);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_date.html">Date</a> testDate(12,7,2020);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    testUnit.<a class="code" href="class_unit.html#a9a2b0cbf6d77f3884b43a275b1949966">SetUnitId</a>(<span class="stringliteral">&quot;ICT282&quot;</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    testUnit.<a class="code" href="class_unit.html#a0922592481529e4806a519e51276833f">SetUnitName</a>(<span class="stringliteral">&quot;Data Structure&quot;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    testUnit.<a class="code" href="class_unit.html#abff157e76552cc8a3941f39b96869ff2">SetCredits</a>(3);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    cout &lt;&lt; testResult;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_result.html">Result</a> testResult(testUnit, 89, testDate);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    cout &lt;&lt; testResult;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_result_html"><div class="ttname"><a href="class_result.html">Result</a></div><div class="ttdoc">This class contains the result consisting constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_result_8h_source.html#l00025">Result.h:25</a></div></div>
-<div class="ttc" id="aclass_unit_html_abff157e76552cc8a3941f39b96869ff2"><div class="ttname"><a href="class_unit.html#abff157e76552cc8a3941f39b96869ff2">Unit::SetCredits</a></div><div class="ttdeci">void SetCredits(unsigned credit)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8h_source.html#l00161">Unit.h:161</a></div></div>
+<div class="ttc" id="aclass_result_html"><div class="ttname"><a href="class_result.html">Result</a></div><div class="ttdoc">This class contains the result consisting constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_result_8h_source.html#l00026">Result.h:26</a></div></div>
+<div class="ttc" id="aclass_unit_html_abff157e76552cc8a3941f39b96869ff2"><div class="ttname"><a href="class_unit.html#abff157e76552cc8a3941f39b96869ff2">Unit::SetCredits</a></div><div class="ttdeci">void SetCredits(unsigned credit)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00063">Unit.cpp:63</a></div></div>
+<div class="ttc" id="aclass_unit_html_a0922592481529e4806a519e51276833f"><div class="ttname"><a href="class_unit.html#a0922592481529e4806a519e51276833f">Unit::SetUnitName</a></div><div class="ttdeci">void SetUnitName(string unitName)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00058">Unit.cpp:58</a></div></div>
 <div class="ttc" id="a_result_test_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="_result_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="_result_test_8cpp_source.html#l00016">ResultTest.cpp:16</a></div></div>
-<div class="ttc" id="aclass_unit_html_ac15c197032096290f7240c6ca37960ec"><div class="ttname"><a href="class_unit.html#ac15c197032096290f7240c6ca37960ec">Unit::SetUnitId</a></div><div class="ttdeci">void SetUnitId(const char *unitId)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00048">Unit.cpp:48</a></div></div>
 <div class="ttc" id="a_result_8h_html"><div class="ttname"><a href="_result_8h.html">Result.h</a></div><div class="ttdoc">Object Class for the Result Class.</div></div>
-<div class="ttc" id="aclass_unit_html_ac53eb47c2701c7bbc05aa8b898bde7ad"><div class="ttname"><a href="class_unit.html#ac53eb47c2701c7bbc05aa8b898bde7ad">Unit::SetUnitName</a></div><div class="ttdeci">void SetUnitName(const char *unitName)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00054">Unit.cpp:54</a></div></div>
-<div class="ttc" id="aclass_unit_html"><div class="ttname"><a href="class_unit.html">Unit</a></div><div class="ttdoc">This class contains the unit consisting constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8h_source.html#l00042">Unit.h:42</a></div></div>
+<div class="ttc" id="aclass_unit_html_a9a2b0cbf6d77f3884b43a275b1949966"><div class="ttname"><a href="class_unit.html#a9a2b0cbf6d77f3884b43a275b1949966">Unit::SetUnitId</a></div><div class="ttdeci">void SetUnitId(string unitId)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00053">Unit.cpp:53</a></div></div>
+<div class="ttc" id="aclass_unit_html"><div class="ttname"><a href="class_unit.html">Unit</a></div><div class="ttdoc">This class contains the unit consisting constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8h_source.html#l00028">Unit.h:28</a></div></div>
+<div class="ttc" id="aclass_date_html"><div class="ttname"><a href="class_date.html">Date</a></div><div class="ttdoc">This class contains the date This class contains constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_date_8h_source.html#l00030">Date.h:30</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

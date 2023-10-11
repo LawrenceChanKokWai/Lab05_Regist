@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lab 03: Result.cpp Source File</title>
+<title>Lab 04: Result.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Lab 03
+   <div id="projectname">Lab 04
    &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">ICT283 Data Structure &amp; Abstraction</div>
@@ -95,60 +95,91 @@ $(document).ready(function(){initNavTree('_result_8cpp_source.html',''); initRes
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    m_marks = 0.0;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_result.html#a78f08be55f903a6795103886e0a6aa62">   17</a></span>&#160;<a class="code" href="class_result.html#a90f44667e23d25ccdeac37f00a74657b">Result::Result</a>(<a class="code" href="class_unit.html">Unit</a> &amp;unit, <span class="keywordtype">float</span> marks)</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_result.html#a5bb13a332d1e39785d17f485d18bcdcc">   17</a></span>&#160;<a class="code" href="class_result.html#a90f44667e23d25ccdeac37f00a74657b">Result::Result</a>(<a class="code" href="class_unit.html">Unit</a> &amp;unit, <span class="keywordtype">float</span> marks, <a class="code" href="class_date.html">Date</a> &amp;date)</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    m_unit = unit;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    m_marks = marks;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_result.html#a8a442d311e4868f8e6094d8b3c2a02fa">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_result.html#a8a442d311e4868f8e6094d8b3c2a02fa">Result::GetUnit</a>( <a class="code" href="class_unit.html">Unit</a> &amp;unit )<span class="keyword"> const</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    unit = m_unit;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_result.html#a984dbc50adb7dcc9207122fd943fe4a8">   28</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="class_result.html#a984dbc50adb7dcc9207122fd943fe4a8">Result::GetMarks</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> m_marks;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_result.html#a138e4b9661a9b847b9240d86806dcbef">   33</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_result.html#a138e4b9661a9b847b9240d86806dcbef">Result::SetUnit</a>(<a class="code" href="class_unit.html">Unit</a> &amp;unit)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    m_unit = unit;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_result.html#a20645b1b42ef7bc9a4a7520a581174d6">   38</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_result.html#a20645b1b42ef7bc9a4a7520a581174d6">Result::SetMarks</a>(<span class="keywordtype">float</span> marks)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    m_marks = marks;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="_result_8cpp.html#a180fc33da8d4dc00234b39a25da17673">   43</a></span>&#160;ostream &amp;<a class="code" href="_result_8cpp.html#a180fc33da8d4dc00234b39a25da17673">operator &lt;&lt; </a>(ostream &amp;outputStream, <span class="keyword">const</span> <a class="code" href="class_result.html">Result</a> &amp;R)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> spacing = 4;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    outputStream &lt;&lt; R.m_unit</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                &lt;&lt; left &lt;&lt; setw(spacing) &lt;&lt; <span class="stringliteral">&quot;&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Marks:&quot;</span> &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;&quot;</span> &lt;&lt; R.m_marks &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> outputStream;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="_result_8cpp.html#a4c5cdab2d8b61c3f3bc4770a96ff32a0">   53</a></span>&#160;istream &amp;<a class="code" href="_result_8cpp.html#a4c5cdab2d8b61c3f3bc4770a96ff32a0">operator &gt;&gt; </a>(istream &amp;inputStream, <a class="code" href="class_result.html">Result</a> &amp;R)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    inputStream &gt;&gt; R.m_unit &gt;&gt; R.m_marks;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> inputStream;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    m_date = date;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_result.html#a8a442d311e4868f8e6094d8b3c2a02fa">   24</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_result.html#a8a442d311e4868f8e6094d8b3c2a02fa">Result::GetUnit</a>( <a class="code" href="class_unit.html">Unit</a> &amp;unit )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    unit = m_unit;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_result.html#a2d701abe66b96a1d6723a5835e744309">   29</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_result.html#a2d701abe66b96a1d6723a5835e744309">Result::GetDate</a>(<a class="code" href="class_date.html">Date</a> &amp;date)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    date = m_date;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_result.html#a984dbc50adb7dcc9207122fd943fe4a8">   34</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="class_result.html#a984dbc50adb7dcc9207122fd943fe4a8">Result::GetMarks</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> m_marks;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_result.html#a138e4b9661a9b847b9240d86806dcbef">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_result.html#a138e4b9661a9b847b9240d86806dcbef">Result::SetUnit</a>(<a class="code" href="class_unit.html">Unit</a> &amp;unit)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    m_unit = unit;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_result.html#a82a011482002e890c2b955724a8484dc">   44</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_result.html#a82a011482002e890c2b955724a8484dc">Result::SetDate</a>(<a class="code" href="class_date.html">Date</a> &amp;date)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    m_date = date;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_result.html#a20645b1b42ef7bc9a4a7520a581174d6">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_result.html#a20645b1b42ef7bc9a4a7520a581174d6">Result::SetMarks</a>(<span class="keywordtype">float</span> marks)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    m_marks = marks;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="_result_8h.html#a180fc33da8d4dc00234b39a25da17673">   54</a></span>&#160;ostream &amp;<a class="code" href="_result_8cpp.html#a180fc33da8d4dc00234b39a25da17673">operator &lt;&lt; </a>(ostream &amp;outputStream, <span class="keyword">const</span> <a class="code" href="class_result.html">Result</a> &amp;R)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> spacing = 4;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_unit.html">Unit</a> tempUnit;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_date.html">Date</a> tempDate;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    R.<a class="code" href="class_result.html#a8a442d311e4868f8e6094d8b3c2a02fa">GetUnit</a>(tempUnit);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    R.<a class="code" href="class_result.html#a2d701abe66b96a1d6723a5835e744309">GetDate</a>(tempDate);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    outputStream &lt;&lt; tempUnit</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                 &lt;&lt; left &lt;&lt; setw(spacing) &lt;&lt; <span class="stringliteral">&quot;&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Marks:&quot;</span> &lt;&lt; setw(6) &lt;&lt; <span class="stringliteral">&quot;&quot;</span> &lt;&lt; R.<a class="code" href="class_result.html#a984dbc50adb7dcc9207122fd943fe4a8">GetMarks</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                 &lt;&lt;  tempDate &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> outputStream;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="_result_8h.html#a4c5cdab2d8b61c3f3bc4770a96ff32a0">   69</a></span>&#160;istream &amp;<a class="code" href="_result_8cpp.html#a4c5cdab2d8b61c3f3bc4770a96ff32a0">operator &gt;&gt; </a>(istream &amp;inputStream, <a class="code" href="class_result.html">Result</a> &amp;R)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_unit.html">Unit</a> tempUnit;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    inputStream &gt;&gt; tempUnit;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    R.<a class="code" href="class_result.html#a138e4b9661a9b847b9240d86806dcbef">SetUnit</a>(tempUnit);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">float</span> tempMarks = 0;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">char</span> comma;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    inputStream &gt;&gt; comma &gt;&gt; tempMarks;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    R.<a class="code" href="class_result.html#a20645b1b42ef7bc9a4a7520a581174d6">SetMarks</a>(tempMarks);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_date.html">Date</a> tempDate;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    inputStream &gt;&gt; comma &gt;&gt; tempDate;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    R.<a class="code" href="class_result.html#a82a011482002e890c2b955724a8484dc">SetDate</a>(tempDate);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> inputStream;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_result_html_a984dbc50adb7dcc9207122fd943fe4a8"><div class="ttname"><a href="class_result.html#a984dbc50adb7dcc9207122fd943fe4a8">Result::GetMarks</a></div><div class="ttdeci">float GetMarks() const</div><div class="ttdoc">Member Method.</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00028">Result.cpp:28</a></div></div>
-<div class="ttc" id="aclass_result_html"><div class="ttname"><a href="class_result.html">Result</a></div><div class="ttdoc">This class contains the result consisting constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_result_8h_source.html#l00025">Result.h:25</a></div></div>
-<div class="ttc" id="aclass_result_html_a20645b1b42ef7bc9a4a7520a581174d6"><div class="ttname"><a href="class_result.html#a20645b1b42ef7bc9a4a7520a581174d6">Result::SetMarks</a></div><div class="ttdeci">void SetMarks(float marks)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00038">Result.cpp:38</a></div></div>
-<div class="ttc" id="a_result_8cpp_html_a4c5cdab2d8b61c3f3bc4770a96ff32a0"><div class="ttname"><a href="_result_8cpp.html#a4c5cdab2d8b61c3f3bc4770a96ff32a0">operator&gt;&gt;</a></div><div class="ttdeci">istream &amp; operator&gt;&gt;(istream &amp;inputStream, Result &amp;R)</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00053">Result.cpp:53</a></div></div>
-<div class="ttc" id="aclass_result_html_a8a442d311e4868f8e6094d8b3c2a02fa"><div class="ttname"><a href="class_result.html#a8a442d311e4868f8e6094d8b3c2a02fa">Result::GetUnit</a></div><div class="ttdeci">void GetUnit(Unit &amp;unit) const</div><div class="ttdoc">Member Method.</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00023">Result.cpp:23</a></div></div>
+<div class="ttc" id="aclass_result_html_a984dbc50adb7dcc9207122fd943fe4a8"><div class="ttname"><a href="class_result.html#a984dbc50adb7dcc9207122fd943fe4a8">Result::GetMarks</a></div><div class="ttdeci">float GetMarks() const</div><div class="ttdoc">Member Method.</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00034">Result.cpp:34</a></div></div>
+<div class="ttc" id="aclass_result_html"><div class="ttname"><a href="class_result.html">Result</a></div><div class="ttdoc">This class contains the result consisting constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_result_8h_source.html#l00026">Result.h:26</a></div></div>
+<div class="ttc" id="aclass_result_html_a20645b1b42ef7bc9a4a7520a581174d6"><div class="ttname"><a href="class_result.html#a20645b1b42ef7bc9a4a7520a581174d6">Result::SetMarks</a></div><div class="ttdeci">void SetMarks(float marks)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00049">Result.cpp:49</a></div></div>
+<div class="ttc" id="a_result_8cpp_html_a4c5cdab2d8b61c3f3bc4770a96ff32a0"><div class="ttname"><a href="_result_8cpp.html#a4c5cdab2d8b61c3f3bc4770a96ff32a0">operator&gt;&gt;</a></div><div class="ttdeci">istream &amp; operator&gt;&gt;(istream &amp;inputStream, Result &amp;R)</div><div class="ttdoc">Overload input stream operator.</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00069">Result.cpp:69</a></div></div>
+<div class="ttc" id="aclass_result_html_a82a011482002e890c2b955724a8484dc"><div class="ttname"><a href="class_result.html#a82a011482002e890c2b955724a8484dc">Result::SetDate</a></div><div class="ttdeci">void SetDate(Date &amp;date)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00044">Result.cpp:44</a></div></div>
+<div class="ttc" id="aclass_result_html_a2d701abe66b96a1d6723a5835e744309"><div class="ttname"><a href="class_result.html#a2d701abe66b96a1d6723a5835e744309">Result::GetDate</a></div><div class="ttdeci">void GetDate(Date &amp;date) const</div><div class="ttdoc">Member Method.</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00029">Result.cpp:29</a></div></div>
+<div class="ttc" id="aclass_result_html_a8a442d311e4868f8e6094d8b3c2a02fa"><div class="ttname"><a href="class_result.html#a8a442d311e4868f8e6094d8b3c2a02fa">Result::GetUnit</a></div><div class="ttdeci">void GetUnit(Unit &amp;unit) const</div><div class="ttdoc">Member Method.</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00024">Result.cpp:24</a></div></div>
 <div class="ttc" id="aclass_result_html_a90f44667e23d25ccdeac37f00a74657b"><div class="ttname"><a href="class_result.html#a90f44667e23d25ccdeac37f00a74657b">Result::Result</a></div><div class="ttdeci">Result()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00012">Result.cpp:12</a></div></div>
-<div class="ttc" id="a_result_8cpp_html_a180fc33da8d4dc00234b39a25da17673"><div class="ttname"><a href="_result_8cpp.html#a180fc33da8d4dc00234b39a25da17673">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;outputStream, const Result &amp;R)</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00043">Result.cpp:43</a></div></div>
+<div class="ttc" id="a_result_8cpp_html_a180fc33da8d4dc00234b39a25da17673"><div class="ttname"><a href="_result_8cpp.html#a180fc33da8d4dc00234b39a25da17673">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;outputStream, const Result &amp;R)</div><div class="ttdoc">Overload output stream operator.</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00054">Result.cpp:54</a></div></div>
 <div class="ttc" id="a_result_8h_html"><div class="ttname"><a href="_result_8h.html">Result.h</a></div><div class="ttdoc">Object Class for the Result Class.</div></div>
-<div class="ttc" id="aclass_result_html_a138e4b9661a9b847b9240d86806dcbef"><div class="ttname"><a href="class_result.html#a138e4b9661a9b847b9240d86806dcbef">Result::SetUnit</a></div><div class="ttdeci">void SetUnit(Unit &amp;unit)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00033">Result.cpp:33</a></div></div>
-<div class="ttc" id="aclass_unit_html"><div class="ttname"><a href="class_unit.html">Unit</a></div><div class="ttdoc">This class contains the unit consisting constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8h_source.html#l00042">Unit.h:42</a></div></div>
+<div class="ttc" id="aclass_result_html_a138e4b9661a9b847b9240d86806dcbef"><div class="ttname"><a href="class_result.html#a138e4b9661a9b847b9240d86806dcbef">Result::SetUnit</a></div><div class="ttdeci">void SetUnit(Unit &amp;unit)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00039">Result.cpp:39</a></div></div>
+<div class="ttc" id="aclass_unit_html"><div class="ttname"><a href="class_unit.html">Unit</a></div><div class="ttdoc">This class contains the unit consisting constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8h_source.html#l00028">Unit.h:28</a></div></div>
+<div class="ttc" id="aclass_date_html"><div class="ttname"><a href="class_date.html">Date</a></div><div class="ttdoc">This class contains the date This class contains constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_date_8h_source.html#l00030">Date.h:30</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

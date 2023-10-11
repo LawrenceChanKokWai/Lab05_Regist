@@ -23,27 +23,20 @@ Collaboration diagram for Unit\+:\nopagebreak
 \item 
 \mbox{\hyperlink{class_unit_a8e46f663a95736c8002d85ab271a7581}{Unit}} ()
 \begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_unit_a63cd56f8c035ce9c0d394650be74bb99}{Unit}} (const char $\ast$unit\+Name, const char $\ast$unit\+Id, unsigned credit)
+\mbox{\hyperlink{class_unit_ae30ba4103519733b1cfb1a39581e2c5a}{Unit}} (string unit\+Name, string unit\+Id, unsigned \mbox{\hyperlink{_unit_test_8txt_ac281457f0d2e18b13ff51ef65f2273c1}{credit}})
 \begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
-const char $\ast$ \mbox{\hyperlink{class_unit_a184536cfeeda6ba3e486d6d0dfa91a76}{Get\+Unit\+Id}} () const
+string \mbox{\hyperlink{class_unit_a8952641afc157ff469bd4c85f664e71f}{Get\+Unit\+Id}} () const
 \begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
-const char $\ast$ \mbox{\hyperlink{class_unit_a68eeb31e4e6e309c9ba27e1ed63bd724}{Get\+Unit\+Name}} () const
+string \mbox{\hyperlink{class_unit_a4fe683b797b0e2814be2ffffa2c19bbe}{Get\+Unit\+Name}} () const
 \begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_unit_ac15c197032096290f7240c6ca37960ec}{Set\+Unit\+Id}} (const char $\ast$unit\+Id)
-\begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_unit_ac53eb47c2701c7bbc05aa8b898bde7ad}{Set\+Unit\+Name}} (const char $\ast$unit\+Name)
-\begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\item 
 unsigned \mbox{\hyperlink{class_unit_ab1f83a3955a721e46730773747e4e67e}{Get\+Credits}} () const
 \begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_unit_abff157e76552cc8a3941f39b96869ff2}{Set\+Credits}} (unsigned credit)
+void \mbox{\hyperlink{class_unit_a9a2b0cbf6d77f3884b43a275b1949966}{Set\+Unit\+Id}} (string unit\+Id)
+\begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unit_a0922592481529e4806a519e51276833f}{Set\+Unit\+Name}} (string unit\+Name)
+\begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unit_abff157e76552cc8a3941f39b96869ff2}{Set\+Credits}} (unsigned \mbox{\hyperlink{_unit_test_8txt_ac281457f0d2e18b13ff51ef65f2273c1}{credit}})
 \begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Friends}
-\begin{DoxyCompactItemize}
-\item 
-ostream \& \mbox{\hyperlink{class_unit_a3abc2e82e65e93fc5f6c162bc87a5cef}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_unit}{Unit}} \&U)
-\begin{DoxyCompactList}\small\item\em Overload output stream operator. \end{DoxyCompactList}\item 
-istream \& \mbox{\hyperlink{class_unit_a7a9d8f721576c83a2542bb81f2dbec9a}{operator$>$$>$}} (istream \&input, \mbox{\hyperlink{class_unit}{Unit}} \&U)
-\begin{DoxyCompactList}\small\item\em Overload input stream operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -57,7 +50,7 @@ Chan Kok Wai (33924804)
 \end{DoxyVersion}
 
 
-Definition at line 42 of file Unit.\+h.
+Definition at line 28 of file Unit.\+h.
 
 
 
@@ -76,11 +69,11 @@ This initialize the unit object and creates a unit with default values of unit n
 
 Definition at line 24 of file Unit.\+cpp.
 
-\mbox{\Hypertarget{class_unit_a63cd56f8c035ce9c0d394650be74bb99}\label{class_unit_a63cd56f8c035ce9c0d394650be74bb99}} 
+\mbox{\Hypertarget{class_unit_ae30ba4103519733b1cfb1a39581e2c5a}\label{class_unit_ae30ba4103519733b1cfb1a39581e2c5a}} 
 \index{Unit@{Unit}!Unit@{Unit}}
 \index{Unit@{Unit}!Unit@{Unit}}
 \doxysubsubsection{\texorpdfstring{Unit()}{Unit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Unit\+::\+Unit (\begin{DoxyParamCaption}\item[{const char $\ast$}]{unit\+Name,  }\item[{const char $\ast$}]{unit\+Id,  }\item[{unsigned}]{credit }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Unit\+::\+Unit (\begin{DoxyParamCaption}\item[{string}]{unit\+Name,  }\item[{string}]{unit\+Id,  }\item[{unsigned}]{credit }\end{DoxyParamCaption})}
 
 
 
@@ -108,7 +101,7 @@ Definition at line 31 of file Unit.\+cpp.
 \index{Unit@{Unit}!GetCredits@{GetCredits}}
 \index{GetCredits@{GetCredits}!Unit@{Unit}}
 \doxysubsubsection{\texorpdfstring{GetCredits()}{GetCredits()}}
-{\footnotesize\ttfamily unsigned Unit\+::\+Get\+Credits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily unsigned Unit\+::\+Get\+Credits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
@@ -124,7 +117,7 @@ The sum of credits from all units.
 \end{DoxyReturn}
 
 
-Definition at line 156 of file Unit.\+h.
+Definition at line 48 of file Unit.\+cpp.
 
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -133,11 +126,11 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=323pt]{class_unit_ab1f83a3955a721e46730773747e4e67e_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_unit_a184536cfeeda6ba3e486d6d0dfa91a76}\label{class_unit_a184536cfeeda6ba3e486d6d0dfa91a76}} 
+\mbox{\Hypertarget{class_unit_a8952641afc157ff469bd4c85f664e71f}\label{class_unit_a8952641afc157ff469bd4c85f664e71f}} 
 \index{Unit@{Unit}!GetUnitId@{GetUnitId}}
 \index{GetUnitId@{GetUnitId}!Unit@{Unit}}
 \doxysubsubsection{\texorpdfstring{GetUnitId()}{GetUnitId()}}
-{\footnotesize\ttfamily const char $\ast$ Unit\+::\+Get\+Unit\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily string Unit\+::\+Get\+Unit\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
@@ -156,14 +149,14 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=234pt]{class_unit_a184536cfeeda6ba3e486d6d0dfa91a76_icgraph}
+\includegraphics[width=260pt]{class_unit_a8952641afc157ff469bd4c85f664e71f_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_unit_a68eeb31e4e6e309c9ba27e1ed63bd724}\label{class_unit_a68eeb31e4e6e309c9ba27e1ed63bd724}} 
+\mbox{\Hypertarget{class_unit_a4fe683b797b0e2814be2ffffa2c19bbe}\label{class_unit_a4fe683b797b0e2814be2ffffa2c19bbe}} 
 \index{Unit@{Unit}!GetUnitName@{GetUnitName}}
 \index{GetUnitName@{GetUnitName}!Unit@{Unit}}
 \doxysubsubsection{\texorpdfstring{GetUnitName()}{GetUnitName()}}
-{\footnotesize\ttfamily const char $\ast$ Unit\+::\+Get\+Unit\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily string Unit\+::\+Get\+Unit\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
@@ -182,14 +175,14 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=252pt]{class_unit_a68eeb31e4e6e309c9ba27e1ed63bd724_icgraph}
+\includegraphics[width=278pt]{class_unit_a4fe683b797b0e2814be2ffffa2c19bbe_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_unit_abff157e76552cc8a3941f39b96869ff2}\label{class_unit_abff157e76552cc8a3941f39b96869ff2}} 
 \index{Unit@{Unit}!SetCredits@{SetCredits}}
 \index{SetCredits@{SetCredits}!Unit@{Unit}}
 \doxysubsubsection{\texorpdfstring{SetCredits()}{SetCredits()}}
-{\footnotesize\ttfamily void Unit\+::\+Set\+Credits (\begin{DoxyParamCaption}\item[{unsigned}]{credit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Unit\+::\+Set\+Credits (\begin{DoxyParamCaption}\item[{unsigned}]{credit }\end{DoxyParamCaption})}
 
 
 
@@ -210,20 +203,20 @@ Void
 \end{DoxyReturn}
 
 
-Definition at line 161 of file Unit.\+h.
+Definition at line 63 of file Unit.\+cpp.
 
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=240pt]{class_unit_abff157e76552cc8a3941f39b96869ff2_icgraph}
+\includegraphics[width=266pt]{class_unit_abff157e76552cc8a3941f39b96869ff2_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_unit_ac15c197032096290f7240c6ca37960ec}\label{class_unit_ac15c197032096290f7240c6ca37960ec}} 
+\mbox{\Hypertarget{class_unit_a9a2b0cbf6d77f3884b43a275b1949966}\label{class_unit_a9a2b0cbf6d77f3884b43a275b1949966}} 
 \index{Unit@{Unit}!SetUnitId@{SetUnitId}}
 \index{SetUnitId@{SetUnitId}!Unit@{Unit}}
 \doxysubsubsection{\texorpdfstring{SetUnitId()}{SetUnitId()}}
-{\footnotesize\ttfamily void Unit\+::\+Set\+Unit\+Id (\begin{DoxyParamCaption}\item[{const char $\ast$}]{unit\+Id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Unit\+::\+Set\+Unit\+Id (\begin{DoxyParamCaption}\item[{string}]{unit\+Id }\end{DoxyParamCaption})}
 
 
 
@@ -233,7 +226,7 @@ This function sets the unit id of a unit.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em $\ast$unit\+Id} & A pointer unit\+Id pointing to index 0 of unit\+Id. \\
+\mbox{\texttt{ in}}  & {\em unit\+Id} & The unit\+Id of the unit. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -241,20 +234,20 @@ Void
 \end{DoxyReturn}
 
 
-Definition at line 48 of file Unit.\+cpp.
+Definition at line 53 of file Unit.\+cpp.
 
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=234pt]{class_unit_ac15c197032096290f7240c6ca37960ec_icgraph}
+\includegraphics[width=260pt]{class_unit_a9a2b0cbf6d77f3884b43a275b1949966_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_unit_ac53eb47c2701c7bbc05aa8b898bde7ad}\label{class_unit_ac53eb47c2701c7bbc05aa8b898bde7ad}} 
+\mbox{\Hypertarget{class_unit_a0922592481529e4806a519e51276833f}\label{class_unit_a0922592481529e4806a519e51276833f}} 
 \index{Unit@{Unit}!SetUnitName@{SetUnitName}}
 \index{SetUnitName@{SetUnitName}!Unit@{Unit}}
 \doxysubsubsection{\texorpdfstring{SetUnitName()}{SetUnitName()}}
-{\footnotesize\ttfamily void Unit\+::\+Set\+Unit\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{unit\+Name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Unit\+::\+Set\+Unit\+Name (\begin{DoxyParamCaption}\item[{string}]{unit\+Name }\end{DoxyParamCaption})}
 
 
 
@@ -264,7 +257,7 @@ This function sets the unit name of a unit.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em $\ast$unit\+Name} & A pointer unit\+Name pointing to index 0 of unit\+Name. \\
+\mbox{\texttt{ in}}  & {\em unit\+Name} & The unit name of the unit. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -272,66 +265,15 @@ Void
 \end{DoxyReturn}
 
 
-Definition at line 54 of file Unit.\+cpp.
+Definition at line 58 of file Unit.\+cpp.
 
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=252pt]{class_unit_ac53eb47c2701c7bbc05aa8b898bde7ad_icgraph}
+\includegraphics[width=278pt]{class_unit_a0922592481529e4806a519e51276833f_icgraph}
 \end{center}
 \end{figure}
-
-
-\doxysubsection{Friends And Related Function Documentation}
-\mbox{\Hypertarget{class_unit_a3abc2e82e65e93fc5f6c162bc87a5cef}\label{class_unit_a3abc2e82e65e93fc5f6c162bc87a5cef}} 
-\index{Unit@{Unit}!operator$<$$<$@{operator$<$$<$}}
-\index{operator$<$$<$@{operator$<$$<$}!Unit@{Unit}}
-\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
-{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_unit}{Unit}} \&}]{U }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
-
-
-
-Overload output stream operator. 
-
-This is a friend member function that directly access into the member variables. This outputs the user defined unit format.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em os} & ostream extraction of user defined variable of the unit (first parameter). \\
-\hline
-\mbox{\texttt{ in}}  & {\em U} & The unit class variable to be used for extraction (second parameter). \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-os The display output format of the unit. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{class_unit_a7a9d8f721576c83a2542bb81f2dbec9a}\label{class_unit_a7a9d8f721576c83a2542bb81f2dbec9a}} 
-\index{Unit@{Unit}!operator$>$$>$@{operator$>$$>$}}
-\index{operator$>$$>$@{operator$>$$>$}!Unit@{Unit}}
-\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
-{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{input,  }\item[{\mbox{\hyperlink{class_unit}{Unit}} \&}]{U }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
-
-
-
-Overload input stream operator. 
-
-This is a friend member function that directly access into the member variables. This inputs the user defined unit format.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em input} & istream insertion of user defined variable of the unit (first parameter). \\
-\hline
-\mbox{\texttt{ in}}  & {\em U} & The unit class variable to be used for insertion (second parameter). \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-input The insertion format of the unit. 
-\end{DoxyReturn}
-
-
-Definition at line 60 of file Unit.\+cpp.
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

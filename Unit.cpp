@@ -23,43 +23,62 @@
 
 Unit::Unit()
 {
-    m_unitName[0] = '\0';
-    m_unitId[0] = '\0';
+    m_unitName = "";
+    m_unitId = "";
     m_credits = 0;
 }
 
-Unit::Unit( const char * unitName, const char *unitId, unsigned credit )
+Unit::Unit( string unitName, string unitId, unsigned credit )
 {
-    strncpy( m_unitName, unitName, UnitNameSize );
-    strncpy( m_unitId, unitId, UnitIdSize );
+    m_unitName = unitName;
+    m_unitId = unitId;
     m_credits = credit;
 }
 
-const char *Unit::GetUnitId() const
+string Unit::GetUnitId() const
 {
     return m_unitId;
 }
 
-const char *Unit::GetUnitName() const
+string Unit::GetUnitName() const
 {
     return m_unitName;
 }
 
-void Unit::SetUnitId(const char *unitId)
+unsigned Unit::GetCredits() const
 {
-    strncpy(m_unitId, unitId, UnitIdSize - 1);
-    m_unitId[UnitIdSize - 1] = '\0';
+    return m_credits;
 }
 
-void Unit::SetUnitName(const char *unitName)
+void Unit::SetUnitId(string unitId)
 {
-    strncpy(m_unitName, unitName, UnitNameSize -1);
-    m_unitName[UnitNameSize -1] = '\0';
+    m_unitId = unitId;
+}
+
+void Unit::SetUnitName(string unitName)
+{
+    m_unitName = unitName;
+}
+
+void Unit::SetCredits(unsigned int credit)
+{
+    m_credits = credit;
 }
 
 istream & operator >>( istream & input, Unit & U )
 {
-    input >> U.m_unitName >> U.m_unitId >> U.m_credits;
+    string tempStrField;
+
+    getline(input, tempStrField, ',');
+    U.SetUnitName(tempStrField);
+
+    getline(input, tempStrField, ',');
+    U.SetUnitId(tempStrField);
+
+    unsigned tempCreditField = 0;
+    input >> tempCreditField;
+    U.SetCredits(tempCreditField);
+
     return input;
 }
 
@@ -67,8 +86,8 @@ ostream& operator<<(std::ostream& os, const Unit& U)
 {
     const unsigned spacing = 4;
 
-    os << left << setw(spacing) << "" << "Unit ID:" << setw(spacing) << "" << U.m_unitId << '\n'
-       << setw(spacing) << "" << "Unit Name:" << setw(2) << "" << U.m_unitName << '\n'
-       << setw(spacing) << "" << "Credits:" << setw(spacing) << "" << U.m_credits << '\n';
+    os << left << setw(spacing) << "" << "Unit ID:" << setw(spacing) << "" << U.GetUnitId() << '\n'
+       << setw(spacing) << "" << "Unit Name:" << setw(2) << "" << U.GetUnitName() << '\n'
+       << setw(spacing) << "" << "Credits:" << setw(spacing) << "" << U.GetCredits() << '\n';
     return os;
 }

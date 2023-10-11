@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lab 03: Registration.h Source File</title>
+<title>Lab 04: Registration.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Lab 03
+   <div id="projectname">Lab 04
    &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">ICT283 Data Structure &amp; Abstraction</div>
@@ -92,57 +92,58 @@ $(document).ready(function(){initNavTree('_registration_8h_source.html',''); ini
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define REGIST_H</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_result_8h.html">Result.h</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_registration_8h.html#a5b74fc140f1b0449eaaee6fe368482ef">   25</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <a class="code" href="_registration_8h.html#a5b74fc140f1b0449eaaee6fe368482ef">MaxResult</a> = 10;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_registration.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_registration.html">Registration</a></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_registration.html">Registration</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">long</span> GetStudentId() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">unsigned</span> GetSemester() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">unsigned</span> GetCredits() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">unsigned</span> GetCount() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_result.html">Result</a> &amp;GetResult(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> count) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> SetStudentId(<span class="keywordtype">long</span> studentId);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> SetSemester(<span class="keywordtype">unsigned</span> semester);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">void</span> SetCount(<span class="keywordtype">unsigned</span> count);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">void</span> SetResult(<a class="code" href="class_result.html">Result</a> &amp;result, <span class="keywordtype">unsigned</span> index);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keyword">friend</span> ostream &amp; <a class="code" href="_registration_8cpp.html#a47b9e6c8719767aec587822151619af6">operator &lt;&lt;</a>( ostream &amp; os, <span class="keyword">const</span> <a class="code" href="class_registration.html">Registration</a> &amp; R);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">friend</span> istream &amp; <a class="code" href="_registration_8cpp.html#a2d7be84f9edc66ada3b7482f1e2e24bc">operator &gt;&gt;</a>( istream &amp; input, <a class="code" href="class_registration.html">Registration</a> &amp; R );</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">long</span> m_studentId;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">unsigned</span> m_semester;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">unsigned</span> m_count;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="class_result.html">Result</a> m_result[<a class="code" href="_registration_8h.html#a5b74fc140f1b0449eaaee6fe368482ef">MaxResult</a>];</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;};</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include&lt;string&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_result_8h.html">Result.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="_registration_8h.html#a5b74fc140f1b0449eaaee6fe368482ef">   26</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <a class="code" href="_registration_8h.html#a5b74fc140f1b0449eaaee6fe368482ef">MaxResult</a> = 10;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_registration.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_registration.html">Registration</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_registration.html">Registration</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">long</span> GetStudentId() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">unsigned</span> GetSemester() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">unsigned</span> GetCredits() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">unsigned</span> GetCount() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_result.html">Result</a> &amp;GetResult(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> count) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> SetStudentId(<span class="keywordtype">long</span> studentId);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> SetSemester(<span class="keywordtype">unsigned</span> semester);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">void</span> SetCount(<span class="keywordtype">unsigned</span> count);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">void</span> SetResult(<a class="code" href="class_result.html">Result</a> &amp;result, <span class="keywordtype">unsigned</span> index);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">long</span> m_studentId;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">unsigned</span> m_semester;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">unsigned</span> m_count;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="class_result.html">Result</a> m_result[<a class="code" href="_registration_8h.html#a5b74fc140f1b0449eaaee6fe368482ef">MaxResult</a>];</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;};</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    ostream &amp; <a class="code" href="_registration_8h.html#a47b9e6c8719767aec587822151619af6">operator &lt;&lt;</a>( ostream &amp; os, <span class="keyword">const</span> <a class="code" href="class_registration.html">Registration</a> &amp; R);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    istream &amp; <a class="code" href="_registration_8h.html#a2d7be84f9edc66ada3b7482f1e2e24bc">operator &gt;&gt;</a>( istream &amp; input, <a class="code" href="class_registration.html">Registration</a> &amp; R );</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_result_html"><div class="ttname"><a href="class_result.html">Result</a></div><div class="ttdoc">This class contains the result consisting constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_result_8h_source.html#l00025">Result.h:25</a></div></div>
-<div class="ttc" id="a_registration_8h_html_a5b74fc140f1b0449eaaee6fe368482ef"><div class="ttname"><a href="_registration_8h.html#a5b74fc140f1b0449eaaee6fe368482ef">MaxResult</a></div><div class="ttdeci">const unsigned MaxResult</div><div class="ttdef"><b>Definition:</b> <a href="_registration_8h_source.html#l00025">Registration.h:25</a></div></div>
-<div class="ttc" id="aclass_registration_html"><div class="ttname"><a href="class_registration.html">Registration</a></div><div class="ttdoc">This class contains the registration that includes result class. This class contains constructor,...</div><div class="ttdef"><b>Definition:</b> <a href="_registration_8h_source.html#l00037">Registration.h:37</a></div></div>
+<div class="ttc" id="aclass_result_html"><div class="ttname"><a href="class_result.html">Result</a></div><div class="ttdoc">This class contains the result consisting constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_result_8h_source.html#l00026">Result.h:26</a></div></div>
+<div class="ttc" id="a_registration_8h_html_a2d7be84f9edc66ada3b7482f1e2e24bc"><div class="ttname"><a href="_registration_8h.html#a2d7be84f9edc66ada3b7482f1e2e24bc">operator&gt;&gt;</a></div><div class="ttdeci">istream &amp; operator&gt;&gt;(istream &amp;input, Registration &amp;R)</div><div class="ttdoc">Overload input stream operator.</div><div class="ttdef"><b>Definition:</b> <a href="_registration_8cpp_source.html#l00083">Registration.cpp:83</a></div></div>
+<div class="ttc" id="a_registration_8h_html_a47b9e6c8719767aec587822151619af6"><div class="ttname"><a href="_registration_8h.html#a47b9e6c8719767aec587822151619af6">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;os, const Registration &amp;R)</div><div class="ttdoc">Overload output stream operator.</div><div class="ttdef"><b>Definition:</b> <a href="_registration_8cpp_source.html#l00106">Registration.cpp:106</a></div></div>
+<div class="ttc" id="a_registration_8h_html_a5b74fc140f1b0449eaaee6fe368482ef"><div class="ttname"><a href="_registration_8h.html#a5b74fc140f1b0449eaaee6fe368482ef">MaxResult</a></div><div class="ttdeci">const unsigned MaxResult</div><div class="ttdef"><b>Definition:</b> <a href="_registration_8h_source.html#l00026">Registration.h:26</a></div></div>
+<div class="ttc" id="aclass_registration_html"><div class="ttname"><a href="class_registration.html">Registration</a></div><div class="ttdoc">This class contains the registration that includes result class. This class contains constructor,...</div><div class="ttdef"><b>Definition:</b> <a href="_registration_8h_source.html#l00038">Registration.h:38</a></div></div>
 <div class="ttc" id="a_result_8h_html"><div class="ttname"><a href="_result_8h.html">Result.h</a></div><div class="ttdoc">Object Class for the Result Class.</div></div>
-<div class="ttc" id="a_registration_8cpp_html_a2d7be84f9edc66ada3b7482f1e2e24bc"><div class="ttname"><a href="_registration_8cpp.html#a2d7be84f9edc66ada3b7482f1e2e24bc">operator&gt;&gt;</a></div><div class="ttdeci">istream &amp; operator&gt;&gt;(istream &amp;input, Registration &amp;R)</div><div class="ttdef"><b>Definition:</b> <a href="_registration_8cpp_source.html#l00083">Registration.cpp:83</a></div></div>
-<div class="ttc" id="a_registration_8cpp_html_a47b9e6c8719767aec587822151619af6"><div class="ttname"><a href="_registration_8cpp.html#a47b9e6c8719767aec587822151619af6">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;os, const Registration &amp;R)</div><div class="ttdef"><b>Definition:</b> <a href="_registration_8cpp_source.html#l00093">Registration.cpp:93</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

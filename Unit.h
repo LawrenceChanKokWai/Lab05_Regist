@@ -13,24 +13,10 @@
 #define UNIT_H
 
 #include <iostream>
-#include <string.h>
+#include <string>
 #include <iomanip>
 
 using namespace std;
-
-///
-/// Maximum array size for unit name supported
-///
-/// @showinitializer
-///
-const unsigned UnitNameSize = 40;
-
-///
-/// Maximum array size for unit id supported
-///
-/// @showinitializer
-///
-const unsigned UnitIdSize = 10;
 
 /// @brief This class contains the unit
 /// consisting constructor, getters, setters
@@ -61,7 +47,7 @@ public:
     /// @param[in] unitId The unit id of the enrollment mode ( second parameter )
     /// @param[in] credit The number of credit obtained ( third parameter )
     ///
-    Unit( const char * unitName, const char *unitId, unsigned credit );
+    Unit( string unitName, string unitId, unsigned credit );
 
     ///
     /// @brief Member Method
@@ -70,7 +56,7 @@ public:
     ///
     /// @return The unit id of the unit.
     ///
-    const char *GetUnitId() const;
+    string GetUnitId() const;
 
     ///
     /// @brief Member Method
@@ -79,27 +65,7 @@ public:
     ///
     /// @return The unit name of the unit.
     ///
-    const char *GetUnitName() const;
-
-    ///
-    /// @brief Procedure
-    ///
-    /// @details This function sets the unit id of a unit.
-    ///
-    /// @param[in] *unitId A pointer unitId pointing to index 0 of unitId.
-    /// @return Void
-    ///
-    void SetUnitId(const char *unitId);
-
-    ///
-    /// @brief Procedure
-    ///
-    /// @details This function sets the unit name of a unit.
-    ///
-    /// @param[in] *unitName A pointer unitName pointing to index 0 of unitName.
-    /// @return Void
-    ///
-    void SetUnitName(const char *unitName);
+    string GetUnitName() const;
 
     ///
     /// @brief Member Method
@@ -114,6 +80,26 @@ public:
     ///
     /// @brief Procedure
     ///
+    /// @details This function sets the unit id of a unit.
+    ///
+    /// @param[in] unitId The unitId of the unit.
+    /// @return Void
+    ///
+    void SetUnitId(string unitId);
+
+    ///
+    /// @brief Procedure
+    ///
+    /// @details This function sets the unit name of a unit.
+    ///
+    /// @param[in] unitName The unit name of the unit.
+    /// @return Void
+    ///
+    void SetUnitName(string unitName);
+
+    ///
+    /// @brief Procedure
+    ///
     /// @details This function sets the sum of credits.
     ///
     /// @see SetCredits(unsigned credit)
@@ -122,45 +108,34 @@ public:
     ///
     void SetCredits( unsigned credit );
 
-    ///
-    /// @brief Overload output stream operator
-    ///
-    /// @details This is a friend member function that directly access into
-    /// the member variables. This outputs the user defined unit format.
-    ///
-    /// @param[in] os ostream extraction of user defined variable of the unit (first parameter).
-    /// @param[in] U The unit class variable to be used for extraction (second parameter).
-    /// @return os The display output format of the unit.
-    ///
-    friend ostream & operator <<( ostream & os, const Unit & U );
-
-    ///
-    /// @brief Overload input stream operator
-    ///
-    /// @details This is a friend member function that directly access into
-    /// the member variables. This inputs the user defined unit format.
-    ///
-    /// @param[in] input istream insertion of user defined variable of the unit (first parameter).
-    /// @param[in] U The unit class variable to be used for insertion (second parameter).
-    /// @return input The insertion format of the unit.
-    ///
-    friend istream & operator >>( istream & input, Unit & U );
-
 private:
-    char m_unitName[UnitNameSize];
-    char m_unitId[UnitIdSize];
+    string m_unitName;
+    string m_unitId;
     unsigned  m_credits;
 };
 
+///
+/// @brief Overload output stream operator
+///
+/// @details This is a member function that directly access into
+/// the member variables. This outputs the user defined unit format.
+///
+/// @param[in] os ostream extraction of user defined variable of the unit (first parameter).
+/// @param[in] U The unit class variable to be used for extraction (second parameter).
+/// @return os The display output format of the unit.
+///
+ostream & operator <<( ostream & os, const Unit & U );
 
-inline unsigned Unit::GetCredits() const
-{
-    return m_credits;
-}
-
-inline void Unit::SetCredits( unsigned credit )
-{
-    m_credits = credit;
-}
+///
+/// @brief Overload input stream operator
+///
+/// @details This is a member function that directly access into
+/// the member variables. This inputs the user defined unit format.
+///
+/// @param[in] input istream insertion of user defined variable of the unit (first parameter).
+/// @param[in] U The unit class variable to be used for insertion (second parameter).
+/// @return input The insertion format of the unit.
+///
+istream & operator >>( istream & input, Unit & U );
 
 #endif

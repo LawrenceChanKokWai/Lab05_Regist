@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lab 03: UnitTest.cpp File Reference</title>
+<title>Lab 04: UnitTest.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Lab 03
+   <div id="projectname">Lab 04
    &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">ICT283 Data Structure &amp; Abstraction</div>
@@ -93,17 +93,21 @@ $(document).ready(function(){initNavTree('_unit_test_8cpp.html',''); initResizab
 <p><a class="el" href="class_unit.html" title="This class contains the unit consisting constructor, getters, setters member functions,...">Unit</a> test file.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
 <code>#include &quot;<a class="el" href="_unit_8h_source.html">Unit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_utils_8h_source.html">Utils.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for UnitTest.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="_unit_test_8cpp__incl.png" border="0" usemap="#_unit_test_8cpp" alt=""/></div>
 <map name="_unit_test_8cpp" id="_unit_test_8cpp">
-<area shape="rect" title="Unit test file." alt="" coords="39,5,134,32"/>
+<area shape="rect" title="Unit test file." alt="" coords="130,5,225,32"/>
 <area shape="rect" title=" " alt="" coords="5,155,77,181"/>
-<area shape="rect" href="_unit_8h.html" title="Object Class for the Unit Class." alt="" coords="99,80,155,107"/>
-<area shape="rect" title=" " alt="" coords="102,155,167,181"/>
-<area shape="rect" title=" " alt="" coords="192,155,259,181"/>
+<area shape="rect" title=" " alt="" coords="271,155,337,181"/>
+<area shape="rect" href="_unit_8h.html" title="Object Class for the Unit Class." alt="" coords="108,80,164,107"/>
+<area shape="rect" href="_utils_8h.html" title="Utils Class that hold helper functions." alt="" coords="189,80,248,107"/>
+<area shape="rect" title=" " alt="" coords="193,155,247,181"/>
+<area shape="rect" title=" " alt="" coords="101,155,168,181"/>
 </map>
 </div>
 </div>
@@ -136,19 +140,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unit_test_8cpp_source.html#l00016">16</a> of file <a class="el" href="_unit_test_8cpp_source.html">UnitTest.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_unit_test_8cpp_source.html#l00018">18</a> of file <a class="el" href="_unit_test_8cpp_source.html">UnitTest.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_unit_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#_unit_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
 <map name="_unit_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="_unit_test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
-<area shape="rect" title=" " alt="" coords="5,132,56,159"/>
-<area shape="rect" href="class_unit.html#ab1f83a3955a721e46730773747e4e67e" title="Member Method." alt="" coords="112,5,227,32"/>
-<area shape="rect" href="class_unit.html#a184536cfeeda6ba3e486d6d0dfa91a76" title="Member Method." alt="" coords="116,56,223,83"/>
-<area shape="rect" href="class_unit.html#a68eeb31e4e6e309c9ba27e1ed63bd724" title="Member Method." alt="" coords="104,107,235,133"/>
-<area shape="rect" href="class_unit.html#abff157e76552cc8a3941f39b96869ff2" title="Procedure." alt="" coords="112,157,227,184"/>
-<area shape="rect" href="class_unit.html#ac15c197032096290f7240c6ca37960ec" title="Procedure." alt="" coords="116,208,223,235"/>
-<area shape="rect" href="class_unit.html#ac53eb47c2701c7bbc05aa8b898bde7ad" title="Procedure." alt="" coords="104,259,235,285"/>
+<area shape="rect" title=" " alt="" coords="5,157,56,184"/>
+<area shape="rect" href="class_utils.html#add70b4fec7ff9e8d45023de6a2ac7219" title="Method function." alt="" coords="122,5,217,32"/>
+<area shape="rect" href="class_unit.html#ab1f83a3955a721e46730773747e4e67e" title="Member Method." alt="" coords="112,56,227,83"/>
+<area shape="rect" href="class_unit.html#a8952641afc157ff469bd4c85f664e71f" title="Member Method." alt="" coords="116,107,223,133"/>
+<area shape="rect" href="class_unit.html#a4fe683b797b0e2814be2ffffa2c19bbe" title="Member Method." alt="" coords="104,157,235,184"/>
+<area shape="rect" href="class_unit.html#abff157e76552cc8a3941f39b96869ff2" title="Procedure." alt="" coords="112,208,227,235"/>
+<area shape="rect" href="class_unit.html#a9a2b0cbf6d77f3884b43a275b1949966" title="Procedure." alt="" coords="116,259,223,285"/>
+<area shape="rect" href="class_unit.html#a0922592481529e4806a519e51276833f" title="Procedure." alt="" coords="104,309,235,336"/>
 </map>
 </div>
 

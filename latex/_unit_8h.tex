@@ -6,13 +6,13 @@ Object Class for the \mbox{\hyperlink{class_unit}{Unit}} Class.
 
 
 {\ttfamily \#include $<$iostream$>$}\newline
-{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
 {\ttfamily \#include $<$iomanip$>$}\newline
 Include dependency graph for Unit.\+h\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=270pt]{_unit_8h__incl}
+\includegraphics[width=262pt]{_unit_8h__incl}
 \end{center}
 \end{figure}
 This graph shows which files directly or indirectly include this file\+:\nopagebreak
@@ -27,13 +27,13 @@ This graph shows which files directly or indirectly include this file\+:\nopageb
 \item 
 class \mbox{\hyperlink{class_unit}{Unit}}
 \begin{DoxyCompactList}\small\item\em This class contains the unit consisting constructor, getters, setters member functions, and overloaded output and input stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Variables}
+\doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-const unsigned \mbox{\hyperlink{_unit_8h_a96539265e18260e7c58bca410f23a0cb}{Unit\+Name\+Size}} = 40
-\item 
-const unsigned \mbox{\hyperlink{_unit_8h_a41e5f4d7ec46200b0b4f5145682925d9}{Unit\+Id\+Size}} = 10
-\end{DoxyCompactItemize}
+ostream \& \mbox{\hyperlink{_unit_8h_a3abc2e82e65e93fc5f6c162bc87a5cef}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_unit}{Unit}} \&U)
+\begin{DoxyCompactList}\small\item\em Overload output stream operator. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{_unit_8h_a7a9d8f721576c83a2542bb81f2dbec9a}{operator$>$$>$}} (istream \&input, \mbox{\hyperlink{class_unit}{Unit}} \&U)
+\begin{DoxyCompactList}\small\item\em Overload input stream operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -46,24 +46,59 @@ Chan Kok Wai
 \end{DoxyAuthor}
 
 
-\doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{_unit_8h_a41e5f4d7ec46200b0b4f5145682925d9}\label{_unit_8h_a41e5f4d7ec46200b0b4f5145682925d9}} 
-\index{Unit.h@{Unit.h}!UnitIdSize@{UnitIdSize}}
-\index{UnitIdSize@{UnitIdSize}!Unit.h@{Unit.h}}
-\doxysubsubsection{\texorpdfstring{UnitIdSize}{UnitIdSize}}
-{\footnotesize\ttfamily const unsigned Unit\+Id\+Size = 10}
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_unit_8h_a3abc2e82e65e93fc5f6c162bc87a5cef}\label{_unit_8h_a3abc2e82e65e93fc5f6c162bc87a5cef}} 
+\index{Unit.h@{Unit.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Unit.h@{Unit.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_unit}{Unit}} \&}]{U }\end{DoxyParamCaption})}
 
-Maximum array size for unit id supported 
 
-Definition at line 33 of file Unit.\+h.
 
-\mbox{\Hypertarget{_unit_8h_a96539265e18260e7c58bca410f23a0cb}\label{_unit_8h_a96539265e18260e7c58bca410f23a0cb}} 
-\index{Unit.h@{Unit.h}!UnitNameSize@{UnitNameSize}}
-\index{UnitNameSize@{UnitNameSize}!Unit.h@{Unit.h}}
-\doxysubsubsection{\texorpdfstring{UnitNameSize}{UnitNameSize}}
-{\footnotesize\ttfamily const unsigned Unit\+Name\+Size = 40}
+Overload output stream operator. 
 
-Maximum array size for unit name supported 
+This is a member function that directly access into the member variables. This outputs the user defined unit format.
 
-Definition at line 26 of file Unit.\+h.
 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em os} & ostream extraction of user defined variable of the unit (first parameter). \\
+\hline
+\mbox{\texttt{ in}}  & {\em U} & The unit class variable to be used for extraction (second parameter). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+os The display output format of the unit. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_unit_8h_a7a9d8f721576c83a2542bb81f2dbec9a}\label{_unit_8h_a7a9d8f721576c83a2542bb81f2dbec9a}} 
+\index{Unit.h@{Unit.h}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Unit.h@{Unit.h}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{input,  }\item[{\mbox{\hyperlink{class_unit}{Unit}} \&}]{U }\end{DoxyParamCaption})}
+
+
+
+Overload input stream operator. 
+
+This is a member function that directly access into the member variables. This inputs the user defined unit format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em input} & istream insertion of user defined variable of the unit (first parameter). \\
+\hline
+\mbox{\texttt{ in}}  & {\em U} & The unit class variable to be used for insertion (second parameter). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+input The insertion format of the unit. 
+\end{DoxyReturn}
+
+
+Definition at line 68 of file Unit.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{_unit_8h_a7a9d8f721576c83a2542bb81f2dbec9a_cgraph}
+\end{center}
+\end{figure}

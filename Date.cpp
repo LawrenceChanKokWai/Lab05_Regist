@@ -1,3 +1,11 @@
+/// @file Date.cpp
+/// @brief Date implementation file.
+///
+/// This file holds all implementation from Date header file.
+/// @see Date.h
+///
+/// @author Chan Kok Wai
+///
 
 #include "Date.h"
 
@@ -49,8 +57,8 @@ ostream &operator << (ostream &outputStream, const Date &D)
 {
     unsigned spacing = 4;
 
-    outputStream << left << setw(spacing) << "" << "Date:" << setw(6) << ""
-                                << D.GetDay() << "/" << D.GetMonth() << "/" << D.GetYear() << '\n';
+    outputStream << left << setw(spacing) << "" << "Date:" << setw(7) << ""
+                                << D.GetDay() << "/" << D.GetMonth() << "/" << D.GetYear() ;
 
     return outputStream;
 }
@@ -58,13 +66,14 @@ ostream &operator << (ostream &outputStream, const Date &D)
 istream &operator >> (istream &inputStream, Date &D)
 {
     string tempStrField;
+
     getline(inputStream, tempStrField, '/');
     D.SetDay(stoi(tempStrField));
 
     getline(inputStream, tempStrField, '/');
     D.SetMonth(stoi(tempStrField));
 
-    getline(inputStream, tempStrField, ' ');
+    getline(inputStream, tempStrField);
     D.SetYear(stoi(tempStrField));
 
     return inputStream;

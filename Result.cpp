@@ -14,15 +14,21 @@ Result::Result()
     m_marks = 0.0;
 }
 
-Result::Result(Unit &unit, float marks)
+Result::Result(Unit &unit, float marks, Date &date)
 {
     m_unit = unit;
     m_marks = marks;
+    m_date = date;
 }
 
 void Result::GetUnit( Unit &unit ) const
 {
     unit = m_unit;
+}
+
+void Result::GetDate(Date &date) const
+{
+    date = m_date;
 }
 
 float Result::GetMarks() const
@@ -35,6 +41,11 @@ void Result::SetUnit(Unit &unit)
     m_unit = unit;
 }
 
+void Result::SetDate(Date &date)
+{
+    m_date = date;
+}
+
 void Result::SetMarks(float marks)
 {
     m_marks = marks;
@@ -43,16 +54,33 @@ void Result::SetMarks(float marks)
 ostream &operator << (ostream &outputStream, const Result &R)
 {
     const unsigned spacing = 4;
+    Unit tempUnit;
+    Date tempDate;
+    R.GetUnit(tempUnit);
+    R.GetDate(tempDate);
 
-    outputStream << R.m_unit
-                                << left << setw(spacing) << "" << "Marks:" << setw(6) << "" << R.m_marks << '\n';
+    outputStream << tempUnit
+                 << left << setw(spacing) << "" << "Marks:" << setw(6) << "" << R.GetMarks() << '\n'
+                 <<  tempDate << '\n';
 
     return outputStream;
 }
 
 istream &operator >> (istream &inputStream, Result &R)
 {
-    inputStream >> R.m_unit >> R.m_marks;
+
+    Unit tempUnit;
+    inputStream >> tempUnit;
+    R.SetUnit(tempUnit);
+
+    float tempMarks = 0;
+    char comma;
+    inputStream >> comma >> tempMarks;
+    R.SetMarks(tempMarks);
+
+    Date tempDate;
+    inputStream >> comma >> tempDate;
+    R.SetDate(tempDate);
 
     return inputStream;
 }

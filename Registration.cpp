@@ -24,7 +24,9 @@
 // Default constructor for Registration
 Registration::Registration()
 {
-    m_count = 0;
+    m_studentId = INITIAL_VALUE;
+    m_semester = INITIAL_VALUE;
+    m_count = INITIAL_VALUE;
 }
 
 long Registration::GetStudentId() const
@@ -82,22 +84,35 @@ void Registration::SetResult(Result &result, unsigned index)
 
 istream & operator >>( istream & input, Registration & R )
 {
-    input >> R.m_studentId >> R.m_semester >> R.m_count;
+    string tempStrField;
+    Result tempResult;
 
-    for(unsigned i = 0; i < R.m_count; i++)
-        input >> R.m_result[i];
+    getline(input, tempStrField, ',');
+    R.SetStudentId(stoi(tempStrField));
+
+    getline(input, tempStrField, ',');
+    R.SetSemester(stoi(tempStrField));
+
+    getline(input, tempStrField, '\n');
+    R.SetCount(stoi(tempStrField));
+
+    for(unsigned i = 0; i < R.GetCount(); i++)
+    {
+        input >> tempResult;
+        R.SetResult(tempResult, i);
+    }
 
     return input;
 }
 
 ostream & operator <<( ostream & os, const Registration & R )
 {
-    os << "Student ID: " << R.m_studentId << '\n'
-       << "Semester:   " << R.m_semester << '\n';
+    os << "Student ID: " << R.GetStudentId() << '\n'
+       << "Semester:   " << R.GetSemester() << '\n';
 
-    for(unsigned i = 0; i < R.m_count; i++)
+    for(unsigned i = 0; i < R.GetCount(); i++)
     {
-        os << R.m_result[i] << '\n';
+        os << R.GetResult(i)<< '\n';
     }
 
     return os;

@@ -10,16 +10,16 @@ Include dependency graph for Registration.\+cpp\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=270pt]{_registration_8cpp__incl}
+\includegraphics[width=271pt]{_registration_8cpp__incl}
 \end{center}
 \end{figure}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 istream \& \mbox{\hyperlink{_registration_8cpp_a2d7be84f9edc66ada3b7482f1e2e24bc}{operator$>$$>$}} (istream \&input, \mbox{\hyperlink{class_registration}{Registration}} \&R)
-\item 
+\begin{DoxyCompactList}\small\item\em Overload input stream operator. \end{DoxyCompactList}\item 
 ostream \& \mbox{\hyperlink{_registration_8cpp_a47b9e6c8719767aec587822151619af6}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_registration}{Registration}} \&R)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Overload output stream operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -40,6 +40,10 @@ Chan Kok Wai
 \doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
 {\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_registration}{Registration}} \&}]{R }\end{DoxyParamCaption})}
 
+
+
+Overload output stream operator. 
+
 This is a friend member function that directly access into the member variables. This outputs the user defined registration format.
 
 
@@ -54,13 +58,24 @@ os The display output format of the registration.
 \end{DoxyReturn}
 
 
-Definition at line 93 of file Registration.\+cpp.
+Definition at line 106 of file Registration.\+cpp.
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{_registration_8cpp_a47b9e6c8719767aec587822151619af6_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{_registration_8cpp_a2d7be84f9edc66ada3b7482f1e2e24bc}\label{_registration_8cpp_a2d7be84f9edc66ada3b7482f1e2e24bc}} 
 \index{Registration.cpp@{Registration.cpp}!operator$>$$>$@{operator$>$$>$}}
 \index{operator$>$$>$@{operator$>$$>$}!Registration.cpp@{Registration.cpp}}
 \doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
 {\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{input,  }\item[{\mbox{\hyperlink{class_registration}{Registration}} \&}]{R }\end{DoxyParamCaption})}
+
+
+
+Overload input stream operator. 
 
 This is a friend member function that directly access into the member variables. This inputs the user defined registration format.
 
@@ -78,3 +93,10 @@ input The insertion format of the registration.
 
 Definition at line 83 of file Registration.\+cpp.
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{_registration_8cpp_a2d7be84f9edc66ada3b7482f1e2e24bc_cgraph}
+\end{center}
+\end{figure}

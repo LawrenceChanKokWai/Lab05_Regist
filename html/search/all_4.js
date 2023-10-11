@@ -1,12 +1,17 @@
 var searchData=
 [
-  ['setcount_26',['SetCount',['../class_registration.html#a8806e95a1f1159a9c0b317bcb6104a6f',1,'Registration']]],
-  ['setcredits_27',['SetCredits',['../class_unit.html#abff157e76552cc8a3941f39b96869ff2',1,'Unit']]],
-  ['setmarks_28',['SetMarks',['../class_result.html#a20645b1b42ef7bc9a4a7520a581174d6',1,'Result']]],
-  ['setresult_29',['SetResult',['../class_registration.html#a0f6cc413bd8809c543f04a44aa6eac11',1,'Registration']]],
-  ['setsemester_30',['SetSemester',['../class_registration.html#a30bc191dbd0ec35e961c6682b2833a3b',1,'Registration']]],
-  ['setstudentid_31',['SetStudentId',['../class_registration.html#aff8c1a738f6ea932a230712db262180e',1,'Registration']]],
-  ['setunit_32',['SetUnit',['../class_result.html#a138e4b9661a9b847b9240d86806dcbef',1,'Result']]],
-  ['setunitid_33',['SetUnitId',['../class_unit.html#ac15c197032096290f7240c6ca37960ec',1,'Unit']]],
-  ['setunitname_34',['SetUnitName',['../class_unit.html#ac53eb47c2701c7bbc05aa8b898bde7ad',1,'Unit']]]
+  ['getcount_8',['GetCount',['../class_registration.html#a729a2d6ae08aefd2dbe10ec7b3e5ce48',1,'Registration']]],
+  ['getcredits_9',['GetCredits',['../class_registration.html#a72a5cc800d9551d69e4c201cd9f07ccd',1,'Registration::GetCredits()'],['../class_unit.html#ab1f83a3955a721e46730773747e4e67e',1,'Unit::GetCredits()']]],
+  ['getdate_10',['GetDate',['../class_result.html#a2d701abe66b96a1d6723a5835e744309',1,'Result']]],
+  ['getday_11',['GetDay',['../class_date.html#a6645ca88c5f417544415abe127dbeaba',1,'Date']]],
+  ['getmarks_12',['GetMarks',['../class_result.html#a984dbc50adb7dcc9207122fd943fe4a8',1,'Result']]],
+  ['getmonth_13',['GetMonth',['../class_date.html#aa316776e60e28ae20a710bcf6d96b7b8',1,'Date']]],
+  ['getresult_14',['GetResult',['../class_registration.html#a8455b62a567ada3ffee0f32b63400a7d',1,'Registration']]],
+  ['getsemester_15',['GetSemester',['../class_registration.html#a4c1f5de4ca28183644910b90de6856eb',1,'Registration']]],
+  ['getstudentid_16',['GetStudentId',['../class_registration.html#ab8864cecbcbc90e8a70e9d004af31925',1,'Registration']]],
+  ['getunit_17',['GetUnit',['../class_result.html#a8a442d311e4868f8e6094d8b3c2a02fa',1,'Result']]],
+  ['getunitid_18',['GetUnitId',['../class_unit.html#a8952641afc157ff469bd4c85f664e71f',1,'Unit']]],
+  ['getunitname_19',['GetUnitName',['../class_unit.html#a4fe683b797b0e2814be2ffffa2c19bbe',1,'Unit']]],
+  ['getyear_20',['GetYear',['../class_date.html#ad3519b229e188cca67c764352929ea83',1,'Date']]],
+  ['graphics_21',['Graphics',['../rinput_8txt.html#a6ea8df364b28294935535444fa227004',1,'rinput.txt']]]
 ];

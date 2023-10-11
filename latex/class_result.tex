@@ -23,23 +23,20 @@ Collaboration diagram for Result\+:\nopagebreak
 \item 
 \mbox{\hyperlink{class_result_a90f44667e23d25ccdeac37f00a74657b}{Result}} ()
 \begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_result_a78f08be55f903a6795103886e0a6aa62}{Result}} (\mbox{\hyperlink{class_unit}{Unit}} \&unit, float marks)
+\mbox{\hyperlink{class_result_a5bb13a332d1e39785d17f485d18bcdcc}{Result}} (\mbox{\hyperlink{class_unit}{Unit}} \&unit, float marks, \mbox{\hyperlink{class_date}{Date}} \&date)
 \begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_result_a8a442d311e4868f8e6094d8b3c2a02fa}{Get\+Unit}} (\mbox{\hyperlink{class_unit}{Unit}} \&unit) const
 \begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_result_a984dbc50adb7dcc9207122fd943fe4a8}{Get\+Marks}} () const
 \begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_result_a2d701abe66b96a1d6723a5835e744309}{Get\+Date}} (\mbox{\hyperlink{class_date}{Date}} \&date) const
+\begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_result_a138e4b9661a9b847b9240d86806dcbef}{Set\+Unit}} (\mbox{\hyperlink{class_unit}{Unit}} \&unit)
+\begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_result_a82a011482002e890c2b955724a8484dc}{Set\+Date}} (\mbox{\hyperlink{class_date}{Date}} \&date)
 \begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_result_a20645b1b42ef7bc9a4a7520a581174d6}{Set\+Marks}} (float marks)
 \begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Friends}
-\begin{DoxyCompactItemize}
-\item 
-ostream \& \mbox{\hyperlink{class_result_a180fc33da8d4dc00234b39a25da17673}{operator$<$$<$}} (ostream \&output\+Stream, const \mbox{\hyperlink{class_result}{Result}} \&R)
-\begin{DoxyCompactList}\small\item\em Overload output stream operator. \end{DoxyCompactList}\item 
-istream \& \mbox{\hyperlink{class_result_a4c5cdab2d8b61c3f3bc4770a96ff32a0}{operator$>$$>$}} (istream \&input\+Stream, \mbox{\hyperlink{class_result}{Result}} \&R)
-\begin{DoxyCompactList}\small\item\em Overload input stream operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -53,7 +50,7 @@ Chan Kok Wai (33924804)
 \end{DoxyVersion}
 
 
-Definition at line 25 of file Result.\+h.
+Definition at line 26 of file Result.\+h.
 
 
 
@@ -72,11 +69,11 @@ This initialize the result object and creates a result with default values marks
 
 Definition at line 12 of file Result.\+cpp.
 
-\mbox{\Hypertarget{class_result_a78f08be55f903a6795103886e0a6aa62}\label{class_result_a78f08be55f903a6795103886e0a6aa62}} 
+\mbox{\Hypertarget{class_result_a5bb13a332d1e39785d17f485d18bcdcc}\label{class_result_a5bb13a332d1e39785d17f485d18bcdcc}} 
 \index{Result@{Result}!Result@{Result}}
 \index{Result@{Result}!Result@{Result}}
 \doxysubsubsection{\texorpdfstring{Result()}{Result()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Result\+::\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unit}{Unit}} \&}]{unit,  }\item[{float}]{marks }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Result\+::\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unit}{Unit}} \&}]{unit,  }\item[{float}]{marks,  }\item[{\mbox{\hyperlink{class_date}{Date}} \&}]{date }\end{DoxyParamCaption})}
 
 
 
@@ -98,6 +95,32 @@ Definition at line 17 of file Result.\+cpp.
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_result_a2d701abe66b96a1d6723a5835e744309}\label{class_result_a2d701abe66b96a1d6723a5835e744309}} 
+\index{Result@{Result}!GetDate@{GetDate}}
+\index{GetDate@{GetDate}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{GetDate()}{GetDate()}}
+{\footnotesize\ttfamily void Result\+::\+Get\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_date}{Date}} \&}]{date }\end{DoxyParamCaption}) const}
+
+
+
+Member Method. 
+
+This function gets the date of a unit enrolled.
+
+\begin{DoxyReturn}{Returns}
+The date for a unit enrolled. 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file Result.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{class_result_a2d701abe66b96a1d6723a5835e744309_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_result_a984dbc50adb7dcc9207122fd943fe4a8}\label{class_result_a984dbc50adb7dcc9207122fd943fe4a8}} 
 \index{Result@{Result}!GetMarks@{GetMarks}}
 \index{GetMarks@{GetMarks}!Result@{Result}}
@@ -115,8 +138,15 @@ The mark for a unit.
 \end{DoxyReturn}
 
 
-Definition at line 28 of file Result.\+cpp.
+Definition at line 34 of file Result.\+cpp.
 
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{class_result_a984dbc50adb7dcc9207122fd943fe4a8_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_result_a8a442d311e4868f8e6094d8b3c2a02fa}\label{class_result_a8a442d311e4868f8e6094d8b3c2a02fa}} 
 \index{Result@{Result}!GetUnit@{GetUnit}}
 \index{GetUnit@{GetUnit}!Result@{Result}}
@@ -139,13 +169,44 @@ Void.
 \end{DoxyReturn}
 
 
-Definition at line 23 of file Result.\+cpp.
+Definition at line 24 of file Result.\+cpp.
 
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=320pt]{class_result_a8a442d311e4868f8e6094d8b3c2a02fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_result_a82a011482002e890c2b955724a8484dc}\label{class_result_a82a011482002e890c2b955724a8484dc}} 
+\index{Result@{Result}!SetDate@{SetDate}}
+\index{SetDate@{SetDate}!Result@{Result}}
+\doxysubsubsection{\texorpdfstring{SetDate()}{SetDate()}}
+{\footnotesize\ttfamily void Result\+::\+Set\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_date}{Date}} \&}]{date }\end{DoxyParamCaption})}
+
+
+
+Procedure. 
+
+This function sets the date object for a result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \&unit} & A reference date of a date object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file Result.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{class_result_a82a011482002e890c2b955724a8484dc_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_result_a20645b1b42ef7bc9a4a7520a581174d6}\label{class_result_a20645b1b42ef7bc9a4a7520a581174d6}} 
@@ -170,13 +231,13 @@ Void
 \end{DoxyReturn}
 
 
-Definition at line 38 of file Result.\+cpp.
+Definition at line 49 of file Result.\+cpp.
 
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=246pt]{class_result_a20645b1b42ef7bc9a4a7520a581174d6_icgraph}
+\includegraphics[width=272pt]{class_result_a20645b1b42ef7bc9a4a7520a581174d6_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_result_a138e4b9661a9b847b9240d86806dcbef}\label{class_result_a138e4b9661a9b847b9240d86806dcbef}} 
@@ -201,70 +262,15 @@ Void
 \end{DoxyReturn}
 
 
-Definition at line 33 of file Result.\+cpp.
+Definition at line 39 of file Result.\+cpp.
 
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=237pt]{class_result_a138e4b9661a9b847b9240d86806dcbef_icgraph}
+\includegraphics[width=263pt]{class_result_a138e4b9661a9b847b9240d86806dcbef_icgraph}
 \end{center}
 \end{figure}
-
-
-\doxysubsection{Friends And Related Function Documentation}
-\mbox{\Hypertarget{class_result_a180fc33da8d4dc00234b39a25da17673}\label{class_result_a180fc33da8d4dc00234b39a25da17673}} 
-\index{Result@{Result}!operator$<$$<$@{operator$<$$<$}}
-\index{operator$<$$<$@{operator$<$$<$}!Result@{Result}}
-\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
-{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{output\+Stream,  }\item[{const \mbox{\hyperlink{class_result}{Result}} \&}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
-
-
-
-Overload output stream operator. 
-
-This is a friend member function that directly access into the member variables. This outputs the user defined result format.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em output\+Stream} & ostream extraction of user defined variable of the result (first parameter). \\
-\hline
-\mbox{\texttt{ in}}  & {\em R} & The result class variable to be used for extraction (second parameter). \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-output\+Stream The display output format of the result. 
-\end{DoxyReturn}
-
-
-Definition at line 43 of file Result.\+cpp.
-
-\mbox{\Hypertarget{class_result_a4c5cdab2d8b61c3f3bc4770a96ff32a0}\label{class_result_a4c5cdab2d8b61c3f3bc4770a96ff32a0}} 
-\index{Result@{Result}!operator$>$$>$@{operator$>$$>$}}
-\index{operator$>$$>$@{operator$>$$>$}!Result@{Result}}
-\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
-{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{input\+Stream,  }\item[{\mbox{\hyperlink{class_result}{Result}} \&}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
-
-
-
-Overload input stream operator. 
-
-This is a friend member function that directly access into the member variables. This inputs the result defined unit format.
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em input\+Stream} & istream insertion of user defined variable of the result (first parameter). \\
-\hline
-\mbox{\texttt{ in}}  & {\em R} & The result class variable to be used for insertion (second parameter). \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-input\+Stream The insertion format of the result. 
-\end{DoxyReturn}
-
-
-Definition at line 53 of file Result.\+cpp.
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -16,6 +16,12 @@
 
 using namespace std;
 
+/// @brief This class contains the assertion helper method
+/// that will be used for testing.
+///
+/// @author Chan Kok Wai (33924804)
+/// @version 1.0.0
+///
 class Utils
 {
 public:

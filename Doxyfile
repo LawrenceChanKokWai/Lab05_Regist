@@ -32,7 +32,7 @@ DOXYFILE_ENCODING      = UTF-8
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = "Lab 03"
+PROJECT_NAME           = "Lab 04"
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
 # could be handy for archiving the generated documentation or if some version
@@ -829,7 +829,7 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = C:\Users\Lawrence\Dropbox\PC\Desktop\ChanKokWai_ICT283\Rewrite\Lab3_Regist\registration\codeblocks
+INPUT                  = C:\Users\Lawrence\Dropbox\PC\Desktop\ChanKokWai_ICT283\Rewrite\Lab4_Regist\registration\codeblocks
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses

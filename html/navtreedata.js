@@ -22,15 +22,14 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "Lab 03", "index.html", [
-    [ "Registration Application, Lab 03", "md__r_e_a_d_m_e.html", null ],
+  [ "Lab 04", "index.html", [
+    [ "Registration Application, Lab 04", "md__r_e_a_d_m_e.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "Functions", "functions_func.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -46,7 +45,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_main_8cpp.html"
+"_date_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

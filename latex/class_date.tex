@@ -1,0 +1,268 @@
+\hypertarget{class_date}{}\doxysection{Date Class Reference}
+\label{class_date}\index{Date@{Date}}
+
+
+This class contains the date This class contains constructor, getters, setters member functions, and overloaded output and input stream.  
+
+
+
+
+{\ttfamily \#include $<$Date.\+h$>$}
+
+
+
+Collaboration diagram for Date\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_date__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_date_a6e4979dfc71c09cdab0b65a734e4a4df}{Date}} (unsigned day, unsigned \mbox{\hyperlink{_date_test_8txt_ae3f1899b3e2dd9ce602bb4582de937b1}{month}}, unsigned \mbox{\hyperlink{_date_test_8txt_a2d86645c5b5a8ec9720a104ed18beb6c}{year}})
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_date_a6645ca88c5f417544415abe127dbeaba}{Get\+Day}} () const
+\begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_date_aa316776e60e28ae20a710bcf6d96b7b8}{Get\+Month}} () const
+\begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_date_ad3519b229e188cca67c764352929ea83}{Get\+Year}} () const
+\begin{DoxyCompactList}\small\item\em Member Method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_date_a0e1c77166c662ae3d51be4208d74eaf2}{Set\+Day}} (unsigned day)
+\begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_date_ad8ed88eee21e6d581a153e7c8fe0c4b9}{Set\+Month}} (unsigned \mbox{\hyperlink{_date_test_8txt_ae3f1899b3e2dd9ce602bb4582de937b1}{month}})
+\begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_date_afff11513498de782137c22f37078198d}{Set\+Year}} (unsigned \mbox{\hyperlink{_date_test_8txt_a2d86645c5b5a8ec9720a104ed18beb6c}{year}})
+\begin{DoxyCompactList}\small\item\em Procedure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class contains the date This class contains constructor, getters, setters member functions, and overloaded output and input stream. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_date_8h}{Date.\+h}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Chan Kok Wai (33924804) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 30 of file Date.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}\label{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+This initialize the date object and creates a date with default values of day, month, year as 0. 
+
+Definition at line 12 of file Date.\+cpp.
+
+\mbox{\Hypertarget{class_date_a6e4979dfc71c09cdab0b65a734e4a4df}\label{class_date_a6e4979dfc71c09cdab0b65a734e4a4df}} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}\item[{unsigned}]{day,  }\item[{unsigned}]{month,  }\item[{unsigned}]{year }\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor. 
+
+This initialize the date object and creates a date with user defined values of day, month, year. 
+
+Definition at line 19 of file Date.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_date_a6645ca88c5f417544415abe127dbeaba}\label{class_date_a6645ca88c5f417544415abe127dbeaba}} 
+\index{Date@{Date}!GetDay@{GetDay}}
+\index{GetDay@{GetDay}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{GetDay()}{GetDay()}}
+{\footnotesize\ttfamily unsigned Date\+::\+Get\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Member Method. 
+
+This function gets the day of the date.
+
+\begin{DoxyReturn}{Returns}
+The day of the date. 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file Date.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_date_a6645ca88c5f417544415abe127dbeaba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_date_aa316776e60e28ae20a710bcf6d96b7b8}\label{class_date_aa316776e60e28ae20a710bcf6d96b7b8}} 
+\index{Date@{Date}!GetMonth@{GetMonth}}
+\index{GetMonth@{GetMonth}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{GetMonth()}{GetMonth()}}
+{\footnotesize\ttfamily unsigned Date\+::\+Get\+Month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Member Method. 
+
+This function gets the month of the date.
+
+\begin{DoxyReturn}{Returns}
+The month of the date. 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file Date.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{class_date_aa316776e60e28ae20a710bcf6d96b7b8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_date_ad3519b229e188cca67c764352929ea83}\label{class_date_ad3519b229e188cca67c764352929ea83}} 
+\index{Date@{Date}!GetYear@{GetYear}}
+\index{GetYear@{GetYear}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{GetYear()}{GetYear()}}
+{\footnotesize\ttfamily unsigned Date\+::\+Get\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Member Method. 
+
+This function gets the year of the date.
+
+\begin{DoxyReturn}{Returns}
+The year of the date. 
+\end{DoxyReturn}
+
+
+Definition at line 36 of file Date.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{class_date_ad3519b229e188cca67c764352929ea83_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_date_a0e1c77166c662ae3d51be4208d74eaf2}\label{class_date_a0e1c77166c662ae3d51be4208d74eaf2}} 
+\index{Date@{Date}!SetDay@{SetDay}}
+\index{SetDay@{SetDay}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{SetDay()}{SetDay()}}
+{\footnotesize\ttfamily void Date\+::\+Set\+Day (\begin{DoxyParamCaption}\item[{unsigned}]{day }\end{DoxyParamCaption})}
+
+
+
+Procedure. 
+
+This function sets the day of the date.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em day} & The day of the date. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 41 of file Date.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{class_date_a0e1c77166c662ae3d51be4208d74eaf2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_date_ad8ed88eee21e6d581a153e7c8fe0c4b9}\label{class_date_ad8ed88eee21e6d581a153e7c8fe0c4b9}} 
+\index{Date@{Date}!SetMonth@{SetMonth}}
+\index{SetMonth@{SetMonth}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{SetMonth()}{SetMonth()}}
+{\footnotesize\ttfamily void Date\+::\+Set\+Month (\begin{DoxyParamCaption}\item[{unsigned}]{month }\end{DoxyParamCaption})}
+
+
+
+Procedure. 
+
+This function sets the month of the date.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em month} & The month of the date. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 46 of file Date.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{class_date_ad8ed88eee21e6d581a153e7c8fe0c4b9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_date_afff11513498de782137c22f37078198d}\label{class_date_afff11513498de782137c22f37078198d}} 
+\index{Date@{Date}!SetYear@{SetYear}}
+\index{SetYear@{SetYear}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{SetYear()}{SetYear()}}
+{\footnotesize\ttfamily void Date\+::\+Set\+Year (\begin{DoxyParamCaption}\item[{unsigned}]{year }\end{DoxyParamCaption})}
+
+
+
+Procedure. 
+
+This function sets the year of the date.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em year} & The year of the date. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+Definition at line 51 of file Date.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_date_afff11513498de782137c22f37078198d_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_date_8h}{Date.\+h}}\item 
+\mbox{\hyperlink{_date_8cpp}{Date.\+cpp}}\end{DoxyCompactItemize}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lab 03: Unit.cpp Source File</title>
+<title>Lab 04: Unit.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Lab 03
+   <div id="projectname">Lab 04
    &#160;<span id="projectnumber">1.0.0</span>
    </div>
    <div id="projectbrief">ICT283 Data Structure &amp; Abstraction</div>
@@ -104,68 +104,100 @@ $(document).ready(function(){initNavTree('_unit_8cpp_source.html',''); initResiz
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_unit.html#a8e46f663a95736c8002d85ab271a7581">   24</a></span>&#160;<a class="code" href="class_unit.html#a8e46f663a95736c8002d85ab271a7581">Unit::Unit</a>()</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    m_unitName[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    m_unitId[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    m_unitName = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    m_unitId = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    m_credits = 0;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_unit.html#a63cd56f8c035ce9c0d394650be74bb99">   31</a></span>&#160;<a class="code" href="class_unit.html#a8e46f663a95736c8002d85ab271a7581">Unit::Unit</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> * unitName, <span class="keyword">const</span> <span class="keywordtype">char</span> *unitId, <span class="keywordtype">unsigned</span> credit )</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_unit.html#ae30ba4103519733b1cfb1a39581e2c5a">   31</a></span>&#160;<a class="code" href="class_unit.html#a8e46f663a95736c8002d85ab271a7581">Unit::Unit</a>( <span class="keywordtype">string</span> unitName, <span class="keywordtype">string</span> unitId, <span class="keywordtype">unsigned</span> <a class="code" href="_unit_test_8txt.html#ac281457f0d2e18b13ff51ef65f2273c1">credit</a> )</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    strncpy( m_unitName, unitName, <a class="code" href="_unit_8h.html#a96539265e18260e7c58bca410f23a0cb">UnitNameSize</a> );</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    strncpy( m_unitId, unitId, <a class="code" href="_unit_8h.html#a41e5f4d7ec46200b0b4f5145682925d9">UnitIdSize</a> );</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    m_credits = credit;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    m_unitName = unitName;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    m_unitId = unitId;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    m_credits = <a class="code" href="_unit_test_8txt.html#ac281457f0d2e18b13ff51ef65f2273c1">credit</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_unit.html#a184536cfeeda6ba3e486d6d0dfa91a76">   38</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="class_unit.html#a184536cfeeda6ba3e486d6d0dfa91a76">Unit::GetUnitId</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_unit.html#a8952641afc157ff469bd4c85f664e71f">   38</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_unit.html#a8952641afc157ff469bd4c85f664e71f">Unit::GetUnitId</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> m_unitId;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_unit.html#a68eeb31e4e6e309c9ba27e1ed63bd724">   43</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="class_unit.html#a68eeb31e4e6e309c9ba27e1ed63bd724">Unit::GetUnitName</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_unit.html#a4fe683b797b0e2814be2ffffa2c19bbe">   43</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_unit.html#a4fe683b797b0e2814be2ffffa2c19bbe">Unit::GetUnitName</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> m_unitName;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_unit.html#ac15c197032096290f7240c6ca37960ec">   48</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_unit.html#ac15c197032096290f7240c6ca37960ec">Unit::SetUnitId</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *unitId)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    strncpy(m_unitId, unitId, <a class="code" href="_unit_8h.html#a41e5f4d7ec46200b0b4f5145682925d9">UnitIdSize</a> - 1);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    m_unitId[<a class="code" href="_unit_8h.html#a41e5f4d7ec46200b0b4f5145682925d9">UnitIdSize</a> - 1] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_unit.html#ac53eb47c2701c7bbc05aa8b898bde7ad">   54</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_unit.html#ac53eb47c2701c7bbc05aa8b898bde7ad">Unit::SetUnitName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *unitName)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    strncpy(m_unitName, unitName, <a class="code" href="_unit_8h.html#a96539265e18260e7c58bca410f23a0cb">UnitNameSize</a> -1);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    m_unitName[<a class="code" href="_unit_8h.html#a96539265e18260e7c58bca410f23a0cb">UnitNameSize</a> -1] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="_unit_8cpp.html#a7a9d8f721576c83a2542bb81f2dbec9a">   60</a></span>&#160;istream &amp; <a class="code" href="_unit_8cpp.html#a7a9d8f721576c83a2542bb81f2dbec9a">operator &gt;&gt;</a>( istream &amp; input, <a class="code" href="class_unit.html">Unit</a> &amp; U )</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    input &gt;&gt; U.m_unitName &gt;&gt; U.m_unitId &gt;&gt; U.m_credits;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> input;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="_unit_8cpp.html#a3e9ad3532e507c14a957e842d2c80a69">   66</a></span>&#160;ostream&amp; <a class="code" href="_unit_8cpp.html#a3e9ad3532e507c14a957e842d2c80a69">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="class_unit.html">Unit</a>&amp; U)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> spacing = 4;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    os &lt;&lt; left &lt;&lt; setw(spacing) &lt;&lt; <span class="stringliteral">&quot;&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Unit ID:&quot;</span> &lt;&lt; setw(spacing) &lt;&lt; <span class="stringliteral">&quot;&quot;</span> &lt;&lt; U.m_unitId &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;       &lt;&lt; setw(spacing) &lt;&lt; <span class="stringliteral">&quot;&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Unit Name:&quot;</span> &lt;&lt; setw(2) &lt;&lt; <span class="stringliteral">&quot;&quot;</span> &lt;&lt; U.m_unitName &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;       &lt;&lt; setw(spacing) &lt;&lt; <span class="stringliteral">&quot;&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Credits:&quot;</span> &lt;&lt; setw(spacing) &lt;&lt; <span class="stringliteral">&quot;&quot;</span> &lt;&lt; U.m_credits &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_unit.html#ab1f83a3955a721e46730773747e4e67e">   48</a></span>&#160;<span class="keywordtype">unsigned</span> <a class="code" href="class_unit.html#ab1f83a3955a721e46730773747e4e67e">Unit::GetCredits</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> m_credits;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_unit.html#a9a2b0cbf6d77f3884b43a275b1949966">   53</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_unit.html#a9a2b0cbf6d77f3884b43a275b1949966">Unit::SetUnitId</a>(<span class="keywordtype">string</span> unitId)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    m_unitId = unitId;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_unit.html#a0922592481529e4806a519e51276833f">   58</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_unit.html#a0922592481529e4806a519e51276833f">Unit::SetUnitName</a>(<span class="keywordtype">string</span> unitName)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    m_unitName = unitName;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_unit.html#abff157e76552cc8a3941f39b96869ff2">   63</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_unit.html#abff157e76552cc8a3941f39b96869ff2">Unit::SetCredits</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="_unit_test_8txt.html#ac281457f0d2e18b13ff51ef65f2273c1">credit</a>)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    m_credits = <a class="code" href="_unit_test_8txt.html#ac281457f0d2e18b13ff51ef65f2273c1">credit</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="_unit_8h.html#a7a9d8f721576c83a2542bb81f2dbec9a">   68</a></span>&#160;istream &amp; <a class="code" href="_unit_8cpp.html#a7a9d8f721576c83a2542bb81f2dbec9a">operator &gt;&gt;</a>( istream &amp; input, <a class="code" href="class_unit.html">Unit</a> &amp; U )</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">string</span> tempStrField;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    getline(input, tempStrField, <span class="charliteral">&#39;,&#39;</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    U.<a class="code" href="class_unit.html#a0922592481529e4806a519e51276833f">SetUnitName</a>(tempStrField);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    getline(input, tempStrField, <span class="charliteral">&#39;,&#39;</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    U.<a class="code" href="class_unit.html#a9a2b0cbf6d77f3884b43a275b1949966">SetUnitId</a>(tempStrField);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">unsigned</span> tempCreditField = 0;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    input &gt;&gt; tempCreditField;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    U.<a class="code" href="class_unit.html#abff157e76552cc8a3941f39b96869ff2">SetCredits</a>(tempCreditField);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> input;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="_unit_8cpp.html#a3e9ad3532e507c14a957e842d2c80a69">   85</a></span>&#160;ostream&amp; <a class="code" href="_unit_8cpp.html#a3e9ad3532e507c14a957e842d2c80a69">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="class_unit.html">Unit</a>&amp; U)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> spacing = 4;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    os &lt;&lt; left &lt;&lt; setw(spacing) &lt;&lt; <span class="stringliteral">&quot;&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Unit ID:&quot;</span> &lt;&lt; setw(spacing) &lt;&lt; <span class="stringliteral">&quot;&quot;</span> &lt;&lt; U.<a class="code" href="class_unit.html#a8952641afc157ff469bd4c85f664e71f">GetUnitId</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;       &lt;&lt; setw(spacing) &lt;&lt; <span class="stringliteral">&quot;&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Unit Name:&quot;</span> &lt;&lt; setw(2) &lt;&lt; <span class="stringliteral">&quot;&quot;</span> &lt;&lt; U.<a class="code" href="class_unit.html#a4fe683b797b0e2814be2ffffa2c19bbe">GetUnitName</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;       &lt;&lt; setw(spacing) &lt;&lt; <span class="stringliteral">&quot;&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Credits:&quot;</span> &lt;&lt; setw(spacing) &lt;&lt; <span class="stringliteral">&quot;&quot;</span> &lt;&lt; U.<a class="code" href="class_unit.html#ab1f83a3955a721e46730773747e4e67e">GetCredits</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="a_unit_8cpp_html_a3e9ad3532e507c14a957e842d2c80a69"><div class="ttname"><a href="_unit_8cpp.html#a3e9ad3532e507c14a957e842d2c80a69">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Unit &amp;U)</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00066">Unit.cpp:66</a></div></div>
-<div class="ttc" id="aclass_unit_html_a68eeb31e4e6e309c9ba27e1ed63bd724"><div class="ttname"><a href="class_unit.html#a68eeb31e4e6e309c9ba27e1ed63bd724">Unit::GetUnitName</a></div><div class="ttdeci">const char * GetUnitName() const</div><div class="ttdoc">Member Method.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00043">Unit.cpp:43</a></div></div>
-<div class="ttc" id="aclass_unit_html_a184536cfeeda6ba3e486d6d0dfa91a76"><div class="ttname"><a href="class_unit.html#a184536cfeeda6ba3e486d6d0dfa91a76">Unit::GetUnitId</a></div><div class="ttdeci">const char * GetUnitId() const</div><div class="ttdoc">Member Method.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00038">Unit.cpp:38</a></div></div>
-<div class="ttc" id="a_unit_8cpp_html_a7a9d8f721576c83a2542bb81f2dbec9a"><div class="ttname"><a href="_unit_8cpp.html#a7a9d8f721576c83a2542bb81f2dbec9a">operator&gt;&gt;</a></div><div class="ttdeci">istream &amp; operator&gt;&gt;(istream &amp;input, Unit &amp;U)</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00060">Unit.cpp:60</a></div></div>
-<div class="ttc" id="a_unit_8h_html_a41e5f4d7ec46200b0b4f5145682925d9"><div class="ttname"><a href="_unit_8h.html#a41e5f4d7ec46200b0b4f5145682925d9">UnitIdSize</a></div><div class="ttdeci">const unsigned UnitIdSize</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8h_source.html#l00033">Unit.h:33</a></div></div>
-<div class="ttc" id="aclass_unit_html_ac15c197032096290f7240c6ca37960ec"><div class="ttname"><a href="class_unit.html#ac15c197032096290f7240c6ca37960ec">Unit::SetUnitId</a></div><div class="ttdeci">void SetUnitId(const char *unitId)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00048">Unit.cpp:48</a></div></div>
-<div class="ttc" id="aclass_unit_html_ac53eb47c2701c7bbc05aa8b898bde7ad"><div class="ttname"><a href="class_unit.html#ac53eb47c2701c7bbc05aa8b898bde7ad">Unit::SetUnitName</a></div><div class="ttdeci">void SetUnitName(const char *unitName)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00054">Unit.cpp:54</a></div></div>
-<div class="ttc" id="a_unit_8h_html_a96539265e18260e7c58bca410f23a0cb"><div class="ttname"><a href="_unit_8h.html#a96539265e18260e7c58bca410f23a0cb">UnitNameSize</a></div><div class="ttdeci">const unsigned UnitNameSize</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8h_source.html#l00026">Unit.h:26</a></div></div>
+<div class="ttc" id="arinput_8txt_html_aab0d2a978764bdfc059e4ad4592af22a"><div class="ttname"><a href="rinput_8txt.html#aab0d2a978764bdfc059e4ad4592af22a">ICT283</a></div><div class="ttdeci">Data ICT283</div><div class="ttdef"><b>Definition:</b> <a href="rinput_8txt_source.html#l00002">rinput.txt:2</a></div></div>
+<div class="ttc" id="a_unit_8cpp_html_a3e9ad3532e507c14a957e842d2c80a69"><div class="ttname"><a href="_unit_8cpp.html#a3e9ad3532e507c14a957e842d2c80a69">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Unit &amp;U)</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00085">Unit.cpp:85</a></div></div>
+<div class="ttc" id="a_unit_test_8txt_html_a02caa76a222b2a5381df5a8d7e17e9f8"><div class="ttname"><a href="_unit_test_8txt.html#a02caa76a222b2a5381df5a8d7e17e9f8">File</a></div><div class="ttdeci">Unit Test File</div><div class="ttdef"><b>Definition:</b> <a href="_unit_test_8txt_source.html#l00002">UnitTest.txt:2</a></div></div>
+<div class="ttc" id="aclass_unit_html_abff157e76552cc8a3941f39b96869ff2"><div class="ttname"><a href="class_unit.html#abff157e76552cc8a3941f39b96869ff2">Unit::SetCredits</a></div><div class="ttdeci">void SetCredits(unsigned credit)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00063">Unit.cpp:63</a></div></div>
+<div class="ttc" id="aclass_unit_html_a0922592481529e4806a519e51276833f"><div class="ttname"><a href="class_unit.html#a0922592481529e4806a519e51276833f">Unit::SetUnitName</a></div><div class="ttdeci">void SetUnitName(string unitName)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00058">Unit.cpp:58</a></div></div>
+<div class="ttc" id="arinput_8txt_html_ac115375c2f982466e9b5015e10c04f72"><div class="ttname"><a href="rinput_8txt.html#ac115375c2f982466e9b5015e10c04f72">ICT289</a></div><div class="ttdeci">Data Computer ICT289</div><div class="ttdef"><b>Definition:</b> <a href="rinput_8txt_source.html#l00003">rinput.txt:3</a></div></div>
+<div class="ttc" id="a_date_test_8txt_html_ae3f1899b3e2dd9ce602bb4582de937b1"><div class="ttname"><a href="_date_test_8txt.html#ae3f1899b3e2dd9ce602bb4582de937b1">month</a></div><div class="ttdeci">Date Test month</div><div class="ttdef"><b>Definition:</b> <a href="_date_test_8txt_source.html#l00013">DateTest.txt:13</a></div></div>
+<div class="ttc" id="aclass_unit_html_a4fe683b797b0e2814be2ffffa2c19bbe"><div class="ttname"><a href="class_unit.html#a4fe683b797b0e2814be2ffffa2c19bbe">Unit::GetUnitName</a></div><div class="ttdeci">string GetUnitName() const</div><div class="ttdoc">Member Method.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00043">Unit.cpp:43</a></div></div>
+<div class="ttc" id="a_unit_test_8txt_html_ac281457f0d2e18b13ff51ef65f2273c1"><div class="ttname"><a href="_unit_test_8txt.html#ac281457f0d2e18b13ff51ef65f2273c1">credit</a></div><div class="ttdeci">Unit Test unit and for credit</div><div class="ttdef"><b>Definition:</b> <a href="_unit_test_8txt_source.html#l00002">UnitTest.txt:2</a></div></div>
+<div class="ttc" id="a_unit_8cpp_html_a7a9d8f721576c83a2542bb81f2dbec9a"><div class="ttname"><a href="_unit_8cpp.html#a7a9d8f721576c83a2542bb81f2dbec9a">operator&gt;&gt;</a></div><div class="ttdeci">istream &amp; operator&gt;&gt;(istream &amp;input, Unit &amp;U)</div><div class="ttdoc">Overload input stream operator.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00068">Unit.cpp:68</a></div></div>
+<div class="ttc" id="aclass_unit_html_a8952641afc157ff469bd4c85f664e71f"><div class="ttname"><a href="class_unit.html#a8952641afc157ff469bd4c85f664e71f">Unit::GetUnitId</a></div><div class="ttdeci">string GetUnitId() const</div><div class="ttdoc">Member Method.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00038">Unit.cpp:38</a></div></div>
+<div class="ttc" id="arinput_8txt_html_a6ea8df364b28294935535444fa227004"><div class="ttname"><a href="rinput_8txt.html#a6ea8df364b28294935535444fa227004">Graphics</a></div><div class="ttdeci">Data Computer Graphics</div><div class="ttdef"><b>Definition:</b> <a href="rinput_8txt_source.html#l00002">rinput.txt:2</a></div></div>
+<div class="ttc" id="a_unit_test_8txt_html_a2d717a2adb2566002d0699f98c34ef0e"><div class="ttname"><a href="_unit_test_8txt.html#a2d717a2adb2566002d0699f98c34ef0e">Credit</a></div><div class="ttdeci">Unit Test unit and for Unit Unit Credit</div><div class="ttdef"><b>Definition:</b> <a href="_unit_test_8txt_source.html#l00019">UnitTest.txt:19</a></div></div>
+<div class="ttc" id="a_unit_test_8txt_html_a922c7a4b8b6b8ac3869caac173707ee2"><div class="ttname"><a href="_unit_test_8txt.html#a922c7a4b8b6b8ac3869caac173707ee2">name</a></div><div class="ttdeci">Unit Test unit name</div><div class="ttdef"><b>Definition:</b> <a href="_unit_test_8txt_source.html#l00002">UnitTest.txt:2</a></div></div>
+<div class="ttc" id="a_date_test_8txt_html_a2d86645c5b5a8ec9720a104ed18beb6c"><div class="ttname"><a href="_date_test_8txt.html#a2d86645c5b5a8ec9720a104ed18beb6c">year</a></div><div class="ttdeci">Date Test year</div><div class="ttdef"><b>Definition:</b> <a href="_date_test_8txt_source.html#l00019">DateTest.txt:19</a></div></div>
+<div class="ttc" id="arinput_8txt_html_abd8f8d3f9c87abbc9a4bab7fa94d91c6"><div class="ttname"><a href="rinput_8txt.html#abd8f8d3f9c87abbc9a4bab7fa94d91c6">Structures</a></div><div class="ttdeci">Data Structures</div><div class="ttdef"><b>Definition:</b> <a href="rinput_8txt_source.html#l00001">rinput.txt:1</a></div></div>
 <div class="ttc" id="aclass_unit_html_a8e46f663a95736c8002d85ab271a7581"><div class="ttname"><a href="class_unit.html#a8e46f663a95736c8002d85ab271a7581">Unit::Unit</a></div><div class="ttdeci">Unit()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00024">Unit.cpp:24</a></div></div>
+<div class="ttc" id="a_unit_test_8txt_html_a345fcac4bea4b782bc3969b45f99a9c3"><div class="ttname"><a href="_unit_test_8txt.html#a345fcac4bea4b782bc3969b45f99a9c3">ID</a></div><div class="ttdeci">Unit Test unit and for Unit ID</div><div class="ttdef"><b>Definition:</b> <a href="_unit_test_8txt_source.html#l00013">UnitTest.txt:13</a></div></div>
+<div class="ttc" id="aclass_unit_html_ab1f83a3955a721e46730773747e4e67e"><div class="ttname"><a href="class_unit.html#ab1f83a3955a721e46730773747e4e67e">Unit::GetCredits</a></div><div class="ttdeci">unsigned GetCredits() const</div><div class="ttdoc">Member Method.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00048">Unit.cpp:48</a></div></div>
+<div class="ttc" id="aclass_unit_html_a9a2b0cbf6d77f3884b43a275b1949966"><div class="ttname"><a href="class_unit.html#a9a2b0cbf6d77f3884b43a275b1949966">Unit::SetUnitId</a></div><div class="ttdeci">void SetUnitId(string unitId)</div><div class="ttdoc">Procedure.</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8cpp_source.html#l00053">Unit.cpp:53</a></div></div>
 <div class="ttc" id="a_unit_8h_html"><div class="ttname"><a href="_unit_8h.html">Unit.h</a></div><div class="ttdoc">Object Class for the Unit Class.</div></div>
-<div class="ttc" id="aclass_unit_html"><div class="ttname"><a href="class_unit.html">Unit</a></div><div class="ttdoc">This class contains the unit consisting constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8h_source.html#l00042">Unit.h:42</a></div></div>
+<div class="ttc" id="aclass_unit_html"><div class="ttname"><a href="class_unit.html">Unit</a></div><div class="ttdoc">This class contains the unit consisting constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_unit_8h_source.html#l00028">Unit.h:28</a></div></div>
+<div class="ttc" id="aclass_date_html"><div class="ttname"><a href="class_date.html">Date</a></div><div class="ttdoc">This class contains the date This class contains constructor, getters, setters member functions,...</div><div class="ttdef"><b>Definition:</b> <a href="_date_8h_source.html#l00030">Date.h:30</a></div></div>
+<div class="ttc" id="a_date_test_8txt_html_a9bbe8e712007c1333c2e14bb0ad173d2"><div class="ttname"><a href="_date_test_8txt.html#a9bbe8e712007c1333c2e14bb0ad173d2">File</a></div><div class="ttdeci">Date Test File</div><div class="ttdef"><b>Definition:</b> <a href="_date_test_8txt_source.html#l00013">DateTest.txt:13</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
