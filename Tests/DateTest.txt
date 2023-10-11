@@ -1,0 +1,21 @@
+Date Test File: 
+====Test1: Test on default constructor with initial value to be set as 0====
+[PASS]: Date has been set as 0
+[PASS]: Date has been set as 0
+[PASS]: Date has been set as 0
+
+====Test2: Test on Parameterized constructor with user defined value==== 
+[PASS]: Parameterized constructor created with day set as 21
+[PASS]: Parameterized constructor created with day set as 7
+[PASS]: Parameterized constructor created with day set as 2020
+
+====Test3: Test on Date Class Setters in setting user defined values==== 
+Test Value: --->day: 1, month: 1, year: 2000
+[PASS]: Set day to 1 successfully
+[PASS]: Set month to 1 successfully
+[PASS]: Set year to 2000 successfully
+
+====Test4: Test on output stream of date class==== 
+Test Value: --->day: 1, month: 1, year: 2000
+Actual cout display:
+    Date:      1/1/2000
