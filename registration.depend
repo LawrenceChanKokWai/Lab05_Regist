@@ -164,3 +164,59 @@
 	"Unit.h"
 	"Registration.h"
 
+1697043827 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\date.cpp
+	"Date.h"
+
+1696911696 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\date.h
+	<iostream>
+	<string>
+	<iomanip>
+
+1696857912 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\main.cpp
+	<iostream>
+	<fstream>
+	"Unit.h"
+	"Registration.h"
+
+1697027397 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\unit.h
+	<iostream>
+	<string>
+	<iomanip>
+
+1697473135 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\registration.h
+	<iostream>
+	<string>
+	"Student.h"
+	"Result.h"
+
+1697035812 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\result.h
+	<iomanip>
+	"Unit.h"
+	"Date.h"
+
+1697473697 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\registration.cpp
+	"Registration.h"
+
+1697043088 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\result.cpp
+	"Result.h"
+
+1697043232 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\unit.cpp
+	"Unit.h"
+
+1697467702 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\student.cpp
+	"Student.h"
+
+1697470382 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\student.h
+	<iostream>
+	<string>
+
+1697469136 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\studenttest.cpp
+	<ostream>
+	"Student.h"
+	"Utils.h"
+
+1697043610 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\utils.h
+	<iostream>
+	<string>
+	<fstream>
+

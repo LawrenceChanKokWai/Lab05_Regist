@@ -14,6 +14,7 @@
 
 #include <iostream>
 #include<string>
+#include "Student.h"
 #include "Result.h"
 
 using namespace std;
@@ -48,13 +49,24 @@ public:
     Registration();
 
     ///
-    /// @brief Member Method
+    /// @brief Procedure
     ///
-    /// @details This function gets the student id of the student.
+    /// @details This function gets the student from the student class.
     ///
-    /// @return The student id of the student.
+    /// @param[in] student The student  of a student from the student class.
+    /// @return Void
     ///
-    long GetStudentId() const;
+    void GetStudent(Student &student) const;
+
+    ///
+    /// @brief Procedure
+    ///
+    /// @details This function sets the student.
+    ///
+    /// @param[in] student The student  of a student.
+    /// @return Void
+    ///
+    void SetStudent(Student &student);
 
     ///
     /// @brief Member Method
@@ -95,16 +107,6 @@ public:
     ///
     /// @brief Procedure
     ///
-    /// @details This function sets the student Id.
-    ///
-    /// @param[in] studentId The student id of a student.
-    /// @return Void
-    ///
-    void SetStudentId(long studentId);
-
-    ///
-    /// @brief Procedure
-    ///
     /// @details This function sets the semester.
     ///
     /// @param[in] semester The semester for the student enrolled with the units.
@@ -134,35 +136,35 @@ public:
 
 private:
     const unsigned INITIAL_VALUE = 0;
-    long m_studentId;
+    Student m_student;
     unsigned m_semester;
     unsigned m_count;
     Result m_result[MaxResult];
 };
 
-    ///
-    /// @brief Overload output stream operator
-    ///
-    /// @details This is a friend member function that directly access into
-    /// the member variables. This outputs the user defined registration format.
-    ///
-    /// @param[in] os ostream extraction of user defined variable of the registration (first parameter).
-    /// @param[in] R The registration class variable to be used for extraction (second parameter).
-    /// @return os The display output format of the registration.
-    ///
-    ostream & operator <<( ostream & os, const Registration & R);
+///
+/// @brief Overload output stream operator
+///
+/// @details This is a friend member function that directly access into
+/// the member variables. This outputs the user defined registration format.
+///
+/// @param[in] os ostream extraction of user defined variable of the registration (first parameter).
+/// @param[in] R The registration class variable to be used for extraction (second parameter).
+/// @return os The display output format of the registration.
+///
+ostream & operator <<( ostream & os, const Registration & R);
 
-    ///
-    /// @brief Overload input stream operator
-    ///
-    /// @details This is a friend member function that directly access into
-    /// the member variables. This inputs the user defined registration format.
-    ///
-    /// @param[in] input istream insertion of user defined variable of the registration (first parameter).
-    /// @param[in] R The registration class variable to be used for insertion (second parameter).
-    /// @return input The insertion format of the registration.
-    ///
-    istream & operator >>( istream & input, Registration & R );
+///
+/// @brief Overload input stream operator
+///
+/// @details This is a friend member function that directly access into
+/// the member variables. This inputs the user defined registration format.
+///
+/// @param[in] input istream insertion of user defined variable of the registration (first parameter).
+/// @param[in] R The registration class variable to be used for insertion (second parameter).
+/// @return input The insertion format of the registration.
+///
+istream & operator >>( istream & input, Registration & R );
 
 #endif
 

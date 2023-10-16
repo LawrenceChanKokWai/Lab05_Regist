@@ -1,14 +1,10 @@
 Registration Test File: 
 ====Test1: Test on default constructor with initial value to be set as 0 for count====
-[PASS]: Default Constructor created with student id set to 0
 [PASS]: Default Constructor created with semester set to 0
 [PASS]: Default Constructor created with count set to 0
 
-====Test2: Test on Setting Student ID: 12345678==== 
-[PASS]: Student Id successfully been set to 12345678
-
-====Test3: Test on Setting Semester: 3==== 
+====Test2: Test on Setting Semester: 3==== 
 [PASS]: Semester successfully been set to 3
 
-====Test4: Test on Setting Count: 3==== 
+====Test3: Test on Setting Count: 3==== 
 [PASS]: Count successfully been set to 3

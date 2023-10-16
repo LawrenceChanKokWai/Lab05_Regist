@@ -1,0 +1,15 @@
+Student Test File: 
+====Test1: 
+Test on default constructor with initial value to be set as 0 for student Id, 
+and empty string for student name====
+[PASS]: Student Id has been set to 0 when student is created
+[PASS]: Student Name has been set to empty string when student object has been created
+
+====Test2: Test on Setting Student ID: 123456789==== 
+[PASS]: Student Id has been set as 123456789
+
+====Test3: Test on Setting Student Name: Chan Kok Wai==== 
+[PASS]: Student Name has been set as Chan Kok Wai
+
+====Test4: Test on Output Stream: ==== 
+Actual: 

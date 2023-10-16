@@ -1,4 +1,6 @@
 Student ID: 12345678
+Student Name: Chan Kok Wai
+
 Semester:   1
     Unit ID:    ICT283
     Unit Name:  Data Structures

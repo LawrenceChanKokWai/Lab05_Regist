@@ -18,6 +18,7 @@ int main()
 {
     Utils utils;
     Registration testRegist;
+    Student testStudent;
     const string INFILE("Tests/RegistrationTest.txt");
     ofstream ofs(INFILE);
     if(!ofs)
@@ -27,12 +28,6 @@ int main()
 
     cout << "Registration Test File: \n====Test1: Test on default constructor with initial value to be set as 0 for count====" << endl;
     ofs << "Registration Test File: \n====Test1: Test on default constructor with initial value to be set as 0 for count====" << endl;
-
-    utils.Assert(
-        testRegist.GetStudentId() == 0,
-        "Default Constructor created with student id set to 0",
-        "Default Constructor Should be created and student id to be set to 0", ofs
-    );
 
     utils.Assert(
         testRegist.GetSemester() == 0,
@@ -46,20 +41,10 @@ int main()
         "Default Constructor Should be created and count to be set to 0", ofs
     );
 
-    long testStudentIIdValue(12345678);
-    testRegist.SetStudentId(testStudentIIdValue);
-    cout << '\n' << "====Test2: Test on Setting Student ID: " << testStudentIIdValue << "==== \n";
-    ofs << '\n' << "====Test2: Test on Setting Student ID: " << testStudentIIdValue << "==== \n";
-    utils.Assert(
-        testRegist.GetStudentId() == testStudentIIdValue,
-        "Student Id successfully been set to 12345678",
-        "Student Id should be set to 12345678", ofs
-    );
-
     unsigned testSemesterValue(3);
     testRegist.SetSemester(testSemesterValue);
-    cout << '\n' << "====Test3: Test on Setting Semester: " << testSemesterValue << "==== \n";
-    ofs << '\n' << "====Test3: Test on Setting Semester: " << testSemesterValue << "==== \n";
+    cout << '\n' << "====Test2: Test on Setting Semester: " << testSemesterValue << "==== \n";
+    ofs << '\n' << "====Test2: Test on Setting Semester: " << testSemesterValue << "==== \n";
     utils.Assert(
         testRegist.GetSemester() == testSemesterValue,
         "Semester successfully been set to 3",
@@ -68,8 +53,8 @@ int main()
 
     unsigned testCountValue(3);
     testRegist.SetCount(testCountValue);
-    cout << '\n' << "====Test4: Test on Setting Count: " << testCountValue << "==== \n";
-    ofs << '\n' << "====Test4: Test on Setting Count: " << testCountValue << "==== \n";
+    cout << '\n' << "====Test3: Test on Setting Count: " << testCountValue << "==== \n";
+    ofs << '\n' << "====Test3: Test on Setting Count: " << testCountValue << "==== \n";
     utils.Assert(
         testRegist.GetSemester() == testCountValue,
         "Count successfully been set to 3",
