@@ -1,19 +1,6 @@
-## Registration Application, Lab 04
-
+## Registration Application, Lab 05
 #### - All Class
-- [x] Unit test all classes.
-- [x] Provide setters and getters.
-- [x] Move all implementations to cpp files.
-- [x] Modify all to strings.
-- [x] Use getline to read and compose words.
-- [x] Unfriend all overload input and output stream operator.
-
-#### - Date Class
-- [x] Create a date class, with day / month / year
-- [x] Provide get and set method and use output operators for the new attributes.
-
-#### - Result Class
-- [x] Should output unit, marks and date.
-
-#### - Registration Class
-- [x] Should contain student id, semester, unit, marks and date.
+- [ ] Modify Lab04 that each student id has an associated student name.
+- [ ] Modify Unit class has a unit coordinator and the unit coordinator's details include: coordinator name, room number, telephone number and email.
+- [ ] Modify Unit has a list of enrolled students. Store list in an encapsulated dynamic array, array is a private member of a template class called Vector.
+ student id, semester, unit, marks and date.
