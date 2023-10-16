@@ -36,11 +36,11 @@
 		<Unit filename="Date.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="DateTest.cpp" />
-		<Unit filename="Main.cpp">
+		<Unit filename="DateTest.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
+		<Unit filename="Main.cpp" />
 		<Unit filename="Registration.cpp" />
 		<Unit filename="Registration.h" />
 		<Unit filename="RegistrationTest.cpp">
