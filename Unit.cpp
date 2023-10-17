@@ -28,7 +28,7 @@ Unit::Unit()
     m_credits = 0;
 }
 
-Unit::Unit( string unitName, string unitId, unsigned credit )
+Unit::Unit( string unitName, string unitId, Coordinator &coordinator, unsigned credit )
 {
     m_unitName = unitName;
     m_unitId = unitId;
