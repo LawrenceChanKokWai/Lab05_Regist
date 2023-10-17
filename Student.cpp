@@ -28,7 +28,7 @@ void Student::SetStudentName(string &studentName)
 
 ostream &operator << (ostream &output, const Student &S)
 {
-    output   << "Student ID: " << S.GetStudentId() << '\n'
+    output   << "\nStudent ID: " << S.GetStudentId() << '\n'
                     << "Student Name: " << S.GetStudentName() << '\n';
 
     return output;

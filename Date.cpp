@@ -73,8 +73,10 @@ istream &operator >> (istream &inputStream, Date &D)
     getline(inputStream, tempStrField, '/');
     D.SetMonth(stoi(tempStrField));
 
-    getline(inputStream, tempStrField);
-    D.SetYear(stoi(tempStrField));
+    if(getline(inputStream, tempStrField, ','))
+    {
+        D.SetYear(stoi(tempStrField));
+    }
 
     return inputStream;
 }

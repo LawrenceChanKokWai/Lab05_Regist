@@ -55,6 +55,14 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
+		<Unit filename="Student.cpp" />
+		<Unit filename="Student.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="StudentTest.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="Unit.cpp" />
 		<Unit filename="Unit.h" />
 		<Unit filename="UnitTest.cpp">

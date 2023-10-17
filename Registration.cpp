@@ -93,7 +93,7 @@ istream & operator >>( istream & input, Registration & R )
     getline(input, tempStrField, ',');
     R.SetSemester(stoi(tempStrField));
 
-    getline(input, tempStrField, '\n');
+    getline(input, tempStrField, ',');
     R.SetCount(stoi(tempStrField));
 
     for(unsigned i = 0; i < R.GetCount(); i++)
@@ -109,7 +109,7 @@ ostream & operator <<( ostream & os, const Registration & R )
 {
     Student tempStudent;
     R.GetStudent(tempStudent);
-    os << tempStudent << '\n'
+    os << tempStudent
        << "Semester:   " << R.GetSemester() << '\n';
 
     for(unsigned i = 0; i < R.GetCount(); i++)

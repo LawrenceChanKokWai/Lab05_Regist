@@ -31,21 +31,28 @@ using namespace std;
 int main()
 {
     ifstream infile( "rinput.txt" );
+        ofstream ofile( "routput.txt" );
     if( !infile )
         return -1;
 
     Registration R;
-    infile >> R;
-    cout << R
-            << "Number of courses = " << R.GetCount() << '\n'
-            << "Total credits     = " << R.GetCredits() << '\n';
+    while(infile.peek() != EOF)
+    {
+        infile >> R;
+        cout << R
+             << "Number of courses = " << R.GetCount() << '\n'
+             << "Total credits     = " << R.GetCredits() << '\n';
 
-    ofstream ofile( "routput.txt" );
+        ofile << R
+              << "Number of courses = " << R.GetCount() << '\n'
+              << "Total credits     = " << R.GetCredits() << '\n';
+    }
+
+
+
 
 // Use a debugger and track down the calls made "behind the scene"
-    ofile << R
-          << "Number of courses = " << R.GetCount() << '\n'
-          << "Total credits     = " << R.GetCredits() << '\n';
+
 
     // Declare and initialize a Course, and modify
     // its credits.

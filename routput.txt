@@ -1,6 +1,6 @@
+
 Student ID: 12345678
 Student Name: Chan Kok Wai
-
 Semester:   1
     Unit ID:    ICT283
     Unit Name:  Data Structures
@@ -16,3 +16,27 @@ Semester:   1
 
 Number of courses = 2
 Total credits     = 6
+
+Student ID: 12345678
+Student Name: Chan Kok Wai
+Semester:   1
+    Unit ID:    ICT283
+    Unit Name:  Data Algorithm & Structures
+    Credits:    3
+    Marks:      95
+    Date:       21/7/2020
+
+    Unit ID:    ICT289
+    Unit Name:  Computer Graphics & Testings
+    Credits:    3
+    Marks:      80
+    Date:       19/3/2020
+
+    Unit ID:    ICT206
+    Unit Name:  DataBase
+    Credits:    3
+    Marks:      80
+    Date:       24/8/2020
+
+Number of courses = 3
+Total credits     = 9
