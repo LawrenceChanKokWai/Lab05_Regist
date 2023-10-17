@@ -47,9 +47,10 @@ public:
     ///
     /// @param[in] unitName The name of the unit ( first parameter )
     /// @param[in] unitId The unit id of the enrollment mode ( second parameter )
-    /// @param[in] credit The number of credit obtained ( third parameter )
+    /// @param[in] &coordinator The reference coordinator object of a unit ( third parameter )
+    /// @param[in] credit The number of credit obtained ( fourth parameter )
     ///
-    Unit( string unitName, string unitId, unsigned credit );
+    Unit( string unitName, string unitId, Coordinator &coordinator, unsigned credit );
 
     ///
     /// @brief Member Method
@@ -79,8 +80,24 @@ public:
     ///
     unsigned GetCredits() const;
 
+    ///
+    /// @brief Procedure
+    ///
+    /// @details This function gets the coordinator object from coordinator class.
+    ///
+    /// @param &coordinator The reference of a coordinator object.
+    /// @return Void
+    ///
     void GetCoordinator(Coordinator &coordinator) const;
 
+    ///
+    /// @brief Procedure
+    ///
+    /// @details This function sets the coordinator object.
+    ///
+    /// @param &coordinator The reference of a coordinator object.
+    /// @return Void
+    ///
     void SetCoordinator(Coordinator &coordinator);
 
     ///
