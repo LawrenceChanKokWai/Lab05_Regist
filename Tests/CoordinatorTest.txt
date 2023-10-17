@@ -1,0 +1,27 @@
+Coordinator Test File: 
+====Test1: Test on default constructor with coordinator name and email initial value to be set as empty string====
+[PASS]: Coordinator Name is set to be empty
+[PASS]: Coordinator Email is set to be empty
+
+====Test2: Test on Default Constructor with room number & phone number to be set as 0==== 
+[PASS]: Room Number has been set to 0
+[PASS]: Phone Number has been set to 0
+
+====Test3: Test on Setting Coordinator Name: Andrea Leong==== 
+[PASS]: Coordinator Name has been set to Andrea Leong
+
+====Test4: Test on Setting Room Number: 40==== 
+[PASS]: Coordinator Room Number has been set to 40
+
+====Test5: Test on Setting Phone Number: 12342543==== 
+[PASS]: Coordinator Phone Number has been set to 12342543
+
+====Test6: Test on Setting Email: andrea_leong@outlook.com==== 
+[PASS]: Coordinator Email has been set to andrea_leong@outlook.com
+
+====Test7: Test on output Stream: ==== 
+Actual Output: 
+    Unit Coordinator:   Andrea Leong
+    Room Number:        40
+    Phone Number:       12342543
+    Email:              andrea_leong@outlook.com
