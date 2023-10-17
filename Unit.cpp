@@ -32,6 +32,7 @@ Unit::Unit( string unitName, string unitId, Coordinator &coordinator, unsigned c
 {
     m_unitName = unitName;
     m_unitId = unitId;
+    m_coordinator = coordinator;
     m_credits = credit;
 }
 
