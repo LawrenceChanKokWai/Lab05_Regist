@@ -16,6 +16,8 @@
 #include <string>
 #include <iomanip>
 
+#include "Coordinator.h"
+
 using namespace std;
 
 /// @brief This class contains the unit
@@ -77,6 +79,10 @@ public:
     ///
     unsigned GetCredits() const;
 
+    void GetCoordinator(Coordinator &coordinator) const;
+
+    void SetCoordinator(Coordinator &coordinator);
+
     ///
     /// @brief Procedure
     ///
@@ -111,6 +117,7 @@ public:
 private:
     string m_unitName;
     string m_unitId;
+    Coordinator m_coordinator;
     unsigned  m_credits;
 };
 

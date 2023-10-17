@@ -57,7 +57,7 @@ ostream &operator << (ostream &outputStream, const Date &D)
 {
     unsigned spacing = 4;
 
-    outputStream << left << setw(spacing) << "" << "Date:" << setw(7) << ""
+    outputStream << left << setw(spacing) << "" << "Date:" << setw(15) << ""
                                 << D.GetDay() << "/" << D.GetMonth() << "/" << D.GetYear() ;
 
     return outputStream;

@@ -50,6 +50,16 @@ unsigned Unit::GetCredits() const
     return m_credits;
 }
 
+void Unit::GetCoordinator(Coordinator &coordinator) const
+{
+    coordinator = m_coordinator;
+}
+
+void Unit::SetCoordinator(Coordinator &coordinator)
+{
+    m_coordinator = coordinator;
+}
+
 void Unit::SetUnitId(string unitId)
 {
     m_unitId = unitId;
@@ -68,12 +78,16 @@ void Unit::SetCredits(unsigned int credit)
 istream & operator >>( istream & input, Unit & U )
 {
     string tempStrField;
+    Coordinator tempCoordinatorField;
 
     getline(input, tempStrField, ',');
     U.SetUnitName(tempStrField);
 
     getline(input, tempStrField, ',');
     U.SetUnitId(tempStrField);
+
+    input >> tempCoordinatorField;
+    U.SetCoordinator(tempCoordinatorField);
 
     unsigned tempCreditField = 0;
     input >> tempCreditField;
@@ -85,9 +99,12 @@ istream & operator >>( istream & input, Unit & U )
 ostream& operator<<(std::ostream& os, const Unit& U)
 {
     const unsigned spacing = 4;
+    Coordinator tempCoordinatorField;
+    U.GetCoordinator(tempCoordinatorField);
 
-    os << left << setw(spacing) << "" << "Unit ID:" << setw(spacing) << "" << U.GetUnitId() << '\n'
-       << setw(spacing) << "" << "Unit Name:" << setw(2) << "" << U.GetUnitName() << '\n'
-       << setw(spacing) << "" << "Credits:" << setw(spacing) << "" << U.GetCredits() << '\n';
+    os << left << setw(spacing) << "" << "Unit ID:" << setw(12) << "" << U.GetUnitId() << '\n'
+       << setw(spacing) << "" << "Unit Name:" << setw(10) << "" << U.GetUnitName() << '\n'
+       << tempCoordinatorField
+       << setw(spacing) << "" << "Credits:" << setw(12) << "" << U.GetCredits() << '\n';
     return os;
 }

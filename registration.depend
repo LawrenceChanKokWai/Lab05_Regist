@@ -178,12 +178,13 @@
 	"Unit.h"
 	"Registration.h"
 
-1697027397 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\unit.h
+1697550145 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\unit.h
 	<iostream>
 	<string>
 	<iomanip>
+	"Coordinator.h"
 
-1697473135 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\registration.h
+1697544639 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\registration.h
 	<iostream>
 	<string>
 	"Student.h"
@@ -194,16 +195,16 @@
 	"Unit.h"
 	"Date.h"
 
-1697540215 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\registration.cpp
+1697550185 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\registration.cpp
 	"Registration.h"
 
-1697043088 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\result.cpp
+1697550733 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\result.cpp
 	"Result.h"
 
-1697043232 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\unit.cpp
+1697550675 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\unit.cpp
 	"Unit.h"
 
-1697540187 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\student.cpp
+1697540249 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\student.cpp
 	"Student.h"
 
 1697470382 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\student.h
@@ -219,4 +220,16 @@
 	<iostream>
 	<string>
 	<fstream>
+
+1697542238 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\coordinatortest.cpp
+	<iostream>
+	"Coordinator.h"
+
+1697542089 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\coordinator.h
+	<iostream>
+	<string>
+	<iomanip>
+
+1697542676 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\coordinator.cpp
+	"Coordinator.h"
 

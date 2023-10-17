@@ -1,2 +1,2 @@
-12345678,Chan Kok Wai,1,2,Data Structures,ICT283,3,95,21/7/2020,Computer Graphics,ICT289,3,80,19/3/2020,
-12345678,Chan Kok Wai,1,3,Data Algorithm & Structures,ICT283,3,95,21/7/2020,Computer Graphics & Testings,ICT289,3,80,19/3/2020,DataBase,ICT206,3,80,24/8/2020
+12345678,Chan Kok Wai,1,2,Data Structures,ICT283,Dr Andrea,42,97865654,andrea_leong@outlook.com,3,95,21/7/2020,Computer Graphics,ICT289,Dr Andrea,42,97865654,andrea_leong@outlook.com,3,80,19/3/2020,
+12345678,Chan Wai Kok,1,3,Data Algorithm & Structures,ICT283,Dr Andrea Leong,42,97865654,andrea_leong@outlook.com,3,95,21/7/2020,Computer Graphics & Testings,ICT289,Dr Andrea Leong,42,97865654,andrea_leong@outlook.com,3,80,19/3/2020,DataBase,ICT206,Dr Andrea Leong,42,97865654,andrea_leong@outlook.com,3,80,24/8/2020

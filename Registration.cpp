@@ -109,8 +109,9 @@ ostream & operator <<( ostream & os, const Registration & R )
 {
     Student tempStudent;
     R.GetStudent(tempStudent);
-    os << tempStudent
-       << "Semester:   " << R.GetSemester() << '\n';
+
+    os    << tempStudent
+             << "Semester:   " << R.GetSemester() << '\n';
 
     for(unsigned i = 0; i < R.GetCount(); i++)
     {

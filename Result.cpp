@@ -60,7 +60,7 @@ ostream &operator << (ostream &outputStream, const Result &R)
     R.GetDate(tempDate);
 
     outputStream << tempUnit
-                 << left << setw(spacing) << "" << "Marks:" << setw(6) << "" << R.GetMarks() << '\n'
+                 << left << setw(spacing) << "" << "Marks:" << setw(14) << "" << R.GetMarks() << '\n'
                  <<  tempDate << '\n';
 
     return outputStream;
