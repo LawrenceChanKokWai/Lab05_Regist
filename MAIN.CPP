@@ -17,6 +17,7 @@
 #include <fstream>
 #include "Unit.h"  // Course class declaration
 #include "Registration.h" // Registration class declaration
+#include "Vector.h"
 
 using namespace std;
 
@@ -31,24 +32,28 @@ using namespace std;
 int main()
 {
     ifstream infile( "rinput.txt" );
-        ofstream ofile( "routput.txt" );
+    ofstream ofile( "routput.txt" );
     if( !infile )
         return -1;
 
     Registration R;
+    Vector<Registration>registVector;
     while(infile.peek() != EOF)
     {
         infile >> R;
-        cout << R
-             << "Number of courses = " << R.GetCount() << '\n'
-             << "Total credits     = " << R.GetCredits() << '\n';
+        registVector.AppendObject(R);
+        //cout << R
+        //     << "Number of courses = " << R.GetCount() << '\n'
+        //     << "Total credits     = " << R.GetCredits() << '\n';
 
-        ofile << R
-              << "Number of courses = " << R.GetCount() << '\n'
-              << "Total credits     = " << R.GetCredits() << '\n';
+        //ofile << R
+        //     << "Number of courses = " << R.GetCount() << '\n'
+        //     << "Total credits     = " << R.GetCredits() << '\n';
     }
 
+    ofile << registVector.GetObjectByIndex(0);
 
+    infile.close();
 
 
 // Use a debugger and track down the calls made "behind the scene"

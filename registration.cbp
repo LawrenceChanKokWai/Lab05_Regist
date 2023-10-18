@@ -32,6 +32,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Coordinator.cpp" />
+		<Unit filename="Coordinator.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="CoordinatorTest.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="Date.cpp" />
 		<Unit filename="Date.h">
 			<Option target="&lt;{~None~}&gt;" />
@@ -40,7 +48,10 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="Main.cpp" />
+		<Unit filename="Main.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="Registration.cpp" />
 		<Unit filename="Registration.h" />
 		<Unit filename="RegistrationTest.cpp">
@@ -51,10 +62,7 @@
 		<Unit filename="Result.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="ResultTest.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-		</Unit>
+		<Unit filename="ResultTest.cpp" />
 		<Unit filename="Student.cpp" />
 		<Unit filename="Student.h">
 			<Option target="&lt;{~None~}&gt;" />

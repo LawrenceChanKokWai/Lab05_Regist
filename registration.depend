@@ -164,7 +164,7 @@
 	"Unit.h"
 	"Registration.h"
 
-1697550781 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\date.cpp
+1697643272 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\date.cpp
 	"Date.h"
 
 1696911696 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\date.h
@@ -172,19 +172,20 @@
 	<string>
 	<iomanip>
 
-1697539984 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\main.cpp
+1697643531 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\main.cpp
 	<iostream>
 	<fstream>
 	"Unit.h"
 	"Registration.h"
+	"Vector.h"
 
-1697551973 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\unit.h
+1697633519 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\unit.h
 	<iostream>
 	<string>
 	<iomanip>
 	"Coordinator.h"
 
-1697544639 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\registration.h
+1697641011 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\registration.h
 	<iostream>
 	<string>
 	"Student.h"
@@ -233,4 +234,19 @@
 
 1697542676 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\coordinator.cpp
 	"Coordinator.h"
+
+1697047884 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\resulttest.cpp
+	<iostream>
+	"Result.h"
+	"Utils.h"
+
+1697647621 source:c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\vectortest.cpp
+	<iostream>
+	<fstream>
+	"Vector.h"
+	"Registration.h"
+	"Utils.h"
+
+1697647665 c:\users\lawrence\dropbox\pc\desktop\chankokwai_ict283\rewrite\lab5_regist\registration\codeblocks\vector.h
+	<stdexcept>
 

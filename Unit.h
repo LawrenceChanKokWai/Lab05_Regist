@@ -20,6 +20,7 @@
 
 using namespace std;
 
+///
 /// @brief This class contains the unit
 /// consisting constructor, getters, setters
 /// member functions, and overloaded output and input stream.

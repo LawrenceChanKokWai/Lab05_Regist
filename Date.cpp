@@ -77,6 +77,10 @@ istream &operator >> (istream &inputStream, Date &D)
     {
         D.SetYear(stoi(tempStrField));
     }
+    else
+    {
+        getline(inputStream, tempStrField, '\n');
+    }
 
     return inputStream;
 }

@@ -135,7 +135,7 @@ public:
     void SetResult(Result &result, unsigned index);
 
 private:
-    const unsigned INITIAL_VALUE = 0;
+    unsigned INITIAL_VALUE = 0;
     Student m_student;
     unsigned m_semester;
     unsigned m_count;

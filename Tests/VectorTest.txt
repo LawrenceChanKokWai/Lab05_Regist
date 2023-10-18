@@ -1,0 +1,18 @@
+Vector Test File: 
+====Test1: Test on default constructor with initial capacity values====
+[PASS]: Initial Capacity set as 2
+[PASS]: Initial Used Slot set as 0
+[PASS]: Initial Dynamic Array pointer created, Address is not null
+
+====Test2: Test on destructor==== 
+[PASS]: testVector deleted and set to nullptr
+
+====Test3: Test on Appending Object==== 
+[PASS]: Object One Been Appended into Vector
+
+====Test4: Test on Getting Object through index 0==== 
+[PASS]: Index 0 of vector retrieved successfully
+
+====Test5: Test on Copy Constructor==== 
+&VecTwo: 0xd70270 | &VecOne: 0xd71820
+&VecTwo[0]: 0xd70270 | &VecOne[0]: 0xd71820
